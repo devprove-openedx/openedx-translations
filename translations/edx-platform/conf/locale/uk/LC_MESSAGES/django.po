@@ -14550,3 +14550,9 @@ msgstr "Додайте текст Авторського Права сюди!"
 #: xmodule/capa/templates/codeinput.html:10
 msgid "Code Editor"
 msgstr "Редактор коду"
+
+msgid "Register for free"
+msgstr "Реєстрація"
+
+msgid "The place for all your online learning"
+msgstr "Місце для всього вашого онлайн-навчання"
