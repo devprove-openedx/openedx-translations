@@ -14585,6 +14585,14 @@ msgstr "Шукати курс"
 msgid "Filters"
 msgstr "Фільтри"
 
+#: themes/indigo-override/lms/templates/course.html:22
+msgid "Learn More"
+msgstr "Дізнатися більше"
+
+#: themes/indigo-override/lms/templates/course.htm:34
+msgid "Starts"
+msgstr "Початок"
+
 # course page
 
 msgid "Already Enrolled"
