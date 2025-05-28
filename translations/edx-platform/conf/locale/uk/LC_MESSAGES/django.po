@@ -14551,8 +14551,46 @@ msgstr "Додайте текст Авторського Права сюди!"
 msgid "Code Editor"
 msgstr "Редактор коду"
 
+
+# INDIGO THEME
+
+# header
 msgid "Register for free"
 msgstr "Реєстрація"
 
+msgid "Discover courses"
+msgstr "Курси"
+
+# index
 msgid "The place for all your online learning"
 msgstr "Місце для всього вашого онлайн-навчання"
+
+# courses
+
+msgid "Courses"
+msgstr "Курси"
+
+msgid "Unlock Your Potential: Discover New Courses Today!"
+msgstr "Розкрийте свій потенціал: відкрийте для себе нові курси сьогодні!"
+
+msgid "Explore a world of knowledge and enhance your skills with our diverse range of courses"
+msgstr "Досліджуйте світ знань і вдосконалюйте свої навички за допомогою різноманітних курсів"
+
+msgid "Explore course"
+msgstr "Шукати курс"
+
+msgid "Search for a course"
+msgstr "Шукати курс"
+
+msgid "Filters"
+msgstr "Фільтри"
+
+msgid "Filters"
+msgstr "Фільтри"
+
+msgid "Learn More"
+msgstr "Переглянути"
+
+msgid "Starts: {date}"
+msgstr "Початок: {date}"
+
