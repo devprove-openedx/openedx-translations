@@ -6828,3 +6828,11 @@ msgstr "Ви ще не маєте жодної закладки на сторі�
 #: openedx/features/course_search/static/course_search/templates/dashboard_search_results.underscore:26
 msgid "Sorry, no results were found."
 msgstr "На жаль, жодного результату не знайдено."
+
+# INDIGO THEME
+
+msgid "Starts"
+msgstr "Починається"
+
+msgid "Starts: %(start_date)s"
+msgstr "Починається: %(start_date)s"
