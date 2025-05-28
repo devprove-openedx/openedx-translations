@@ -14585,9 +14585,6 @@ msgstr "Шукати курс"
 msgid "Filters"
 msgstr "Фільтри"
 
-msgid "Filters"
-msgstr "Фільтри"
-
 msgid "Learn More"
 msgstr "Переглянути"
 
