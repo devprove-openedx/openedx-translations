@@ -3331,6 +3331,7 @@ msgstr "до {date}"
 #: cms/templates/group_configurations.html:100
 #: cms/templates/group_configurations.html:109
 #: lms/templates/courseware/program_marketing.html:319
+#: themes/indigo-override/lms/templates/course.htm:22
 msgid "Learn More"
 msgstr "Дізнатися більше"
 
@@ -13382,6 +13383,7 @@ msgstr "Дізнатися більше"
 
 #: lms/templates/course.html:29 lms/templates/course.html:39
 #: lms/templates/course.html:41
+#: themes/indigo-override/lms/templates/course.htm:34 themes/indigo-override/lms/templates/course.htm:48 themes/indigo-override/lms/templates/course.htm:50
 msgid "Starts"
 msgstr "Розпочинається"
 
@@ -14584,14 +14586,6 @@ msgstr "Шукати курс"
 
 msgid "Filters"
 msgstr "Фільтри"
-
-#: themes/indigo-override/lms/templates/course.html:22
-msgid "Learn More"
-msgstr "Дізнатися більше"
-
-#: themes/indigo-override/lms/templates/course.htm:34
-msgid "Starts"
-msgstr "Початок"
 
 # course page
 
