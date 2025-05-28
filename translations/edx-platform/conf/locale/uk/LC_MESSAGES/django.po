@@ -14591,3 +14591,52 @@ msgstr "Переглянути"
 msgid "Starts: {date}"
 msgstr "Початок: {date}"
 
+# course page
+
+msgid "Already Enrolled"
+msgstr "Вже зареєстровано"
+
+msgid "Course is full"
+msgstr "Курс повний"
+
+msgid "Enrollment in this course is by invitation only"
+msgstr "Запис на цей курс тільки за запрошеннями"
+
+msgid "Enrollment is Closed"
+msgstr "Реєстрацію закрито"
+
+msgid "Enrollment is Closed"
+msgstr "Реєстрацію закрито"
+
+msgid "View About Page in studio"
+msgstr "Переглянути в studio"
+
+msgid "Course Summary"
+msgstr "Про курс"
+
+msgid "Enroll Now"
+msgstr "Записатися"
+
+
+# studio
+msgid "My Courses"
+msgstr "Мої курси"
+
+msgid "Discover"
+msgstr "Курси"
+
+msgid "View course in:"
+msgstr "Переглянути курс в:"
+
+msgid "View this course as:"
+msgstr "Переглянути курс як:"
+
+msgid "View course in:"
+msgstr "Переглянути курс в:"
+
+# footer
+msgid "Powered by:"
+msgstr "Забезпечено:"
+
+msgid "All Rights Reserved."
+msgstr "Всі права захищено."
