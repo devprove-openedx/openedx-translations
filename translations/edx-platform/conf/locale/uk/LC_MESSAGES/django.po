@@ -14570,7 +14570,7 @@ msgstr "Місце для всього вашого онлайн-навчанн�
 # courses
 
 msgid "Courses"
-msgstr "Курси"
+msgstr "Мої курси"
 
 msgid "Unlock Your Potential: Discover New Courses Today!"
 msgstr "Розкрийте свій потенціал: відкрийте для себе нові курси сьогодні!"
@@ -14603,14 +14603,6 @@ msgstr "Резюме курсу"
 
 msgid "Enroll Now"
 msgstr "Записатися"
-
-
-# studio
-msgid "Discover"
-msgstr "Курси"
-
-msgid "View course in:"
-msgstr "Переглянути курс в:"
 
 # footer
 msgid "Powered by:"
