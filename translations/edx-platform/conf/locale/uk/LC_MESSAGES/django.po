@@ -14561,7 +14561,7 @@ msgid "Register for free"
 msgstr "Реєстрація"
 
 msgid "Discover courses"
-msgstr "Курси"
+msgstr "Всі курси"
 
 # index
 msgid "The place for all your online learning"
