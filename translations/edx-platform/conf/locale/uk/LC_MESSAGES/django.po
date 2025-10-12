@@ -14610,3 +14610,190 @@ msgstr "Забезпечено:"
 
 msgid "All Rights Reserved."
 msgstr "Всі права захищено."
+
+# Tos
+
+msgid "Account Deletion Instruction"
+msgstr "Інструкція з видалення облікового запису"
+
+msgid "How to delete an account on the website https://qc.org.ua/"
+msgstr "Як видалити акаунт на сайті https://qc.org.ua/"
+
+msgid "1. In the top menu (header), open the dropdown list and select 'Account'."
+msgstr "1. У верхньому меню (хедері) відкрийте випадаючий список та виберіть «Обліковий запис»."
+
+msgid "2. Scroll to the bottom of the page."
+msgstr "2. Прокрутіть сторінку до кінця."
+
+msgid "3. Click the 'Delete my account' button."
+msgstr "3. Натисніть кнопку «Видалити мій обліковий запис»."
+
+msgid "After confirmation, you will receive an email notification:"
+msgstr "Після підтвердження на вашу електронну пошту прийде повідомлення:"
+
+msgid "Hello name surname,"
+msgstr "Здрастуйте name surname,"
+
+msgid "We have received a request to delete your account on the Nursing Development Platform. We are sorry to see you go!"
+msgstr "Ми отримали запит на видалення вашого облікового запису Платформа розвитку медсестринства. Нам шкода, що ви йдете!"
+
+msgid "Your account will be deleted shortly..."
+msgstr "Ваш обліковий запис буде видалено найближчим часом..."
+
+msgid "This is an informational message only. If you did not initiate this request, please contact our support team at contact@qc.org.ua."
+msgstr "Це лише інформаційний лист. Якщо ви не ініціювали цей запит, будь ласка, зверніться до служби підтримки: contact@qc.org.ua."
+
+msgid "Best regards, Nursing Development Platform"
+msgstr "Найкраще, Платформа розвитку медсестринства"
+
+msgid "Additional Option"
+msgstr "Додаткова опція"
+
+msgid "If you encounter difficulties, you can also request data deletion directly by sending an email to contact@qc.org.ua with the subject line: Delete My Account."
+msgstr "Якщо у вас виникнуть труднощі, ви також можете безпосередньо подати запит на видалення даних, надіславши електронного листа на адресу: contact@qc.org.ua з темою листа: Видалити мій обліковий запис."
+
+# privacy policy
+
+msgid "Effective date:"
+msgstr "Дата набуття чинності:"
+
+msgid "Last updated:"
+msgstr "Останнє оновлення:"
+
+msgid "This document describes the terms of use and privacy policy of the website Nursing Development Platform, which operates based on Open edX (hereinafter referred to as the 'Platform'), as well as the rights and obligations of the User ('User') and the Platform Administration ('Administration')"
+msgstr "Цей документ описує умови використання та політику конфіденційності вебсайту Платформа розвитку медсестринства, що працює на основі Open edX, надалі — «Платформа», а також права та обов’язки Користувача, надалі — «Користувач», та Адміністрації Платформи, надалі — «Адміністрація»."
+
+msgid "1. Acceptance of Terms"
+msgstr "1. Прийняття умов"
+
+msgid "By using the Platform, you agree to this Agreement. If you do not agree with any of its terms, please do not use the Platform."
+msgstr "Користуючись Платформою, ви погоджуєтесь із цією Угодою. Якщо ви не згодні з будь-якою з умов — будь ласка, не користуйтеся Платформою."
+
+msgid "2. Collection and Processing of Personal Data"
+msgstr "2. Збір та обробка персональних даних"
+
+msgid "We may collect the following information:"
+msgstr "Ми можемо збирати наступну інформацію:"
+
+msgid "Name and surname;"
+msgstr "Ім’я та прізвище;"
+
+msgid "Email address;"
+msgstr "Адреса електронної пошти;"
+
+msgid "Account data (username, password);"
+msgstr "Дані облікового запису (логін, пароль);"
+
+msgid "Learning progress, test results, certificates;"
+msgstr "Прогрес навчання, результати тестів, сертифікати;"
+
+msgid "IP address, device type, browser, and cookies."
+msgstr "IP-адреса, тип пристрою, браузер та cookies."
+
+msgid "2.1 Purpose of Data Collection"
+msgstr "2.1 Мета збору"
+
+msgid "Providing access to courses and educational content;"
+msgstr "Надання доступу до курсів та освітнього контенту;"
+
+msgid "Improving the operation of the Platform;"
+msgstr "Покращення роботи Платформи;"
+
+msgid "Sending notifications and updates;"
+msgstr "Надсилання сповіщень та оновлень;"
+
+msgid "Maintaining statistics and analytics."
+msgstr "Ведення статистики та аналітики."
+
+msgid "3. Data Storage and Protection"
+msgstr "3. Зберігання та захист даних"
+
+msgid "We take appropriate technical and organizational measures to protect your data:"
+msgstr "Ми вживаємо відповідних технічних та організаційних заходів для захисту ваших даних:"
+
+msgid "SSL encryption;"
+msgstr "SSL-шифрування;"
+
+msgid "Restricted server access;"
+msgstr "Обмежений доступ до серверів;"
+
+msgid "Secure passwords and authentication."
+msgstr "Захищені паролі та автентифікація."
+
+msgid "Data is stored on Google Cloud servers located in EU countries."
+msgstr "Дані зберігаються на серверах Google Cloud у країнах ЄС."
+
+msgid "4. Disclosure to Third Parties"
+msgstr "4. Передача третім особам"
+
+msgid "We do not share your personal data with third parties without your consent, except as required by law."
+msgstr "Ми не передаємо ваші персональні дані третім особам без вашої згоди, окрім випадків, передбачених законодавством."
+
+msgid "5. User Rights"
+msgstr "5. Права Користувача"
+
+msgid "Each User has the right to:"
+msgstr "Кожен Користувач має право:"
+
+msgid "Access their personal data;"
+msgstr "Доступу до власних персональних даних;"
+
+msgid "Rectify or delete their data;"
+msgstr "Виправлення або видалення своїх даних;"
+
+msgid "Withdraw consent to data processing;"
+msgstr "Відкликання згоди на обробку даних;"
+
+msgid "File a complaint with the authorized data protection authority."
+msgstr "Подання скарги до уповноваженого органу захисту персональних даних."
+
+msgid "6. User Account"
+msgstr "6. Обліковий запис"
+
+msgid "The User must:"
+msgstr "Користувач зобов’язаний:"
+
+msgid "Provide accurate information during registration;"
+msgstr "Надавати правдиву інформацію під час реєстрації;"
+
+msgid "Not share their account credentials with third parties;"
+msgstr "Не передавати свої облікові дані третім особам;"
+
+msgid "Follow the rules of ethical behavior during learning."
+msgstr "Дотримуватись правил етичної поведінки під час навчання."
+
+msgid "7. Content and Intellectual Property"
+msgstr "7. Контент та інтелектуальна власність"
+
+msgid "All educational content is the property of the Platform or course authors/instructors and is protected by copyright. Use of content without permission is prohibited."
+msgstr "Весь освітній контент є власністю Платформи або викладачів/авторів курсів і захищений авторським правом. Використання контенту без дозволу заборонене."
+
+msgid "8. Liability"
+msgstr "8. Відповідальність"
+
+msgid "The Platform is not responsible for:"
+msgstr "Платформа не несе відповідальності за:"
+
+msgid "Temporary unavailability of the service;"
+msgstr "Тимчасову недоступність сервісу;"
+
+msgid "Loss of data due to circumstances beyond the Administration’s control;"
+msgstr "Втрату даних з причин, незалежних від Адміністрації;"
+
+msgid "Improper use of the service by Users."
+msgstr "Неправильне використання сервісу Користувачами."
+
+msgid "9. Changes to the Agreement"
+msgstr "9. Зміни в Угоді"
+
+msgid "The Administration reserves the right to modify these terms. All changes take effect upon publication. We recommend reviewing this document regularly."
+msgstr "Адміністрація залишає за собою право змінювати ці умови. Усі зміни набирають чинності з моменту їх публікації. Ми рекомендуємо регулярно переглядати цей документ."
+
+msgid "10. Contacts"
+msgstr "10. Контакти"
+
+msgid "For data protection inquiries, please contact:"
+msgstr "З питань захисту даних, звертайтесь:"
+
+msgid "By continuing to use the Platform, you confirm your agreement with this Privacy Policy and Terms of Use."
+msgstr "Продовжуючи користуватись Платформою, ви підтверджуєте свою згоду з цією Політикою конфіденційності та умовами Користування."
