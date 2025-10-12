@@ -14628,8 +14628,8 @@ msgstr "2. Прокрутіть сторінку до кінця."
 msgid "3. Click the 'Delete my account' button."
 msgstr "3. Натисніть кнопку «Видалити мій обліковий запис»."
 
-msgid "After confirmation, you will receive an email notification:"
-msgstr "Після підтвердження на вашу електронну пошту прийде повідомлення:"
+msgid "4. After confirmation, you will receive an email notification:"
+msgstr "4. Після підтвердження на вашу електронну пошту прийде повідомлення:"
 
 msgid "Hello name surname,"
 msgstr "Здрастуйте name surname,"
