@@ -4682,8 +4682,8 @@ msgid ""
 "Before proceeding, please {htmlStart}unlink all social media "
 "accounts{htmlEnd}."
 msgstr ""
-"Перш ніж продовжити,будь ласка{htmlStart} від’єднайте всі облікові записи "
-"соціальних медіа {htmlEnd}."
+"Перш ніж продовжити, будь ласка{htmlStart} від’єднайте всі облікові записи "
+"соціальних мереж{htmlEnd}."
 
 #: lms/static/js/student_account/components/StudentAccountDeletion.jsx:54
 msgid "Before proceeding, please {htmlStart}{emailMsg}{htmlEnd}."
