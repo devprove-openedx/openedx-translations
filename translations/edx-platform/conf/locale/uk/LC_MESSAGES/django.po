@@ -14800,3 +14800,7 @@ msgstr "З питань захисту даних, звертайтесь:"
 
 msgid "By continuing to use the Platform, you confirm your agreement with this Privacy Policy and Terms of Use."
 msgstr "Продовжуючи користуватись Платформою, ви підтверджуєте свою згоду з цією Політикою конфіденційності та умовами Користування."
+
+msgid "This page left intentionally blank. Feel free to add your own content."
+msgstr "Ця сторінка поки що порожня..."
+
