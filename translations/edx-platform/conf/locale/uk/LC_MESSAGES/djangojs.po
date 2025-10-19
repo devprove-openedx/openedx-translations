@@ -2910,6 +2910,12 @@ msgstr ""
 msgid "We couldn't find any results for \"%s\"."
 msgstr "Ми не змогли знайти жодних результатів для \"%s\"."
 
+msgid "Viewing %s course"
+msgstr "Знайдено %s курс"
+
+msgid "Viewing %s courses"
+msgstr "Знайдено курсів: %s"
+
 #: lms/static/js/discussions_management/views/discussions.js:60
 msgid "Not divided"
 msgstr "Не розподілено"
