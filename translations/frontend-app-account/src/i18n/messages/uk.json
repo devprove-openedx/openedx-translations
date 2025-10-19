@@ -126,7 +126,7 @@
   "id.verification.requirements.description": "Для того, щоб пройти Верифікацію за допомогою фото, вам знадобиться наступне:",
   "id.verification.requirements.card.device.title": "Пристрій з камерою",
   "id.verification.requirements.card.device.allow": "Дозволити",
-  "id.verification.requirements.title": "Вимоги до перевірки фотографій",
+  "id.verification.requirements.card.id.title": "Посвідчення особи з фотографією",
   "id.verification.requirements.card.id.text": "Вам потрібне дійсне посвідчення особи, яке містить ваше повне ім'я та фотографію, наприклад, водійське посвідчення або паспорт.",
   "id.verification.privacy.title": "Політика конфіденційності",
   "id.verification.privacy.need.photo.question": "Для чого {siteName} потребує моє фото?",
@@ -161,7 +161,7 @@
   "id.verification.camera.access.problems": "Виникли проблеми?",
   "id.verification.camera.access.skip": "Пропустити та завантажити файли зображень замість цього.",
   "id.verification.camera.access.success": "Схоже, камера працює і готова до використання.",
-  "id.verification.camera.access.failure": "Схоже, нам не вдалося отримати доступ до вашої камери. Вам потрібно буде завантажити файли зображень із вашим посвідченням особи та фотографією."
+  "id.verification.camera.access.failure": "Схоже, нам не вдалося отримати доступ до вашої камери. Вам потрібно буде завантажити файли зображень із вашим посвідченням особи та фотографією.",
   "id.verification.camera.access.failure.temporary": "Схоже, нам не вдалося отримати доступ до вашої камери. Переконайтесь, що ваша вебкамера підключена і що ви надали браузеру дозвіл на доступ до неї.",
   "id.verification.camera.access.failure.temporary.chrome": "Щоб увімкнути доступ до камери в Chrome:",
   "id.verification.camera.access.failure.temporary.chrome.step1": "Відкрийте Chrome.",
@@ -188,7 +188,7 @@
   "id.verification.camera.access.failure.temporary.safari.step2": "Натисніть меню Safari, потім виберіть «Налаштування». Ви також можете використати Command+ як комбінацію клавіш.",
   "id.verification.camera.access.failure.temporary.safari.step3": "Виберіть вкладку «Вебсайти», а потім виберіть «Камера».",
   "id.verification.camera.access.failure.temporary.safari.step4": "Виберіть «edx.org» і змініть дозвіл на камеру на «Дозволити».",
-  "id.verification.camera.access.failure.unsupported": "Схоже, ваш браузер не підтримує доступ до камери."
+  "id.verification.camera.access.failure.unsupported": "Схоже, ваш браузер не підтримує доступ до камери.",
   "id.verification.camera.access.failure.unsupported.chrome.explanation": "Браузер Chrome наразі не підтримує доступ до камери на пристроях iOS, таких як iPhone та iPad.",
   "id.verification.camera.access.failure.unsupported.instructions": "Будь ласка, скористайтеся іншим браузером для завершення перевірки особи.",
   "id.verification.photo.tips.title": "Корисні поради для фото",
@@ -212,7 +212,7 @@
   "id.verification.id.tips.list.clear": "Переконайтеся, що видно фотографію і чітко читається ваше ім’я.",
   "id.verification.id.photo.title.camera": "Сфотографуйте свій документ",
   "id.verification.id.photo.title.upload": "Завантажте фотографію свого документа",
-  "id.verification.id.photo.preview.alt": "Попередній перегляд документа з фотографією."
+  "id.verification.id.photo.preview.alt": "Попередній перегляд документа з фотографією.",
   "id.verification.id.photo.instructions.camera": "Коли ваше посвідчення особи буде правильно розташоване, натисніть кнопку «Зробити фото» нижче, щоб сфотографувати документ. Будь ласка, використовуйте паспорт, водійське посвідчення або інший документ із вашим повним ім’ям і фотографією.",
   "id.verification.id.photo.instructions.upload": "Будь ласка, завантажте фотографію вашого посвідчення особи. Переконайтеся, що весь документ вміщується в рамку та добре освітлений. Розмір файлу не повинен перевищувати 10 МБ. Підтримувані формати:",
   "id.verification.id.photo.instructions.upload.error.invalidFileType": "Обраний вами файл має непідтримуваний формат зображення. Будь ласка, виберіть один із таких форматів:",
@@ -317,7 +317,7 @@
   "account.settings.editable.field.password.reset.button.confirmation": "Ми надіслали лист на {email}. Перейдіть за посиланням у листі для відновлення пароля. Не отримали лист? Зв'яжіться з {technicalSupportLink}.",
   "account.settings.editable.field.password.reset.button.forbidden": "Ваш попередній запит обробляється, будь ласка, спробуйте пізніше.",
   "account.settings.editable.field.password.reset.label": "Пароль",
-  "account.settings.editable.field.password.reset.button": "Змінити пароль"
+  "account.settings.editable.field.password.reset.button": "Змінити пароль",
   "account.settings.sso.link.account": "Увійти через {name}",
   "account.settings.sso.account.connected": "Пов’язано",
   "account.settings.sso.account.disconnect.error": "Виникла проблема з відключенням цього облікового запису. Якщо проблема не зникає, зверніться до служби підтримки.",
