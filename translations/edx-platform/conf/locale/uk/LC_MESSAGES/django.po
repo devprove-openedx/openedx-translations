@@ -14604,12 +14604,36 @@ msgstr "Резюме курсу"
 msgid "Enroll Now"
 msgstr "Записатися"
 
+msgid "Classes Start"
+msgstr "Початок занять"
+
+msgid "Classes End"
+msgstr "Кінець занять"
+
+msgid "Estimated Effort"
+msgstr "Очікувані зусилля"
+
+msgid "You are enrolled in this course"
+msgstr "Ви зараховані на цей курс"
+
 # footer
 msgid "Powered by:"
 msgstr "Забезпечено:"
 
 msgid "All Rights Reserved."
 msgstr "Всі права захищено."
+
+msgid "Prerequisites"
+msgstr "Передумови"
+
+msgid "View About Page in studio"
+msgstr "Переглянути сторінку «Про нас» у студії"
+
+msgid "An error occurred. Please try again later."
+msgstr "Сталася помилка. Будь ласка, спробуйте пізніше."
+
+msgid "Share with friends and family!"
+msgstr "Поділіться з друзями та родиною!"
 
 # Tos
 
