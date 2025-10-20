@@ -14007,16 +14007,17 @@ msgid ""
 "                "
 msgid_plural ""
 "\n"
-"                Learners will see all of the %(num_selected)s selected "
-"components, in random order:\n"
+"                Learners will see all of the %(num_selected)s selected components, in random order:\n"
 "                "
 msgstr[0] ""
+"\n"
 "                Учні побачать вибраний компонент:\n"
 "                "
 msgstr[1] ""
-"                Учні побачать всі вибрані %(num_selected)s компоненти, "
-"у випадковому порядку:\n"
+"\n"
+"                Учні побачать всі вибрані компоненти (%(num_selected)s) у випадковому порядку:\n"
 "                "
+
 
 #: xmodule/templates/item_bank/author_view.html:32
 #, python-brace-format
