@@ -1472,10 +1472,6 @@ msgid "Free"
 msgstr "Безкоштовно"
 
 #: common/djangoapps/course_modes/models.py:983
-msgid ""
-"The time period before a course ends in which a course mode will expire"
-msgstr "Період часу до кінця курсу, після чого вказанний режим закінчується"
-
 msgid "The time period before a course ends in which a course mode will expire"
 msgstr "Період часу перед закінченням курсу, протягом якого режим курсу стане недійсним"
 
@@ -1613,7 +1609,7 @@ msgid ""
 "follows:                     course_id, username, mode"
 msgstr ""
 "Очікується, що дані будуть надані у форматі CSV-файлу, "
-"де перший рядок є заголовком, а колонки мають бути такими: "`
+"де перший рядок є заголовком, а колонки мають бути такими: "
 "course_id, username, mode"
 
 #: common/djangoapps/student/models/user.py:461
@@ -4833,7 +4829,6 @@ msgstr ""
 "%(comment_username)s відповів(ла) на %(thread_title)s: "
 "%(comment_body|truncatechars:200)s"
 
-Копировать код
 #: lms/djangoapps/discussion/views.py:80
 msgid "Access to this discussion is restricted to team members and staff."
 msgstr "Доступ до цієї дискусії обмежений лише для членів команди та персоналу."
@@ -6965,17 +6960,6 @@ msgid "This email was automatically sent from %(site_name)s to %(full_name)s"
 msgstr ""
 "Це повідомлення електронної пошти було автоматично надіслано з%(site_name)s "
 "до %(full_name)s"
-
-#: lms/templates/instructor/edx_ace/enrolledunenroll/email/body.html:12
-#, python-format
-msgid ""
-"\n"
-"                    You have been unenrolled from %(course_name)s\n"
-"                "
-msgstr ""
-"\n"
-"                    Вас виключено з курсу %(course_name)s\n"
-"                "
 
 #: lms/templates/instructor/edx_ace/enrollenrolled/email/body.html:12
 #, python-format
@@ -12472,8 +12456,8 @@ msgstr "Назва сертифікату (Коротка)"
 #: xmodule/course_block.py:638
 msgid ""
 "Use this setting only when generating PDF certificates. Between quotation "
-"marks, enter the short name of the type of certificate that students receive "
-"when they complete the course. For instance, \"Certificate\"."
+"marks, enter the long name of the type of certificate that students receive "
+"when they complete the course. For instance, \"Certificate of Achievement\"."
 msgstr ""
 "Використовуйте цю опцію тільки для створення сертифікатів у форматі Pdf. В "
 "лапках введіть довгу назву типу сертифікату, який отримають студенти, коли "
@@ -13541,6 +13525,7 @@ msgid ""
 "are \"always\", \"answered\", \"attempted\", \"closed\", \"finished\", "
 "\"past_due\", \"correct_or_past_due\", \"after_all_attempts\", "
 "\"after_all_attempts_or_correct\", \"attempted_no_past_due\", and \"never\"."
+msgstr ""
 "Вкажіть, коли кнопка \"Показати відповідь\" повинна з'являтися для кожної задачі. "
 "Допустимими є \"always\", \"answered\", \"attempted\", \"closed\", \"finished\", "
 "\"past_due\", \"correct_or_past_due\", \"after_all_attempts\", "
@@ -14192,7 +14177,7 @@ msgid "Current position in the video."
 msgstr "Поточна позиція в відео."
 
 #: xmodule/video_block/video_xfields.py:34
-msgid "Optional, for older browsers: the YouTube ID for the 1.25x speed video."
+msgid "Optional, for older browsers: the YouTube ID for the normal speed video."
 msgstr ""
 "Необов'язкове значення для застарілих браузерів: ідентифікатор відео на "
 "YouTube на нормальній швидкості."
@@ -18209,10 +18194,6 @@ msgid ""
 msgstr ""
 "Адміністратори - це члени команди, які можуть додавати та видаляти інших "
 "учасників команди курсу."
-
-#: cms/templates/manage_users_lib.html:92
-msgid "Add a New User"
-msgstr "Додати нового користувача"
 
 #: cms/templates/manage_users.html:104
 msgid ""
@@ -25655,7 +25636,7 @@ msgstr "Ваш запит обмежено через надмірну кіль�
 #: lms/templates/static_templates/privacy.html:14
 #: lms/templates/static_templates/tos.html:13
 msgid "This page left intentionally blank. Feel free to add your own content."
-msgstr "Ця сторінка залишена навмисно порожньою. Ви можете додати свій контент."
+msgstr "Ця сторінка поки-що порожня..."
 
 #: lms/templates/static_templates/embargo.html:18
 #, python-brace-format
@@ -26531,7 +26512,4 @@ msgstr "З питань захисту даних, звертайтесь:"
 
 msgid "By continuing to use the Platform, you confirm your agreement with this Privacy Policy and Terms of Use."
 msgstr "Продовжуючи користуватись Платформою, ви підтверджуєте свою згоду з цією Політикою конфіденційності та умовами Користування."
-
-msgid "This page left intentionally blank. Feel free to add your own content."
-msgstr "Ця сторінка поки що порожня..."
 
