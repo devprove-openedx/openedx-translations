@@ -2511,10 +2511,6 @@ msgstr ""
 msgid "Sign in to {platform} so we can help you better."
 msgstr "Увійдіть до {platform}, щоб ми змогли  вам краще допомогти."
 
-#: lms/djangoapps/support/static/support/jsx/single_support_form.jsx:48
-msgid "Select a subject for your support request."
-msgstr "Виберіть тему для вашого запиту до служби підтримки."
-
 #: lms/djangoapps/support/static/support/jsx/single_support_form.jsx:47
 msgid ""
 "Select a course or select \"Not specific to a course\" for your support "
@@ -2525,7 +2521,7 @@ msgstr ""
 
 #: lms/djangoapps/support/static/support/jsx/single_support_form.jsx:48
 msgid "Select a subject for your support request."
-msgstr "Виберіть тему для вашого запиту в службу підтримки."
+msgstr "Виберіть тему для вашого запиту до служби підтримки."
 
 #: lms/djangoapps/support/static/support/jsx/single_support_form.jsx:49
 msgid "Enter some details for your support request."
@@ -4367,7 +4363,7 @@ msgid ""
 "Error starting a task to rescore problem '<%- problem_id %>'. Make sure that "
 "the problem identifier is complete and correct."
 msgstr ""
-"Помилка створення задачі по корегуванню оцінки за завдання '<%- problem_id "%>'."
+"Помилка створення задачі по корегуванню оцінки за завдання '<%- problem_id %>'."
 "Переконайтеся, що ідентифікатори завдання та студента вказані правильно і повністю. "
 
 #. Translators: a "Task" is a background process such as grading students or
@@ -4703,9 +4699,9 @@ msgid ""
 "{strongStart}you will no longer be able to use the same email on "
 "{platformName}.{strongEnd}"
 msgstr ""
-"{strongStart}Увага: Видалення облікового запису є постійним.{strongEnd} Будь ласка, уважно прочитайте "
-"вищезазначене перед тим, як продовжити. Це незворотна дія, і "
-"{strongStart}ви більше не зможете використовувати ту саму електронну пошту на "
+"{strongStart}Увага: Видалення облікового запису є остаточним.{strongEnd} "
+"Будь ласка, уважно прочитайте вищевикладене перед продовженням. Це незворотна дія, "
+"і {strongStart}ви більше не зможете використовувати ту саму електронну адресу на "
 "{platformName}.{strongEnd}"
 
 #: lms/static/js/student_account/components/StudentAccountDeletion.jsx:80
@@ -4714,7 +4710,7 @@ msgid ""
 "cannot be undone. {platformName} will not be able to recover your account or "
 "the data that is deleted."
 msgstr ""
-"Зверніть увагу: Видалення вашого облікового запису та особистих даних є постійним і "
+"Зверніть увагу: Видалення вашого облікового запису та особистих даних є остаточним і "
 "не може бути скасоване. {platformName} не зможе відновити ваш обліковий запис чи "
 "дані, що були видалені."
 
@@ -4734,17 +4730,7 @@ msgid ""
 msgstr ""
 "Це включає доступ до {siteName} з системи вашого роботодавця або університету{additionalSiteSpecificDeletionText}."
 
-#: lms/static/js/student_account/components/StudentAccountDeletion.jsx:71
-msgid ""
-"{strongStart}Warning: Account deletion is permanent.{strongEnd} Please read "
-"the above carefully before proceeding. This is an irreversible action, and "
-"{strongStart}you will no longer be able to use the same email on "
-"{platformName}.{strongEnd}"
-msgstr ""
-"{strongStart}Увага: Видалення облікового запису є остаточним.{strongEnd} "
-"Будь ласка, уважно прочитайте вищевикладене перед продовженням. Це незворотна дія, "
-"і {strongStart}ви більше не зможете використовувати ту саму електронну адресу на "
-"{platformName}.{strongEnd}"
+
 
 #: lms/static/js/student_account/components/StudentAccountDeletion.jsx:104
 msgid "We’re sorry to see you go!"
@@ -6438,7 +6424,6 @@ msgstr ""
 "http://?"
 
 #. #-#-#-#-#  djangojs.po (0.1a)  #-#-#-#-#
-"http://?"
 #. Translators: this is a message from the raw HTML editor displayed in the
 #. browser when a user needs to edit HTML
 #: xmodule/js/src/html/edit.js:1160
@@ -10476,15 +10461,6 @@ msgstr ""
 "Успішне завершення програми %(org)s %(program)s може бути зараховане "
 " для гнучких, вимогливих і доступних магістерських програм провідних університетів світу."
 
-#: lms/templates/learner_dashboard/program_details_view.underscore:18
-#, python-format
-msgid ""
-"Track and plan your progress through the %(count)s courses in this program. "
-"To complete the program, you must earn a verified certificate for each "
-"course."
-msgstr "Відстежуйте та плануйте свій прогрес через %(count)s курсів у цій "
-"програмі. Щоб завершити програму, ви повинні отримати перевірений сертифікат для кожного курсу."
-
 #: lms/templates/learner_dashboard/program_header_view.underscore:15
 #, python-brace-format
 msgid "{organization}\\'s logo"
@@ -10892,7 +10868,7 @@ msgstr ""
 msgid ""
 "What if I have difficulty holding my head in position relative to the camera?"
 msgstr ""
-Що робити, якщо мені важко тримати голову у потрібному положенні відносно камери?"
+"Що робити, якщо мені важко тримати голову у потрібному положенні відносно камери?"
 
 #: lms/templates/verify_student/face_photo_step.underscore:62
 #: lms/templates/verify_student/id_photo_step.underscore:57
