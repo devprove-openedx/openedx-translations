@@ -1,7 +1,7 @@
 {
   "authoring.alert.error.connection": "Сталася технічна помилка під час завантаження сторінки. Будь ласка, спробуйте ще раз за кілька хвилин. Якщо проблема не зникне, зверніться за допомогою: {supportLink}.",
   "authoring.alert.support.text": "Сторінка підтримки",
-  "course-authoring.accessibility.page.title": "Політика доступності Studio | {siteName}",
+  "course-authoring.accessibility.page.title": "Політика доступності Студії| {siteName}",
   "course-authoring.advanced-settings.policies.description": "{notice} Не змінюйте ці параметри, якщо Ви не знайомі з ними.",
   "course-authoring.advanced-settings.deprecated.button.text": "{visibility} застарілі налаштування",
   "course-authoring.advanced-settings.heading.title": "Розширені налаштування",
@@ -260,7 +260,7 @@
   "header.links.optimizer": "Оптимізатор Курсу",
   "header.links.exportTags": "Експорт теги",
   "header.links.checklists": "Контрольні списки",
-  "header.user.menu.studio": "Головна сторінка в Studio",
+  "header.user.menu.studio": "Головна сторінка в Студії",
   "header.user.menu.logout": "Вийти",
   "header.label.account.menu": "Меню облікового запису",
   "header.label.account.menu.for": "Меню облікового запису для {username}",
@@ -435,7 +435,7 @@
   "course-authoring.course-search.noResultsSubtitle": "Будь ласка, спробуйте інший пошуковий запит або фільтр",
   "course-authoring.course-search.openInNewWindow": "Відкрити у новому вікні",
   "course-authoring.course-search.searchError": "Сталася помилка. Не вдалося завантажити результати пошуку.",
-  "course-authoring.studio-home.heading.title": "Головна сторінка {studioShortName}",
+  "course-authoring.studio-home.heading.title": "{studioShortName} головна сторінка",
   "course-authoring.studio-home.add-new-course.btn.text": "Новий курс",
   "course-authoring.studio-home.add-new-library.btn.text": "Нова бібліотека",
   "course-authoring.studio-home.page-load.failed.message": "Не вдалося завантажити головну сторінку Студії. Будь ласка, спробуйте пізніше.",
@@ -2734,5 +2734,4 @@
   "course-authoring.pages-resources.app-settings-modal.reset-all-units-tooltip.checked": "Негайно скиньте всі зміни на рівні модулів і встановіть прапорець «Увімкнути підсумки» для всіх модулів.",
   "course-authoring.pages-resources.app-settings-modal.reset-all-units-tooltip.unchecked": "Негайно скиньте всі зміни на рівні модулів і зніміть прапорець «Увімкнути підсумки» для всіх модулів.",
   "course-authoring.pages-resources.app-settings-modal.reset": "Скинути"
-  
 }

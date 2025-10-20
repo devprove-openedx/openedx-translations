@@ -23,17 +23,17 @@
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
 # 
 # Translators:
-# Brian Smith, 2024
 # edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025
+# Brian Smith, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-04-25 00:36+0000\n"
+"POT-Creation-Date: 2025-09-19 00:44+0000\n"
 "PO-Revision-Date: 2023-11-20 11:35+0000\n"
-"Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025\n"
+"Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Thai (https://app.transifex.com/open-edx/teams/6205/th/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -42,12 +42,12 @@ msgstr ""
 "Language: th\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: cms/djangoapps/contentstore/asset_storage_handlers.py:548
+#: cms/djangoapps/contentstore/asset_storage_handlers.py:551
 msgid "Upload completed"
 msgstr "การอัปโหลดเสร็จสมบูรณ์"
 
 #: cms/djangoapps/contentstore/course_group_config.py:65
-#: cms/djangoapps/contentstore/views/certificates.py:142
+#: cms/djangoapps/contentstore/views/certificate_manager.py:92
 msgid "invalid JSON"
 msgstr "JSON ไม่ถูกต้อง"
 
@@ -147,7 +147,7 @@ msgstr "ตำแหน่งหลักสูตรที่ให้มาไ
 msgid "Missing branch on fresh clone"
 msgstr "สาขาของ fresh clone หายไป"
 
-#: cms/djangoapps/contentstore/helpers.py:203
+#: cms/djangoapps/contentstore/helpers.py:205
 msgid "Vertical"
 msgstr "แนวดิ่ง"
 
@@ -159,29 +159,37 @@ msgstr ""
 "ใช้หลักสูตรที่กำหนดไว้และพยายามที่จะส่งออกไปยัง git repository\n"
 "ไดเรกทอรีหลักสูตรจะต้องพร้อมที่จะเป็น git repository ก่อนแล้ว โดยการใช้: git_export <course_loc> <git_url>"
 
+#: cms/djangoapps/contentstore/models.py:184
+msgid "The component must be published to access `published_at`"
+msgstr "ส่วนประกอบต้องถูกเผยแพร่เพื่อเข้าใช้ `published_at`"
+
+#: cms/djangoapps/contentstore/models.py:355
+msgid "The container must be published to access `published_at`"
+msgstr "คอนเทนเนอร์ต้องถูกเผยแพร่เพื่อเข้าใช้ `published_at`"
+
 #. Translators: This is the status for a video that the servers have failed to
 #. process
-#: cms/djangoapps/contentstore/models.py:356
+#: cms/djangoapps/contentstore/models.py:537
 #: cms/djangoapps/contentstore/video_storage_handlers.py:127
 msgid "Failed"
 msgstr "ล้มเหลว"
 
-#: cms/djangoapps/contentstore/models.py:357 lms/templates/seq_block.html:76
+#: cms/djangoapps/contentstore/models.py:538 lms/templates/seq_block.html:93
 #: lms/templates/vert_module.html:28
 msgid "Completed"
 msgstr "เสร็จสิ้น"
 
-#: cms/djangoapps/contentstore/utils.py:1283
+#: cms/djangoapps/contentstore/utils.py:1293
 #, python-brace-format
 msgid "Duplicate of {0}"
 msgstr "ค่าซ้ำกันของ {0}"
 
-#: cms/djangoapps/contentstore/utils.py:1285
+#: cms/djangoapps/contentstore/utils.py:1295
 #, python-brace-format
 msgid "Duplicate of '{0}'"
 msgstr "ค่าซ้ำกันของ '{0}'"
 
-#: cms/djangoapps/contentstore/utils.py:1341
+#: cms/djangoapps/contentstore/utils.py:1351
 msgid "Invalid prerequisite course key"
 msgstr "หลักสูตรพื้นฐานไม่ถูกต้อง"
 
@@ -238,17 +246,16 @@ msgstr "วันที่เพิ่ม"
 msgid "{course}_video_urls"
 msgstr "{course}_video_urls"
 
-#: cms/djangoapps/contentstore/views/certificates.py:165
+#: cms/djangoapps/contentstore/views/certificate_manager.py:115
 msgid "must have name of the certificate"
 msgstr "ต้องมีชื่อใบรับรอง"
 
-#: cms/djangoapps/contentstore/views/certificates.py:250
+#: cms/djangoapps/contentstore/views/certificate_manager.py:200
 #, python-brace-format
 msgid "Certificate dict {0} missing value key '{1}'"
 msgstr "ดิครับรอง {0} ค่าสำคัญ '{1}' สูญหาย"
 
-#: cms/djangoapps/contentstore/views/certificates.py:355
-#: cms/djangoapps/contentstore/views/certificates.py:393
+#: cms/djangoapps/contentstore/views/certificates.py:148
 #, python-brace-format
 msgid "PermissionDenied: Failed in authenticating {user}"
 msgstr "การอนุญาตถูกปฏิเสธ: การตรวจสอบ {user} ล้มเหลว"
@@ -257,11 +264,11 @@ msgstr "การอนุญาตถูกปฏิเสธ: การตร�
 msgid "Blank"
 msgstr "ว่าง"
 
-#: cms/djangoapps/contentstore/views/course.py:355
+#: cms/djangoapps/contentstore/views/course.py:358
 msgid "Course has been successfully reindexed."
 msgstr "หลักสูตรได้รับการจัดเรียงเรียบร้อย"
 
-#: cms/djangoapps/contentstore/views/course.py:884
+#: cms/djangoapps/contentstore/views/course.py:888
 msgid ""
 "Special characters not allowed in organization, course number, and course "
 "run."
@@ -269,7 +276,7 @@ msgstr ""
 "ตัวอักษรพิเศษไม่ได้รับอนุญาตให้ใช้ในการระบุชื่อสถาบัน "
 "รหัสหลักสูตรและหลักสูตรที่เปิด"
 
-#: cms/djangoapps/contentstore/views/course.py:920
+#: cms/djangoapps/contentstore/views/course.py:924
 msgid ""
 "There is already a course defined with the same organization and course "
 "number. Please change either organization or course number to be unique."
@@ -277,13 +284,13 @@ msgstr ""
 "หลักสูตรนี้มีอยู่แล้วจากสถาบันเดียวกัน และรหัสหลักสูตร "
 "กรุณาเปลี่ยนชื่อสถาบันหรือรหัสหลักสูตรให้สอดคล้องกัน"
 
-#: cms/djangoapps/contentstore/views/course.py:925
-#: cms/djangoapps/contentstore/views/course.py:928
+#: cms/djangoapps/contentstore/views/course.py:929
+#: cms/djangoapps/contentstore/views/course.py:932
 msgid ""
 "Please change either the organization or course number so that it is unique."
 msgstr "กรุณาเปลี่ยนชื่อสถาบันหรือรหัสหลักสูตรอื่น เนื่องจากชื่อนี้ถูกใช้แล้ว"
 
-#: cms/djangoapps/contentstore/views/course.py:933
+#: cms/djangoapps/contentstore/views/course.py:937
 #, python-brace-format
 msgid ""
 "Unable to create course '{name}'.\n"
@@ -295,19 +302,19 @@ msgstr ""
 "\n"
 "{err}"
 
-#: cms/djangoapps/contentstore/views/course.py:1368
+#: cms/djangoapps/contentstore/views/course.py:1372
 msgid "An error occurred while trying to save your tabs"
 msgstr "เกิดข้อผิดพลาดขณะพยายามบันทึกแท็บของคุณ"
 
-#: cms/djangoapps/contentstore/views/course.py:1369
+#: cms/djangoapps/contentstore/views/course.py:1373
 msgid "Tabs Exception"
 msgstr "การยกเว้นแท็บ"
 
-#: cms/djangoapps/contentstore/views/course.py:1587
+#: cms/djangoapps/contentstore/views/course.py:1591
 msgid "This group configuration is in use and cannot be deleted."
 msgstr "การตั้งค่าของกลุ่มนี้อยู่ในระหว่างใช้งานและไม่สามารถลบข้อมูลได้"
 
-#: cms/djangoapps/contentstore/views/course.py:1601
+#: cms/djangoapps/contentstore/views/course.py:1605
 msgid "This content group is in use and cannot be deleted."
 msgstr "กลุ่มเนื้อหานี้อยู่ในระหว่างใช้งานและไม่สามารถลบข้อมูลได้"
 
@@ -378,7 +385,7 @@ msgstr "ระบุ `บทบาท` ไม่ถูกต้อง"
 msgid "You may not remove the last Admin. Add another Admin first."
 msgstr "คุณยังไม่ได้ลบแอดมินเก่า เพิ่มแอดมินอื่นก่อน"
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1100
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1154
 #, python-brace-format
 msgid ""
 "Students must score {score}{pct_sign} or higher to access course materials."
@@ -388,11 +395,11 @@ msgstr ""
 
 #. Translators: This is the percent sign. It will be used to represent
 #. a percent value out of 100, e.g. "58%" means "58/100".
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1105
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1159
 msgid "%"
 msgstr "เปอร์เซนต์"
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1666
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1727
 #, python-brace-format
 msgid "{section_or_subsection} \"{display_name}\""
 msgstr "{section_or_subsection} \"{display_name}\""
@@ -433,10 +440,26 @@ msgstr ""
 "ตัวเลือกสำหรับจดบันทึกของผู้ใช้รายนี้ (เช่น "
 "ทำไมถึงไม่ได้รับอนุญาตให้เข้าไปในการสร้างหลักสูตร)"
 
-#: cms/djangoapps/models/settings/course_metadata.py:225
+#: cms/djangoapps/models/settings/course_metadata.py:229
 #, python-brace-format
 msgid "Incorrect format for field '{name}'. {detailed_message}"
 msgstr "ระบุ '{name}' ไม่ถูกต้อง. {detailed_message}"
+
+#: cms/lib/xblock/upstream_sync.py:281
+msgid "Linked `upstream_key` is not a valid key"
+msgstr "ลิงก์ `upstream_key` ไม่ใช่คีย์ที่ถูกต้อง"
+
+#: common/djangoapps/student/admin.py:319
+#, python-format
+msgid "Successfully reverted %(count)d selected history entry."
+msgid_plural "Successfully reverted %(count)d selected history entries."
+msgstr[0] "สำเร็จในการย้อนกลับประวัติที่เลือก %(count)d รายการ"
+
+#: common/djangoapps/student/admin.py:349
+#, python-format
+msgid "Successfully deleted %(count)d selected history entry."
+msgid_plural "Successfully deleted %(count)d selected history entries."
+msgstr[0] "ลบประวัติที่เลือกไว้จำนวน %(count)d รายการเรียบร้อยแล้ว"
 
 #. #-#-#-#-#  mako.po (PROJECT VERSION)  #-#-#-#-#
 #. Translators: this is a control to allow users to exit out of this modal
@@ -489,18 +512,59 @@ msgstr "ทีม %(platform_name)s "
 msgid "Wiki"
 msgstr "Wiki"
 
+#: lms/djangoapps/instructor/views/api.py:2253
+#, python-brace-format
+msgid ""
+"User {user_id} does not have permission to override scores for problem "
+"{problem_to_reset}."
+msgstr ""
+"ผู้ใช้ {user_id} ไม่มีสิทธิ์ในการเปลี่ยนแปลงคะแนนสำหรับปัญหา "
+"{problem_to_reset}"
+
+#: lms/djangoapps/instructor/views/serializer.py:496
+msgid "Whether to reset for all students."
+msgstr "ควรรีเซ็ตสำหรับนักเรียนทุกคนหรือไม่"
+
+#: lms/djangoapps/instructor/views/serializer.py:501
+msgid "Whether to delete entrance exam state for the student."
+msgstr "ควรลบสถานะการสอบเข้าของนักเรียนหรือไม่"
+
+#: lms/djangoapps/instructor/views/serializer.py:543
+msgid ""
+"You must provide either unique_student_identifier or set all_students to "
+"True."
+msgstr ""
+"คุณต้องระบุ unique_student_identifier หรือกำหนด all_students เป็น True"
+
+#: lms/djangoapps/instructor/views/serializer.py:565
+msgid "The URL name of the problem to override the score for."
+msgstr "ชื่อ URL ของปัญหาที่ต้องการเปลี่ยนคะแนน"
+
+#: lms/djangoapps/instructor/views/serializer.py:571
+msgid "The overriding score to set."
+msgstr "คะแนนที่ต้องการตั้งค่าใหม่"
+
 #. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:139
+#: lms/djangoapps/instructor_task/tasks.py:143
 #: lms/templates/wiki/plugins/attachments/index.html:74
-#: wiki/models/article.py:245
+#: wiki/models/article.py:257
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/history.html:22
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/index.html:20
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/search.html:39
 #: wiki/templates/wiki/includes/revision_info.html:15
 msgid "deleted"
 msgstr "ลบแล้ว"
+
+#: lms/djangoapps/lti_provider/models.py:44
+msgid ""
+"When checked, the platform will automatically use any personal information "
+"provided via LTI to create an account. Otherwise an anonymous account will "
+"be created."
+msgstr ""
+"เมื่อเลือกแล้ว แพลตฟอร์มจะใช้ข้อมูลส่วนบุคคลที่ให้ผ่าน LTI "
+"เพื่อสร้างบัญชีผู้ใช้โดยอัตโนมัติ มิฉะนั้นจะสร้างบัญชีผู้ใช้แบบไม่ระบุตัวตน"
 
 #: lms/templates/main_django.html:50 cms/templates/base.html:102
 #: cms/templates/container_chromeless.html:112 lms/templates/main.html:203
@@ -554,7 +618,7 @@ msgstr "ลบบทความ"
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/delete.html:9
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/index.html:35
 #: wiki/templates/wiki/delete.html:7 cms/templates/component.html:32
-#: cms/templates/studio_xblock_wrapper.html:202
+#: cms/templates/studio_xblock_wrapper.html:214
 msgid "Delete"
 msgstr "ลบ"
 
@@ -593,7 +657,7 @@ msgstr "คุณกำลังลบบทความ กรุณายื�
 #: lms/templates/wiki/edit.html:4 wiki/templates/wiki/edit.html:4
 #: wiki/templates/wiki/includes/article_menu.html:34
 #: cms/templates/component.html:13 cms/templates/container.html:201
-#: cms/templates/studio_xblock_wrapper.html:157
+#: cms/templates/studio_xblock_wrapper.html:169
 #: lms/templates/wiki/includes/article_menu.html:22
 msgid "Edit"
 msgstr "แก้ไข"
@@ -857,10 +921,8 @@ msgstr ""
 #: lms/templates/wiki/plugins/attachments/index.html:39
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/index.html:117
 #: lms/templates/api_admin/catalogs/search.html:23
-#: lms/templates/courseware/courses.html:44
-#: lms/templates/courseware/courseware.html:189
-#: lms/templates/dashboard.html:286 lms/templates/edxnotes/edxnotes.html:39
-#: lms/templates/index.html:30
+#: lms/templates/courseware/courses.html:44 lms/templates/dashboard.html:286
+#: lms/templates/edxnotes/edxnotes.html:39 lms/templates/index.html:30
 #: lms/templates/ux/reference/bootstrap/course-skeleton.html:47
 #: themes/stanford-style/lms/templates/index.html:26
 msgid "Search"
@@ -956,11 +1018,22 @@ msgstr "ลบการเปลี่ยนแปลงแล้ว"
 msgid "Restoring to this revision will mark the article as deleted."
 msgstr "กู้คืนการแก้ไขใหม่โดยได้ทำเครืองหมายไว้ที่บทความที่ถูกลบแล้ว"
 
+#: openedx/core/djangoapps/notifications/templates/notifications/digest_content.html:50
+#: openedx/core/djangoapps/notifications/templates/notifications/immediate_email_content.html:27
+#: wiki/templates/wiki/includes/article_menu.html:49
+#: lms/templates/wiki/includes/article_menu.html:13
+msgid "View"
+msgstr "ดู"
+
 #: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordreset/email/body.txt:9
 msgid "Please go to the following page and choose a new password:"
 msgstr "กรุณาไปที่หน้าถัดไปและเลือกรหัสผ่านใหม่:"
 
-#: wiki/admin.py:77 wiki/models/article.py:28
+#: xmodule/html_block.py:65
+msgid "Upstream html contents to store upstream data field"
+msgstr "เนื้อหา html ต้นทางเพื่อเก็บข้อมูลฟิลด์ต้นทาง"
+
+#: wiki/admin.py:77 wiki/models/article.py:30
 msgid "created"
 msgstr "สร้างแล้ว"
 
@@ -1131,12 +1204,12 @@ msgstr "ปลดล็อคบทความเพื่อการแก้
 msgid "Settings for plugin"
 msgstr "การตั้งค่าส่วนเสริม"
 
-#: wiki/models/article.py:23 wiki/models/pluginbase.py:158
+#: wiki/models/article.py:25 wiki/models/pluginbase.py:167
 #: wiki/plugins/attachments/models.py:20
 msgid "current revision"
 msgstr "การแก้ไขปัจจุบัน"
 
-#: wiki/models/article.py:25
+#: wiki/models/article.py:27
 msgid ""
 "The revision being displayed for this article. If you need to do a roll-"
 "back, simply change the value of this field."
@@ -1144,15 +1217,15 @@ msgstr ""
 "การแก้ไขถูกแสดงสำหรับบทความนี้ ถ้าคุณต้องการที่จะทำเรียกคืน "
 "เพียงแค่เปลี่ยนการตั้งค่า"
 
-#: wiki/models/article.py:29
+#: wiki/models/article.py:31
 msgid "modified"
 msgstr "เปลี่ยนแปลงแล้ว"
 
-#: wiki/models/article.py:30
+#: wiki/models/article.py:32
 msgid "Article properties last modified"
 msgstr "บทความที่แก้ไขล่าสุด"
 
-#: wiki/models/article.py:34
+#: wiki/models/article.py:36
 msgid ""
 "The owner of the article, usually the creator. The owner always has both "
 "read and write access."
@@ -1160,11 +1233,11 @@ msgstr ""
 "โดยปกติแล้วเจ้าของบทความก็คือผู้ที่สร้างบทความ "
 "ซึ่งเจ้าของบทความสามารถทำได้ทั้งอ่านและเขียน"
 
-#: wiki/models/article.py:36
+#: wiki/models/article.py:38
 msgid "group"
 msgstr "กลุ่ม"
 
-#: wiki/models/article.py:38
+#: wiki/models/article.py:40
 msgid ""
 "Like in a UNIX file system, permissions can be given to a user according to "
 "group membership. Groups are handled through the Django auth system."
@@ -1173,91 +1246,91 @@ msgstr ""
 "สิทธิ์จะได้รับการใช้งานเป็นไปตามการเป็นสมาชิกของกลุ่ม "
 "กลุ่มได้รับการจัดการผ่านระบบรับรองความถูกต้อง Django"
 
-#: wiki/models/article.py:40
+#: wiki/models/article.py:42
 msgid "group read access"
 msgstr "สิทธิ์ในการอ่านของกลุ่ม"
 
-#: wiki/models/article.py:41
+#: wiki/models/article.py:43
 msgid "group write access"
 msgstr "สิทธิ์ในการเขียนของกลุ่ม"
 
-#: wiki/models/article.py:42
+#: wiki/models/article.py:44
 msgid "others read access"
 msgstr "สิทธิ์การอ่านของผู้อื่น"
 
-#: wiki/models/article.py:43
+#: wiki/models/article.py:45
 msgid "others write access"
 msgstr "สิทธิ์การเขียนของผู้อื่น"
 
-#: wiki/models/article.py:173
+#: wiki/models/article.py:175
 #, python-format
 msgid "Article without content (%(id)d)"
 msgstr "บทความไม่มีเนื้อหา (%(id)d)"
 
-#: wiki/models/article.py:201
+#: wiki/models/article.py:205
 msgid "content type"
 msgstr "ประเภทเนื้อหา"
 
-#: wiki/models/article.py:203
+#: wiki/models/article.py:207
 msgid "object ID"
 msgstr "รหัสวัตถุ"
 
-#: wiki/models/article.py:209
+#: wiki/models/article.py:213
 msgid "Article for object"
 msgstr "บทความสำหรับวัตถุ"
 
-#: wiki/models/article.py:210
+#: wiki/models/article.py:214
 msgid "Articles for object"
 msgstr "บทความสำหรับวัตถุ"
 
-#: wiki/models/article.py:219
+#: wiki/models/article.py:231
 msgid "revision number"
 msgstr "การแก้ไขหมายเลข"
 
-#: wiki/models/article.py:225
+#: wiki/models/article.py:237
 msgid "IP address"
 msgstr "หมายเลขไอพี"
 
-#: wiki/models/article.py:232
+#: wiki/models/article.py:244
 msgid "user"
 msgstr "ผู้ใช้"
 
-#: wiki/models/article.py:246 wiki/templates/wiki/article.html:22
+#: wiki/models/article.py:258 wiki/templates/wiki/article.html:22
 #: wiki/templates/wiki/includes/revision_info.html:21
 msgid "locked"
 msgstr "ล็อคแล้ว"
 
-#: wiki/models/article.py:265 wiki/models/pluginbase.py:38
+#: wiki/models/article.py:283 wiki/models/pluginbase.py:40
 msgid "article"
 msgstr "บทความ"
 
-#: wiki/models/article.py:268
+#: wiki/models/article.py:286
 msgid "article contents"
 msgstr "เนื้อหาบทความ"
 
-#: wiki/models/article.py:272
+#: wiki/models/article.py:290
 msgid "article title"
 msgstr "หัวเรื่องบทความ"
 
-#: wiki/models/article.py:273
+#: wiki/models/article.py:291
 msgid ""
 "Each revision contains a title field that must be filled out, even if the "
 "title has not changed"
 msgstr "การแก้ไขแต่ละส่วนมีข้อมูลชื่อที่ต้องกรอกแม้ว่าไม่ได้เปลี่ยนชื่อ"
 
-#: wiki/models/pluginbase.py:74
+#: wiki/models/pluginbase.py:79
 msgid "original article"
 msgstr "บทความต้นฉบับ"
 
-#: wiki/models/pluginbase.py:75
+#: wiki/models/pluginbase.py:80
 msgid "Permissions are inherited from this article"
 msgstr "ได้รับสิทธิ์อนุญาตจากบทความนี้"
 
-#: wiki/models/pluginbase.py:133
+#: wiki/models/pluginbase.py:140
 msgid "A plugin was changed"
 msgstr "ส่วนเสริมได้รับการเปลี่ยนแปลงแล้ว"
 
-#: wiki/models/pluginbase.py:160
+#: wiki/models/pluginbase.py:169
 msgid ""
 "The revision being displayed for this plugin.If you need to do a roll-back, "
 "simply change the value of this field."
@@ -1265,40 +1338,40 @@ msgstr ""
 "การแก้ไขถูกแสดงสำหรับส่วนเสริมนี้ ถ้าคุณต้องการที่จะทำเรียกคืน "
 "เพียงแค่เปลี่ยนการตั้งค่า"
 
-#: wiki/models/urlpath.py:40
+#: wiki/models/urlpath.py:42
 msgid "Cache lookup value for articles"
 msgstr "ค้นหาค่าแคชสำหรับบทความ"
 
-#: wiki/models/urlpath.py:46
+#: wiki/models/urlpath.py:48
 msgid "slug"
 msgstr "ชื่อslug"
 
-#: wiki/models/urlpath.py:136
+#: wiki/models/urlpath.py:138
 msgid "(root)"
 msgstr "(root)"
 
-#: wiki/models/urlpath.py:146
+#: wiki/models/urlpath.py:148
 msgid "URL path"
 msgstr "ตำแหน่ง URL"
 
-#: wiki/models/urlpath.py:147
+#: wiki/models/urlpath.py:149
 msgid "URL paths"
 msgstr "ตำแหน่ง URL"
 
-#: wiki/models/urlpath.py:152
+#: wiki/models/urlpath.py:154
 msgid "Sorry but you cannot have a root article with a slug."
 msgstr "ขออภัย คุณไม่สามารถใช้ชื่อslugในบทความเป็นรูท"
 
-#: wiki/models/urlpath.py:154
+#: wiki/models/urlpath.py:156
 msgid "A non-root note must always have a slug."
 msgstr "บันทึกที่ไม่ใช่รูท มักจะต้องมีชื่อslug"
 
-#: wiki/models/urlpath.py:157
+#: wiki/models/urlpath.py:159
 #, python-format
 msgid "There is already a root node on %s"
 msgstr "มีroot node %s แล้ว"
 
-#: wiki/models/urlpath.py:262
+#: wiki/models/urlpath.py:264
 msgid ""
 "Articles who lost their parents\n"
 "===============================\n"
@@ -1310,7 +1383,7 @@ msgstr ""
 "\n"
 "บทความได้ถูกลบบทความแม่ คุณอาจจะหาบ้านใหม่สำหรับบทความ"
 
-#: wiki/models/urlpath.py:265
+#: wiki/models/urlpath.py:267
 msgid "Lost and found"
 msgstr "Lost and found"
 
@@ -1589,11 +1662,6 @@ msgstr "การตั้งค่าต่างๆ "
 msgid "Changes"
 msgstr "เปลี่ยน"
 
-#: wiki/templates/wiki/includes/article_menu.html:49
-#: lms/templates/wiki/includes/article_menu.html:13
-msgid "View"
-msgstr "ดู"
-
 #: wiki/views/accounts.py:26
 msgid "You are now sign up... and now you can sign in!"
 msgstr "คุณได้สมัครแล้ว... และตอนนี้คุณสามารถเข้าระบบได้!"
@@ -1818,7 +1886,7 @@ msgid "Tools"
 msgstr "เครื่องมือ"
 
 #: cms/templates/component.html:17
-#: cms/templates/studio_xblock_wrapper.html:196
+#: cms/templates/studio_xblock_wrapper.html:208
 msgid "Duplicate"
 msgstr "ทำซ้ำ"
 
@@ -1832,7 +1900,7 @@ msgstr "ลบส่วนประกอบนี้"
 
 #: cms/templates/component.html:39 cms/templates/edit-tabs.html:146
 #: cms/templates/edit-tabs.html:147
-#: cms/templates/studio_xblock_wrapper.html:211
+#: cms/templates/studio_xblock_wrapper.html:228
 msgid "Drag to reorder"
 msgstr "ลากเพื่อจัดลำดับใหม่"
 
@@ -1990,7 +2058,7 @@ msgstr "หมายเหตุ: ไม่อนุญาตให้มีช�
 
 #: cms/templates/course-create-rerun.html:95 cms/templates/index.html:101
 #: cms/templates/settings.html:78
-#: lms/templates/courseware/course_about.html:164
+#: lms/templates/courseware/course_about.html:175
 msgid "Course Number"
 msgstr "หมายเลขหลักสูตร"
 
@@ -3772,7 +3840,7 @@ msgid "Instructors"
 msgstr "อาจารย์ผู้สอน"
 
 #: cms/templates/settings.html:617
-#: lms/templates/courseware/course_about.html:239
+#: lms/templates/courseware/course_about.html:250
 msgid "Requirements"
 msgstr "ความต้องการ"
 
@@ -3989,18 +4057,31 @@ msgstr ""
 "คุณยังสามารถสร้างประเภทของงานที่มอบหมาย เช่น การบ้าน, การทดลอง, ควิซ "
 "และข้อสอบ และกำหนดว่างานประเภทไหนมีค่าเท่าไร"
 
-#: cms/templates/studio_xblock_wrapper.html:99
-#: cms/templates/studio_xblock_wrapper.html:101
+#: cms/templates/studio_xblock_wrapper.html:100
+#: cms/templates/studio_xblock_wrapper.html:102
 msgid "Expand or Collapse"
 msgstr "ขยายเพิ่มหรือยุบทิ้ง"
 
-#: cms/templates/studio_xblock_wrapper.html:217
-#: lms/templates/instructor/instructor_dashboard_2/certificates.html:169
-#: lms/templates/module-error.html:20
-msgid "Details"
-msgstr "รายละเอียด"
+#: cms/templates/studio_xblock_wrapper.html:123
+msgid ""
+"Sourced from a library - but has been modified locally.Sourced from a "
+"library."
+msgstr "ได้มาจากห้องสมุด - แต่มีการแก้ไขในท้องถิ่น ได้มาจากห้องสมุด"
 
-#: cms/templates/studio_xblock_wrapper.html:230
+#: cms/templates/studio_xblock_wrapper.html:127
+msgid "Sourced from a library - but has been modified locally."
+msgstr "ได้มาจากห้องสมุด แต่มีการแก้ไขในท้องถิ่นแล้ว"
+
+#: cms/templates/studio_xblock_wrapper.html:144
+#: cms/templates/studio_xblock_wrapper.html:146
+msgid "Edit Title"
+msgstr "แก้ไขหัวข้อ"
+
+#: cms/templates/studio_xblock_wrapper.html:219
+msgid "Unlink from Library"
+msgstr "ยกเลิกการเชื่อมโยงจากคลังข้อมูล"
+
+#: cms/templates/studio_xblock_wrapper.html:239
 msgid "This block contains multiple components."
 msgstr "บล็อกนี้มีเนื้อหาหลายส่วนประกอบ"
 
@@ -4274,7 +4355,6 @@ msgstr "หลักสูตรทำการโหลดผิดพลาด
 msgid "Search Your Courses"
 msgstr "ค้นหาหลักสูตรของคุณ"
 
-#: lms/templates/courseware/courseware.html:190
 #: lms/templates/dashboard.html:289
 msgid "Clear search"
 msgstr "ล้างการค้นหา"
@@ -4330,7 +4410,7 @@ msgstr "คุณสามารถดูอีเมล์ใหม่ของ
 msgid "An account with the new e-mail address already exists."
 msgstr "บัญชีที่ใช้อีเมล์นี้มีอยู่แล้ว"
 
-#: lms/templates/courseware/course_about.html:281
+#: lms/templates/courseware/course_about.html:292
 #: lms/templates/enroll_staff.html:34
 msgctxt "self"
 msgid "Enroll"
@@ -4544,6 +4624,11 @@ msgstr "กำลังทำงาน"
 msgid "There has been an error on the {platform_name} servers"
 msgstr "พบข้อผิดพลาดบางอย่างบนเซิฟเวอร์ {platform_name}"
 
+#: lms/templates/instructor/instructor_dashboard_2/certificates.html:169
+#: lms/templates/module-error.html:20
+msgid "Details"
+msgstr "รายละเอียด"
+
 #: lms/templates/module-error.html:28
 msgid "Raw data:"
 msgstr "ข้อมูลดิบ:"
@@ -4641,7 +4726,6 @@ msgid "Return To %s"
 msgstr "กลับสู่ %s"
 
 #: lms/templates/courseware/courseware-chromeless.html:12
-#: lms/templates/courseware/courseware.html:28
 #: lms/templates/public_video_share_embed.html:18
 #: openedx/features/course_bookmarks/templates/course_bookmarks/course-bookmarks.html:10
 #, python-brace-format
@@ -4665,18 +4749,18 @@ msgstr ""
 msgid "Secondary e-mail change failed"
 msgstr "การเปลี่ยนอีเมลสำรองล้มเหลว"
 
-#: lms/templates/seq_block.html:18
+#: lms/templates/seq_block.html:35
 msgid "Important!"
 msgstr "สำคัญ!"
 
 #. Translators: A button for showing the Previous Unit
-#: lms/templates/seq_block.html:32 lms/templates/seq_block.html:140
+#: lms/templates/seq_block.html:49 lms/templates/seq_block.html:160
 msgctxt "unit"
 msgid "Previous"
 msgstr "ก่อนหน้า"
 
 #. Translators: A button for showing the Next Unit
-#: lms/templates/seq_block.html:36 lms/templates/seq_block.html:144
+#: lms/templates/seq_block.html:53 lms/templates/seq_block.html:164
 msgctxt "unit"
 msgid "Next"
 msgstr "ถัดไป"
@@ -4939,24 +5023,24 @@ msgstr "เล่นวีดีโอ"
 msgid "No playable video sources found."
 msgstr "ไม่พบแหล่งที่มาของวิดีโอที่สามารถเล่นได้"
 
-#: lms/templates/video.html:138
+#: lms/templates/video.html:121
 msgid "Transcripts"
 msgstr "ใบรับรองผลการเรียน"
 
-#: lms/templates/video.html:144
+#: lms/templates/video.html:127
 #, python-brace-format
 msgid "Download {file}"
 msgstr "ดาวน์โหลด {file}"
 
-#: lms/templates/video.html:150
+#: lms/templates/video.html:133
 msgid "Download transcript"
 msgstr "ดาวน์โหลดบันทึก"
 
-#: lms/templates/video.html:156
+#: lms/templates/video.html:139
 msgid "Handouts"
 msgstr "เอกสารประกอบคำบรรยาย"
 
-#: lms/templates/video.html:157
+#: lms/templates/video.html:140
 msgid "Download Handout"
 msgstr "ดาวน์โหลดเอกสารประกอบคำบรรยาย"
 
@@ -5370,11 +5454,11 @@ msgstr "{platform_name} หน้าหลัก"
 msgid "Noted by"
 msgstr "ถูกบันทึกโดย"
 
-#: lms/templates/certificates/_accomplishment-rendering.html:69
+#: lms/templates/certificates/_accomplishment-rendering.html:68
 msgid "Supported by the following organizations"
 msgstr "สนับสนุนโดยองค์กรดังต่อไปนี้"
 
-#: lms/templates/certificates/_accomplishment-rendering.html:96
+#: lms/templates/certificates/_accomplishment-rendering.html:95
 msgid "Awarded to:"
 msgstr "มอบให้แก่:"
 
@@ -5427,68 +5511,53 @@ msgstr ""
 msgid "Show more"
 msgstr "แสดงเพิ่มเติม"
 
-#: lms/templates/courseware/accordion.html:13
-#, python-brace-format
-msgid "{chapter} current chapter"
-msgstr "{chapter} บทเรียนปัจจุบัน"
-
-#: lms/templates/courseware/accordion.html:46
-#: lms/templates/courseware/progress.html:208
-#, python-brace-format
-msgid "due {date}"
-msgstr "กำหนดส่ง {date}"
-
-#: lms/templates/courseware/accordion.html:69
-msgid "This content is graded"
-msgstr "เนื้อหาส่วนนี้ได้รับการให้คะแนนแล้ว"
-
-#: lms/templates/courseware/course_about.html:44
+#: lms/templates/courseware/course_about.html:55
 msgid "An error occurred. Please try again later."
 msgstr "เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง"
 
-#: lms/templates/courseware/course_about.html:77
+#: lms/templates/courseware/course_about.html:88
 msgid "You are enrolled in this course"
 msgstr "คุณได้ลงทะเบียนเข้าเรียนในวิชานี้"
 
-#: lms/templates/courseware/course_about.html:80
-#: lms/templates/courseware/course_about.html:98
+#: lms/templates/courseware/course_about.html:91
+#: lms/templates/courseware/course_about.html:109
 #: lms/templates/dashboard/_dashboard_course_resume.html:21
 msgid "View Course"
 msgstr "ดูหลักสูตร"
 
-#: lms/templates/courseware/course_about.html:89
+#: lms/templates/courseware/course_about.html:100
 msgid "Enrollment in this course is by invitation only"
 msgstr "การลงทะเบียนในหลักสูตรนี้ต้องได้รับการเชื้อเชิญเท่านั้น"
 
-#: lms/templates/courseware/course_about.html:94
+#: lms/templates/courseware/course_about.html:105
 msgid "Enrollment is Closed"
 msgstr "ปิดการลงทะเบียนแล้ว"
 
-#: lms/templates/courseware/course_about.html:113
+#: lms/templates/courseware/course_about.html:124
 msgid "Enroll Now"
 msgstr "ลงทะเบียนเดี๋ยวนี้"
 
-#: lms/templates/courseware/course_about.html:145
+#: lms/templates/courseware/course_about.html:156
 msgid "View About Page in studio"
 msgstr "ดูหน้าเกี่ยวกับเพจของสตูดิโอ"
 
-#: lms/templates/courseware/course_about.html:173
+#: lms/templates/courseware/course_about.html:184
 msgid "Classes Start"
 msgstr "ชั้นเรียนเริ่ม"
 
-#: lms/templates/courseware/course_about.html:193
+#: lms/templates/courseware/course_about.html:204
 msgid "Classes End"
 msgstr "ัชั้นเรียนจบ"
 
-#: lms/templates/courseware/course_about.html:206
+#: lms/templates/courseware/course_about.html:217
 msgid "Estimated Effort"
 msgstr "ความพยายามที่คาดไว้"
 
-#: lms/templates/courseware/course_about.html:223
+#: lms/templates/courseware/course_about.html:234
 msgid "Prerequisites"
 msgstr "ข้อกำหนดเบื้องต้น"
 
-#: lms/templates/courseware/course_about.html:227
+#: lms/templates/courseware/course_about.html:238
 #: lms/templates/dashboard/_dashboard_course_listing.html:425
 #, python-brace-format
 msgid ""
@@ -5498,11 +5567,11 @@ msgstr ""
 "คุณต้องทำให้เสร็จเรียบร้อย{link_start}{prc_display}{link_end} "
 "ก่อนที่คุณจะเริ่มหลักสูตรนี้"
 
-#: lms/templates/courseware/course_about.html:251
+#: lms/templates/courseware/course_about.html:262
 msgid "Additional Resources"
 msgstr "ข้อมูลเพิ่มเติม"
 
-#: lms/templates/courseware/course_about.html:286
+#: lms/templates/courseware/course_about.html:297
 msgctxt "self"
 msgid "enroll"
 msgstr "ลงทะเบียน"
@@ -5571,26 +5640,12 @@ msgid "Refine Your Search"
 msgstr "ปรับปรุงการค้นหาของคุณ"
 
 #: lms/templates/courseware/courseware-chromeless.html:100
-#: lms/templates/courseware/courseware.html:307
 msgid "Course Utilities"
 msgstr "หลักสูตร"
 
 #: lms/templates/courseware/courseware-error.html:8
 msgid "Courseware"
 msgstr "บทเรียน"
-
-#: lms/templates/courseware/courseware.html:186
-msgid "Course Search"
-msgstr "ค้นหาหลักสูตร"
-
-#: lms/templates/courseware/courseware.html:205
-msgid "No content has been added to this course"
-msgstr "ไม่มีเนื้อหาที่เพิ่มเข้ามาในหลักสูตรนี้"
-
-#: lms/templates/courseware/courseware.html:275
-#, python-brace-format
-msgid "Your score is {current_score}%. You have passed the entrance exam."
-msgstr "คะแนนของคุณคือ {current_score}% คุณสอบผ่านการสอบเข้า"
 
 #: lms/templates/courseware/gradebook.html:44
 msgid "Gradebook"
@@ -5735,6 +5790,11 @@ msgstr "น้อยลง"
 #, python-brace-format
 msgid "{earned} of {total} possible points"
 msgstr "{earned} ของ{total} คะแนนที่เป็นไปได้"
+
+#: lms/templates/courseware/progress.html:208
+#, python-brace-format
+msgid "due {date}"
+msgstr "กำหนดส่ง {date}"
 
 #: lms/templates/courseware/progress.html:224
 msgid "Problem Scores: "
@@ -5970,11 +6030,11 @@ msgstr "เรียนต่อจากเดิม"
 msgid "Get Credit"
 msgstr "รับหน่วยกิต"
 
-#: lms/templates/dashboard/_dashboard_credit_info.html:52
+#: lms/templates/dashboard/_dashboard_credit_info.html:49
 msgid "View Details"
 msgstr "ดูรายละเอียด"
 
-#: lms/templates/dashboard/_dashboard_credit_info.html:69
+#: lms/templates/dashboard/_dashboard_credit_info.html:66
 #, python-brace-format
 msgid ""
 "{provider_name} did not approve your request for course credit. For more "
@@ -5983,7 +6043,7 @@ msgstr ""
 "{provider_name}ไม่อนุมัติคำขอของคุณสำหรับหน่วยกิตของหลักสูตร "
 "สำหรับข้อมูลเพิ่มเติม โปรดติดต่อ {link_to_provider_site} โดยตรง"
 
-#: lms/templates/dashboard/_dashboard_credit_info.html:80
+#: lms/templates/dashboard/_dashboard_credit_info.html:77
 #, python-brace-format
 msgid ""
 "An error occurred with this transaction. For help, contact {support_email}."
@@ -6634,7 +6694,7 @@ msgstr "สร้างใบประกาศนียบัตร"
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html:104
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html:142
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:144
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:148
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2.html:84
 #: lms/templates/instructor/instructor_dashboard_2/send_email.html:117
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html:236
@@ -6643,7 +6703,7 @@ msgstr "งานที่รอดำเนินการ"
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html:106
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html:144
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:146
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:150
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2.html:86
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html:238
 msgid "The status for any active tasks appears in a table below."
@@ -6787,39 +6847,39 @@ msgstr ""
 msgid "Download a CSV of learners who can enroll"
 msgstr "ดาวน์โหลด CSV ของผู้เรียนที่สามารถลงทะเบียน"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:40
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:44
 msgid "Click to download a CSV of anonymized student IDs:"
 msgstr "คลิกเพื่อดาวน์โหลดรหัสของนักเรียนที่ไม่ได้ระบุชื่อเป็นไฟล์ CSV"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:41
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:45
 msgid "Get Student Anonymized IDs CSV"
 msgstr "รับรายชื่อรหัสนักเรียนนิรนามในรูปของไฟล์ CSV"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:44
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:48
 msgid ""
 "Click to generate a CSV file of all proctored exam results in this course."
 msgstr ""
 "คลิกเพื่อสร้างไฟล์ CSV "
 "ที่แสดงรายการของผลสอบที่ถูกควบคุมการสอบทั้งหมดในหลักสูตร"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:45
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:49
 msgid "Generate Proctored Exam Results Report"
 msgstr "สร้างรายงานผลสอบที่ถูกควบคุมการสอบ"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:80
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:84
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/certificates.html:31
 msgid "Click to list certificates that are issued for this course:"
 msgstr "คลิกเพื่อดูรายชื่อใบรับรองที่เกี่ยวข้องกับหลักสูตรนี้:"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:82
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:86
 msgid "View Certificates Issued"
 msgstr "ดูใบรับรอง"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:83
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:87
 msgid "Download CSV of Certificates Issued"
 msgstr "ดาวน์โหลดใบรับรองเป็นไฟล์ CSV"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:90
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:94
 msgid ""
 "For smaller courses, click to list profile information for enrolled students"
 " directly on this page:"
@@ -6827,30 +6887,30 @@ msgstr ""
 "สำหรับหลักสูตรที่มีขนาดเล็ก "
 "คลิกเพื่อแสดงข้อมูลรายละเอียดสำหรับนักเรียนที่ลงทะเบียนโดยตรงได้ในหน้านี้ "
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:91
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:95
 msgid "List enrolled students' profile information"
 msgstr "ข้อมูลรายการประวัตินักเรียนที่ทำการลงทะเบียน"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:96
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:100
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/grading.html:25
 msgid ""
 "Click to generate a CSV grade report for all currently enrolled students."
 msgstr "คลิกเพื่อสร้างรายงานเกรด CSVสำหรับนักเรียนที่กำลังเรียนขณะนี้"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:98
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:102
 msgid "Generate Grade Report"
 msgstr "สร้างรายงานผลการเรียน"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:99
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:103
 msgid "Generate Problem Grade Report"
 msgstr "สร้างรายงานเกรดของปัญหา"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:114
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:118
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2.html:48
 msgid "Reports Available for Download"
 msgstr "รายงานพร้อมให้ดาวน์โหลด"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:121
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:125
 msgid ""
 "The answer distribution report listed below is generated periodically by an "
 "automated background process. The report is cumulative, so answers submitted"

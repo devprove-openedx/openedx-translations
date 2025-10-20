@@ -28,15 +28,16 @@
 # Somaye Julaie <joolaee@iingroups.com>, 2024
 # HeliaEnayati, 2024
 # edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025
+# Brian Smith, 2025
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2025-05-27 00:37+0000\n"
+"POT-Creation-Date: 2025-09-19 00:44+0000\n"
 "PO-Revision-Date: 2023-11-20 11:35+0000\n"
-"Last-Translator: edx_transifex_bot <i18n-working-group+edx-transifex-bot@edx.org>, 2025\n"
+"Last-Translator: Brian Smith, 2025\n"
 "Language-Team: Persian (https://app.transifex.com/open-edx/teams/6205/fa/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -67,11 +68,11 @@ msgstr "تمام مراحل بازسازی دوره با موفقیت درخوا
 msgid "Regenerate *all* course outlines"
 msgstr "بازسازی *همه* طرح‌درس دوره"
 
-#: cms/djangoapps/contentstore/asset_storage_handlers.py:548
+#: cms/djangoapps/contentstore/asset_storage_handlers.py:551
 msgid "Upload completed"
 msgstr "بارگذاری کامل شد"
 
-#: cms/djangoapps/contentstore/asset_storage_handlers.py:592
+#: cms/djangoapps/contentstore/asset_storage_handlers.py:595
 #, python-brace-format
 msgid ""
 "File {filename} exceeds maximum size of {maximum_size_in_megabytes} MB."
@@ -93,7 +94,7 @@ msgid "Content Groups"
 msgstr "گروه‌های محتوا"
 
 #: cms/djangoapps/contentstore/course_group_config.py:65
-#: cms/djangoapps/contentstore/views/certificates.py:142
+#: cms/djangoapps/contentstore/views/certificate_manager.py:92
 msgid "invalid JSON"
 msgstr "JSON نامعتبر"
 
@@ -250,35 +251,35 @@ msgstr "مکان دوره ارائه‌شده نامعتبر است."
 msgid "Missing branch on fresh clone"
 msgstr "شاخۀ مفقود در کلون تازه"
 
-#: cms/djangoapps/contentstore/helpers.py:203
+#: cms/djangoapps/contentstore/helpers.py:205
 msgid "Vertical"
 msgstr "عمودی"
 
-#: cms/djangoapps/contentstore/helpers.py:207
+#: cms/djangoapps/contentstore/helpers.py:209
 #: cms/templates/course_outline.html:212 lms/templates/ccx/schedule.html:86
-#: lms/templates/seq_block.html:136
+#: lms/templates/seq_block.html:156
 msgid "Section"
 msgstr "بخش"
 
-#: cms/djangoapps/contentstore/helpers.py:209
+#: cms/djangoapps/contentstore/helpers.py:211
 #: lms/templates/ccx/schedule.html:90
 msgid "Subsection"
 msgstr "زیر‌بخش"
 
-#: cms/djangoapps/contentstore/helpers.py:211
+#: cms/djangoapps/contentstore/helpers.py:213
 #: lms/djangoapps/instructor/views/tools.py:241
 #: lms/djangoapps/instructor/views/tools.py:253 xmodule/unit_block.py:41
-#: lms/templates/ccx/schedule.html:94 lms/templates/seq_block.html:89
-#: lms/templates/seq_block.html:97
+#: lms/templates/ccx/schedule.html:94 lms/templates/seq_block.html:106
+#: lms/templates/seq_block.html:114
 msgid "Unit"
 msgstr "واحد"
 
-#: cms/djangoapps/contentstore/helpers.py:218
+#: cms/djangoapps/contentstore/helpers.py:220
 #: cms/djangoapps/contentstore/views/component.py:283
 msgid "Problem"
 msgstr "مسئله"
 
-#: cms/djangoapps/contentstore/helpers.py:220
+#: cms/djangoapps/contentstore/helpers.py:222
 #: cms/djangoapps/contentstore/views/component.py:287
 msgid "Library Content"
 msgstr "محتوای کتاب‌خانه"
@@ -291,11 +292,19 @@ msgstr ""
 "دوره مشخص شده را طی کنید و سعی کنید آن را به یک مخزن git صادر کنید\n"
 " . دایرکتوری دوره باید قبلاً یک مخزن git باشد. استفاده: git_export<course_loc><git_url>"
 
+#: cms/djangoapps/contentstore/models.py:184
+msgid "The component must be published to access `published_at`"
+msgstr "بخش باید منتشر شود تا به `published_at` دسترسی پیدا کند"
+
+#: cms/djangoapps/contentstore/models.py:355
+msgid "The container must be published to access `published_at`"
+msgstr "برای دسترسی به `published_at`، ظرف باید منتشر شود"
+
 #. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
 #. Translators: This is listed as the duration for a video that has not
 #. yet reached the point in its processing by the servers where its
 #. duration is determined.
-#: cms/djangoapps/contentstore/models.py:417
+#: cms/djangoapps/contentstore/models.py:535
 #: cms/djangoapps/contentstore/video_storage_handlers.py:533
 #: openedx/core/djangoapps/api_admin/models.py:42 cms/templates/index.html:483
 msgid "Pending"
@@ -303,12 +312,12 @@ msgstr "در حال انتظار"
 
 #. Translators: This is the status for a video that the servers have failed to
 #. process
-#: cms/djangoapps/contentstore/models.py:419
+#: cms/djangoapps/contentstore/models.py:537
 #: cms/djangoapps/contentstore/video_storage_handlers.py:127
 msgid "Failed"
 msgstr "ناموفق"
 
-#: cms/djangoapps/contentstore/models.py:420 lms/templates/seq_block.html:76
+#: cms/djangoapps/contentstore/models.py:538 lms/templates/seq_block.html:93
 #: lms/templates/vert_module.html:28
 msgid "Completed"
 msgstr "تکمیل شد"
@@ -410,7 +419,7 @@ msgstr "رونوشت با کد زبان &quot; {language_code} &quot; از قب�
 msgid "A transcript file is required."
 msgstr "فایل رونوشت مورد نیاز است."
 
-#: cms/djangoapps/contentstore/utils.py:856
+#: cms/djangoapps/contentstore/utils.py:865
 #: cms/templates/visibility_editor.html:113
 msgid "Deleted Group"
 msgstr "گروه حذف‌شده"
@@ -418,32 +427,32 @@ msgstr "گروه حذف‌شده"
 #. Translators: This is building up a list of groups. It is marked for
 #. translation because of the
 #. comma, which is used as a separator between each group.
-#: cms/djangoapps/contentstore/utils.py:924
+#: cms/djangoapps/contentstore/utils.py:933
 #, python-brace-format
 msgid "{previous_groups}, {current_group}"
 msgstr "{previous_groups}، {current_group}"
 
-#: cms/djangoapps/contentstore/utils.py:1087
+#: cms/djangoapps/contentstore/utils.py:1096
 #: cms/djangoapps/contentstore/views/block.py:277
 #: cms/djangoapps/contentstore/views/component.py:282 xmodule/html_block.py:61
 msgid "Text"
 msgstr "متن"
 
-#: cms/djangoapps/contentstore/utils.py:1284
+#: cms/djangoapps/contentstore/utils.py:1293
 #, python-brace-format
 msgid "Duplicate of {0}"
 msgstr "تکراری {0}"
 
-#: cms/djangoapps/contentstore/utils.py:1286
+#: cms/djangoapps/contentstore/utils.py:1295
 #, python-brace-format
 msgid "Duplicate of '{0}'"
 msgstr "تکراری از &quot;{0}&quot;"
 
-#: cms/djangoapps/contentstore/utils.py:1342
+#: cms/djangoapps/contentstore/utils.py:1351
 msgid "Invalid prerequisite course key"
 msgstr "کلید دورۀ پیش‌نیاز معتبر نیست"
 
-#: cms/djangoapps/contentstore/utils.py:1908
+#: cms/djangoapps/contentstore/utils.py:1917
 msgid "Set Date"
 msgstr "تنظیم تاریخ"
 
@@ -463,7 +472,7 @@ msgstr "در حال انجام"
 #. Translators: This is the status for a video that the servers have
 #. successfully processed
 #: cms/djangoapps/contentstore/video_storage_handlers.py:123
-#: openedx/core/djangoapps/content_staging/data.py:19
+#: openedx/core/djangoapps/content_staging/data.py:21
 msgid "Ready"
 msgstr "آماده"
 
@@ -543,7 +552,7 @@ msgid "{profile_name} URL"
 msgstr "آدرس {profile_name}"
 
 #: cms/djangoapps/contentstore/video_storage_handlers.py:516
-#: lms/djangoapps/instructor/views/api.py:1502
+#: lms/djangoapps/instructor/views/api.py:1505
 #: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:59
 msgid "Name"
 msgstr "نام"
@@ -572,7 +581,7 @@ msgstr "وضعیت"
 msgid "{course}_video_urls"
 msgstr "{course}_video_urls"
 
-#: cms/djangoapps/contentstore/video_storage_handlers.py:954
+#: cms/djangoapps/contentstore/video_storage_handlers.py:956
 msgid "A non zero positive integer is expected"
 msgstr "یک عدد صحیح غیر صفر مثبت مورد انتظار است."
 
@@ -630,17 +639,16 @@ msgid ""
 msgstr ""
 "نام فایل تصویر فقط می‌تواند شامل حروف، اعداد، خط فاصله (-) و زیرخط (_) باشد."
 
-#: cms/djangoapps/contentstore/views/certificates.py:165
+#: cms/djangoapps/contentstore/views/certificate_manager.py:115
 msgid "must have name of the certificate"
 msgstr "باید نام گواهی را داشته باشد."
 
-#: cms/djangoapps/contentstore/views/certificates.py:250
+#: cms/djangoapps/contentstore/views/certificate_manager.py:200
 #, python-brace-format
 msgid "Certificate dict {0} missing value key '{1}'"
 msgstr "گواهی {0} کلید مقدار \"{1}\" را ندارد"
 
-#: cms/djangoapps/contentstore/views/certificates.py:355
-#: cms/djangoapps/contentstore/views/certificates.py:393
+#: cms/djangoapps/contentstore/views/certificates.py:148
 #, python-brace-format
 msgid "PermissionDenied: Failed in authenticating {user}"
 msgstr "مجوز رد شد: در احراز هویت {user} موفق نبود"
@@ -657,7 +665,7 @@ msgstr "سطوح پشتیبانی {platform_name}:"
 #: lms/djangoapps/courseware/tabs.py:241
 #: lms/djangoapps/discussion/plugins.py:27
 #: openedx/core/djangoapps/discussions/plugins.py:23
-#: openedx/core/djangoapps/notifications/email/utils.py:448
+#: openedx/core/djangoapps/notifications/email/utils.py:440
 #: openedx/features/lti_course_tab/tab.py:274 xmodule/discussion_block.py:198
 #: lms/djangoapps/discussion/templates/discussion/discussion_profile_page.html:48
 #: lms/templates/ux/reference/bootstrap/course-skeleton.html:24
@@ -695,17 +703,17 @@ msgstr "مسئله خالی"
 msgid "Advanced"
 msgstr "پیشرفته"
 
-#: cms/djangoapps/contentstore/views/course.py:355
+#: cms/djangoapps/contentstore/views/course.py:358
 msgid "Course has been successfully reindexed."
 msgstr "دوره با موفقیت دوباره نمایه شد."
 
-#: cms/djangoapps/contentstore/views/course.py:884
+#: cms/djangoapps/contentstore/views/course.py:888
 msgid ""
 "Special characters not allowed in organization, course number, and course "
 "run."
 msgstr "کاراکترهای ویژه در سازمان، شماره دوره و اجرای دوره مجاز نیستند."
 
-#: cms/djangoapps/contentstore/views/course.py:920
+#: cms/djangoapps/contentstore/views/course.py:924
 msgid ""
 "There is already a course defined with the same organization and course "
 "number. Please change either organization or course number to be unique."
@@ -713,13 +721,13 @@ msgstr ""
 "قبلاً یک دوره با همین سازمان و شماره دوره تعریف شده است. لطفاً شماره سازمان "
 "یا دوره را تغییر دهید تا یکتا باشد."
 
-#: cms/djangoapps/contentstore/views/course.py:925
-#: cms/djangoapps/contentstore/views/course.py:928
+#: cms/djangoapps/contentstore/views/course.py:929
+#: cms/djangoapps/contentstore/views/course.py:932
 msgid ""
 "Please change either the organization or course number so that it is unique."
 msgstr "لطفاً سازمان یا شماره دوره را تغییر دهید تا یکتا باشد."
 
-#: cms/djangoapps/contentstore/views/course.py:933
+#: cms/djangoapps/contentstore/views/course.py:937
 #, python-brace-format
 msgid ""
 "Unable to create course '{name}'.\n"
@@ -730,14 +738,14 @@ msgstr ""
 "\n"
 " {err}"
 
-#: cms/djangoapps/contentstore/views/course.py:945
+#: cms/djangoapps/contentstore/views/course.py:949
 msgid ""
 "User does not have the permission to create courses in this organization or "
 "course creation is disabled"
 msgstr ""
 "کاربر اجازه ایجاد دوره در این سازمان را ندارد یا ایجاد دوره غیرفعال است."
 
-#: cms/djangoapps/contentstore/views/course.py:962
+#: cms/djangoapps/contentstore/views/course.py:966
 msgid ""
 "You must link this course to an organization in order to continue. "
 "Organization you selected does not exist in the system, you will need to add"
@@ -746,19 +754,19 @@ msgstr ""
 "برای ادامه باید این دوره را به یک سازمان مرتبط کنید. سازمانی که انتخاب "
 "کرده‌اید در سیستم وجود ندارد. باید آن را به سیستم اضافه کنید."
 
-#: cms/djangoapps/contentstore/views/course.py:1368
+#: cms/djangoapps/contentstore/views/course.py:1372
 msgid "An error occurred while trying to save your tabs"
 msgstr "هنگام تلاش برای ذخیرۀ زبانه‌های شما خطایی روی داد"
 
-#: cms/djangoapps/contentstore/views/course.py:1369
+#: cms/djangoapps/contentstore/views/course.py:1373
 msgid "Tabs Exception"
 msgstr "استثنای زبانه‌ها "
 
-#: cms/djangoapps/contentstore/views/course.py:1587
+#: cms/djangoapps/contentstore/views/course.py:1591
 msgid "This group configuration is in use and cannot be deleted."
 msgstr "این پیکربندی گروه در حال استفاده است و امکان حذف آن نیست."
 
-#: cms/djangoapps/contentstore/views/course.py:1601
+#: cms/djangoapps/contentstore/views/course.py:1605
 msgid "This content group is in use and cannot be deleted."
 msgstr "این گروه محتوا در حال استفاده است و قابل حذف نیست."
 
@@ -835,7 +843,7 @@ msgstr ""
 msgid "'{organization_key}' is not a valid organization identifier."
 msgstr "«{organization_key}» یک شناسۀ سازمانی معتبر نیست."
 
-#: cms/djangoapps/contentstore/views/preview.py:302
+#: cms/djangoapps/contentstore/views/preview.py:304
 #, python-brace-format
 msgid "Access restricted to: {list_of_groups}"
 msgstr "دسترسی محدود به: {list_of_groups}"
@@ -921,63 +929,63 @@ msgid "You may not remove the last Admin. Add another Admin first."
 msgstr ""
 "شما نمی‌توانید آخرین ادمین را حذف کنید. ابتدا یک ادمین دیگر اضافه کنید."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/create_xblock.py:101
+#: cms/djangoapps/contentstore/xblock_storage_handlers/create_xblock.py:102
 #: xmodule/library_content_block.py:458
 msgid "Empty"
 msgstr "خالی"
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:229
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:631
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:230
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:682
 #, python-brace-format
 msgid "Libraries cannot have more than {limit} components"
 msgstr "کتاب‌خانه‌ها نمی‌توانند بیش از {limit} مولفه داشته باشند."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:438
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:436
 #: openedx/core/djangoapps/xblock/rest_api/views.py:334
 msgid "Invalid data"
 msgstr "داده نامعتبر"
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:440
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:438
 #: openedx/core/djangoapps/xblock/rest_api/views.py:336
 #, python-brace-format
 msgid "Invalid data ({details})"
 msgstr "داده نامعتبر ({details})"
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:605
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:656
 msgid "There was a problem pasting your component."
 msgstr "در چسباندن مؤلفه شما مشکلی پیش آمد."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:609
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:660
 msgid "Your clipboard is empty or invalid."
 msgstr "کلیپ‌بورد شما خالی یا نامعتبر است."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:752
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:803
 #, python-brace-format
 msgid "You can not move {source_type} into {target_parent_type}."
 msgstr "شما نمی‌توانید {source_type} را به {target_parent_type} منتقل کنید."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:761
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:812
 msgid "Item is already present in target location."
 msgstr "این مورد از قبل در مکان مورد نظر وجود داشته است."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:763
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:814
 msgid "You can not move an item into itself."
 msgstr "شما نمی‌توانید یک مورد را به خودش منتقل کنید."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:765
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:816
 msgid "You can not move an item into it's child."
 msgstr "شما نمی‌توانید یک مورد را به فرزند آن منتقل کنید."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:767
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:818
 msgid "You can not move an item directly into content experiment."
 msgstr "شما نمی‌توانید یک مورد را مستقیماً به آزمایش محتوا منتقل کنید."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:769
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:820
 #, python-brace-format
 msgid "{source_usage_key} not found in {parent_usage_key}."
 msgstr "{source_usage_key} در {parent_usage_key} یافت نشد."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:781
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:832
 #, python-brace-format
 msgid ""
 "You can not move {source_usage_key} at an invalid index ({target_index})."
@@ -985,13 +993,13 @@ msgstr ""
 "شما نمی‌ توانید {source_usage_key} در یک شاخص نامعتبر ( {target_index} ) "
 "جابجا کنید."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:788
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:839
 #, python-brace-format
 msgid "You must provide target_index ({target_index}) as an integer."
 msgstr ""
 "شما باید target_index ( {target_index} ) را به‌عنوان یک عدد صحیح ارائه کنید."
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1100
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1154
 #, python-brace-format
 msgid ""
 "Students must score {score}{pct_sign} or higher to access course materials."
@@ -1001,11 +1009,11 @@ msgstr ""
 
 #. Translators: This is the percent sign. It will be used to represent
 #. a percent value out of 100, e.g. "58%" means "58/100".
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1105
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1159
 msgid "%"
 msgstr "%"
 
-#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1666
+#: cms/djangoapps/contentstore/xblock_storage_handlers/view_handlers.py:1727
 #, python-brace-format
 msgid "{section_or_subsection} \"{display_name}\""
 msgstr "{section_or_subsection} «{display_name}»"
@@ -1054,7 +1062,7 @@ msgstr "سازمان‌هایی که کاربر در آن‌ها مجاز به �
 msgid "Grant the user the permission to create courses in ALL organizations"
 msgstr "به کاربر اجازه ایجاد دوره در همه سازمان‌ها داده شود."
 
-#: cms/djangoapps/models/settings/course_metadata.py:225
+#: cms/djangoapps/models/settings/course_metadata.py:229
 #, python-brace-format
 msgid "Incorrect format for field '{name}'. {detailed_message}"
 msgstr "قالب قسمت '{name}' نادرست است. {detailed_message}"
@@ -1063,17 +1071,21 @@ msgstr "قالب قسمت '{name}' نادرست است. {detailed_message}"
 msgid "Dictionary with the available tags"
 msgstr "لغت‌نامه با برچسب‌های موجود"
 
-#: cms/lib/xblock/upstream_sync.py:70
+#: cms/lib/xblock/upstream_sync.py:72
 msgid "Content is not linked to a Content Library."
 msgstr "محتوا به کتابخانه محتوا پیوند داده نشده است."
 
-#: cms/lib/xblock/upstream_sync.py:168
+#: cms/lib/xblock/upstream_sync.py:248
 msgid "Cannot update content because it does not belong to a course."
 msgstr "نمی توان محتوا را به روز کرد زیرا به یک دوره تعلق ندارد."
 
-#: cms/lib/xblock/upstream_sync.py:178
+#: cms/lib/xblock/upstream_sync.py:258
 msgid "Reference to linked library item is malformed"
 msgstr "ارجاع به آیتم کتابخانه پیوندی نادرست است"
+
+#: cms/lib/xblock/upstream_sync.py:281
+msgid "Linked `upstream_key` is not a valid key"
+msgstr "کلید `upstream_key` مرتبط یک کلید معتبر نیست"
 
 #: cms/templates/admin/base_site.html:4 lms/templates/admin/base_site.html:3
 msgid "Django site admin"
@@ -1138,7 +1150,7 @@ msgstr "شما به‌عنوان دانشجوی اصول اخلاقی ثبت‌�
 
 #: common/djangoapps/course_modes/helpers.py:48
 #: lms/djangoapps/branding/api.py:329 lms/djangoapps/branding/api.py:404
-#: lms/djangoapps/courseware/views/views.py:2264
+#: lms/djangoapps/courseware/views/views.py:2286
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:1009
 #: lms/templates/static_templates/honor.html:5
 #: lms/templates/static_templates/honor.html:10
@@ -1158,7 +1170,7 @@ msgstr "آموزش حرفه‌ای"
 #: common/djangoapps/course_modes/models.py:63 xmodule/annotatable_block.py:69
 #: xmodule/capa_block.py:178 xmodule/conditional_block.py:88
 #: xmodule/discussion_block.py:49 xmodule/html_block.py:56
-#: xmodule/html_block.py:393 xmodule/item_bank_block.py:454
+#: xmodule/html_block.py:407 xmodule/item_bank_block.py:454
 #: xmodule/library_content_block.py:77 xmodule/lti_block.py:131
 #: xmodule/split_test_block.py:82 xmodule/unit_block.py:38
 #: xmodule/word_cloud_block.py:63 xmodule/x_module.py:226
@@ -1290,12 +1302,26 @@ msgstr "مقدار نامعتبر انتخاب شده‌است."
 msgid "No selected price or selected price is too low."
 msgstr "هیچ قیمت انتخابی یا قیمت انتخابی خیلی پایین است."
 
-#: common/djangoapps/student/admin.py:316
+#: common/djangoapps/student/admin.py:319
+#, python-format
+msgid "Successfully reverted %(count)d selected history entry."
+msgid_plural "Successfully reverted %(count)d selected history entries."
+msgstr[0] "با موفقیت %(count)d ورودی تاریخچه انتخاب شده بازگردانده شد."
+msgstr[1] "با موفقیت %(count)d ورودی تاریخچه انتخاب شده بازگردانده شد."
+
+#: common/djangoapps/student/admin.py:349
+#, python-format
+msgid "Successfully deleted %(count)d selected history entry."
+msgid_plural "Successfully deleted %(count)d selected history entries."
+msgstr[0] "حذف موفقیت‌آمیز %(count)d ورودی تاریخچه انتخاب‌شده."
+msgstr[1] "با موفقیت %(count)d ورودی تاریخچه انتخاب شده حذف شد."
+
+#: common/djangoapps/student/admin.py:520
 msgid "User profile"
 msgstr "پروفایل کاربر"
 
-#: common/djangoapps/student/admin.py:323
-#: common/djangoapps/student/admin.py:324
+#: common/djangoapps/student/admin.py:527
+#: common/djangoapps/student/admin.py:528
 msgid "Account recovery"
 msgstr "بازیابی حساب کاربری"
 
@@ -1304,7 +1330,7 @@ msgstr "بازیابی حساب کاربری"
 #. meant to hold the user's password.
 #. Translators: This label appears above a field on the registration form
 #. meant to hold the user's password.
-#: common/djangoapps/student/admin.py:339
+#: common/djangoapps/student/admin.py:543
 #: openedx/core/djangoapps/user_authn/views/login_form.py:117
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:609
 #: lms/templates/provider_login.html:48 lms/templates/provider_login.html:49
@@ -1314,7 +1340,7 @@ msgstr "بازیابی حساب کاربری"
 msgid "Password"
 msgstr "رمز عبور"
 
-#: common/djangoapps/student/admin.py:341
+#: common/djangoapps/student/admin.py:545
 msgid ""
 "Raw passwords are not stored, so there is no way to see this user's "
 "password."
@@ -1322,14 +1348,14 @@ msgstr ""
 "از آن‌جا که رمزهای عبور خام ذخیره نمی‌شوند، راهی برای دیدن رمز عبور این "
 "کاربر وجود ندارد."
 
-#: common/djangoapps/student/admin.py:441
+#: common/djangoapps/student/admin.py:657
 #, python-format
 msgid "%(count)d student account was unlocked."
 msgid_plural "%(count)d student accounts were unlocked."
 msgstr[0] "حساب کاربری %(count)d دانش‌پذیر باز شد."
 msgstr[1] "حساب‌های کاربری %(count)d دانش‌پذیر باز شد."
 
-#: common/djangoapps/student/admin.py:498
+#: common/djangoapps/student/admin.py:714
 #, python-brace-format
 msgid ""
 "Please add a key/value 'THIRD_PARTY_AUTH_ONLY_DOMAIN/{site_email_domain}' in"
@@ -1338,12 +1364,12 @@ msgstr ""
 "لطفاً یک کلید/مقدار &quot;THIRD_PARTY_AUTH_ONLY_DOMAIN/ {site_email_domain} "
 "&quot; در قسمت site_values مدل SiteConfiguration اضافه کنید."
 
-#: common/djangoapps/student/admin.py:503
+#: common/djangoapps/student/admin.py:719
 #, python-brace-format
 msgid "Email doesn't have {allowed_site_email_domain} domain name."
 msgstr "ایمیل نام دامنه {allowed_site_email_domain} را ندارد."
 
-#: common/djangoapps/student/admin.py:506
+#: common/djangoapps/student/admin.py:722
 msgid "User with this email doesn't exist in system."
 msgstr "کاربری با این ایمیل در سیستم وجود ندارد."
 
@@ -1371,19 +1397,19 @@ msgstr ""
 msgid "Disabled Account"
 msgstr "حساب کاربری غیرفعال‌شده"
 
-#: common/djangoapps/student/models/course_enrollment.py:1658
+#: common/djangoapps/student/models/course_enrollment.py:1656
 msgid "Namespace of enrollment attribute"
 msgstr "فضای نام ویژگی ثبت‌نام"
 
-#: common/djangoapps/student/models/course_enrollment.py:1662
+#: common/djangoapps/student/models/course_enrollment.py:1660
 msgid "Name of the enrollment attribute"
 msgstr "نام ویژگی ثبت‌نام"
 
-#: common/djangoapps/student/models/course_enrollment.py:1666
+#: common/djangoapps/student/models/course_enrollment.py:1664
 msgid "Value of the enrollment attribute"
 msgstr "مقدار ویژگی ثبت‌نام"
 
-#: common/djangoapps/student/models/course_enrollment.py:1740
+#: common/djangoapps/student/models/course_enrollment.py:1738
 msgid ""
 "The window of time after enrolling during which users can be granted a "
 "refund, represented in microseconds. The default is 14 days."
@@ -1391,7 +1417,7 @@ msgstr ""
 "پنجره زمانی پس از ثبت‌نام که در طی آن می‌توان به کاربران بازپرداخت اعطا کرد "
 "که در میکروثانیه نمایش داده می‌شود. پیش‌فرض 14 روز است."
 
-#: common/djangoapps/student/models/course_enrollment.py:1762
+#: common/djangoapps/student/models/course_enrollment.py:1760
 msgid ""
 "It expect that the data will be provided in a csv file format with"
 "                     first row being the header and columns will be as "
@@ -1402,7 +1428,7 @@ msgstr ""
 "ستون ها به صورت زیر باشد: user_id، نام کاربری، ایمیل، course_id، "
 "is_verified، verification_date"
 
-#: common/djangoapps/student/models/course_enrollment.py:1776
+#: common/djangoapps/student/models/course_enrollment.py:1774
 msgid ""
 "It expect that the data will be provided in a csv file format with"
 "                     first row being the header and columns will be as "
@@ -1411,74 +1437,74 @@ msgstr ""
 "انتظار می رود که داده ها در قالب فایل csv ارائه شوند که ردیف اول سربرگ و "
 "ستون ها به صورت زیر باشد: course_id، نام کاربری، حالت"
 
-#: common/djangoapps/student/models/user.py:461
+#: common/djangoapps/student/models/user.py:463
 msgid "Male"
 msgstr "آقا"
 
-#: common/djangoapps/student/models/user.py:462
+#: common/djangoapps/student/models/user.py:464
 msgid "Female"
 msgstr "خانم"
 
 #. Translators: 'Other' refers to the student's gender
-#: common/djangoapps/student/models/user.py:464
+#: common/djangoapps/student/models/user.py:466
 msgid "Other/Prefer Not to Say"
 msgstr "سایر/ ترجیح می دهم نگویم"
 
-#: common/djangoapps/student/models/user.py:475
+#: common/djangoapps/student/models/user.py:477
 msgid "Doctorate"
 msgstr "دکتری"
 
-#: common/djangoapps/student/models/user.py:476
+#: common/djangoapps/student/models/user.py:478
 msgid "Master's or professional degree"
 msgstr "مدرک کارشناسی ارشد یا حرفه‌ای"
 
-#: common/djangoapps/student/models/user.py:477
+#: common/djangoapps/student/models/user.py:479
 msgid "Bachelor's degree"
 msgstr "مدرک کارشناسی"
 
-#: common/djangoapps/student/models/user.py:478
+#: common/djangoapps/student/models/user.py:480
 msgid "Associate degree"
 msgstr "فوق‌دیپلم"
 
-#: common/djangoapps/student/models/user.py:479
+#: common/djangoapps/student/models/user.py:481
 msgid "Secondary/high school"
 msgstr "دورۀ دوم دبیرستان"
 
-#: common/djangoapps/student/models/user.py:480
+#: common/djangoapps/student/models/user.py:482
 msgid "Junior secondary/junior high/middle school"
 msgstr "دورۀ راهنمایی / راهنمایی / راهنمایی"
 
-#: common/djangoapps/student/models/user.py:481
+#: common/djangoapps/student/models/user.py:483
 msgid "Elementary/primary school"
 msgstr "دورۀ اولیه/دبستان"
 
 #. Translators: 'None' refers to the student's level of education
-#: common/djangoapps/student/models/user.py:483
+#: common/djangoapps/student/models/user.py:485
 msgid "No formal education"
 msgstr "بدون آموزش رسمی"
 
 #. Translators: 'Other' refers to the student's level of education
-#: common/djangoapps/student/models/user.py:485
+#: common/djangoapps/student/models/user.py:487
 msgid "Other education"
 msgstr "سایر"
 
-#: common/djangoapps/student/models/user.py:1331
+#: common/djangoapps/student/models/user.py:1364
 #, python-brace-format
 msgid "{platform_name} Honor Code Certificate for {course_name}"
 msgstr "گواهی اصول اخلاقی {platform_name} برای دوره {course_name}"
 
-#: common/djangoapps/student/models/user.py:1332
+#: common/djangoapps/student/models/user.py:1365
 #, python-brace-format
 msgid "{platform_name} Verified Certificate for {course_name}"
 msgstr "گواهی تایید‌شده {platform_name} برای دوره {course_name}"
 
-#: common/djangoapps/student/models/user.py:1333
-#: common/djangoapps/student/models/user.py:1334
+#: common/djangoapps/student/models/user.py:1366
+#: common/djangoapps/student/models/user.py:1367
 #, python-brace-format
 msgid "{platform_name} Professional Certificate for {course_name}"
 msgstr "گواهی حرفه‌ای {platform_name} برای دوره {course_name}"
 
-#: common/djangoapps/student/models/user.py:1340
+#: common/djangoapps/student/models/user.py:1373
 msgid ""
 "Your organization ID (if your organization has an existing page on LinkedIn)"
 " e.g 1337. If not provided, will default to sending Platform Name (e.g. edX)"
@@ -1488,41 +1514,41 @@ msgstr ""
 "عنوان مثال 1337. اگر مقداری ارائه نشده باشد، به طور پیش‌فرض نام سکو (مثلاً "
 "edX) را ارسال می‌کند."
 
-#: common/djangoapps/student/models/user.py:1396
+#: common/djangoapps/student/models/user.py:1429
 #, python-brace-format
 msgid "{platform_name} Certificate for {course_name}"
 msgstr "گواهی {platform_name} برای دوره {course_name}"
 
-#: common/djangoapps/student/models/user.py:1473
-#: common/djangoapps/student/models/user.py:1505
+#: common/djangoapps/student/models/user.py:1506
+#: common/djangoapps/student/models/user.py:1538
 msgid "The ISO 639-1 language code for this language."
 msgstr "کد زبان ISO 639-1 برای این زبان."
 
-#: common/djangoapps/student/models/user.py:1536
+#: common/djangoapps/student/models/user.py:1569
 msgid "Name of the UTM cookie"
 msgstr "نام کوکی UTM"
 
-#: common/djangoapps/student/models/user.py:1541
+#: common/djangoapps/student/models/user.py:1574
 msgid "Name of the affiliate cookie"
 msgstr "نام کوکی وابسته"
 
-#: common/djangoapps/student/models/user.py:1564
+#: common/djangoapps/student/models/user.py:1597
 msgid "Name of this user attribute."
 msgstr "نام این ویژگی کاربر."
 
-#: common/djangoapps/student/models/user.py:1565
+#: common/djangoapps/student/models/user.py:1598
 msgid "Value of this user attribute."
 msgstr "مقدار این ویژگی کاربر."
 
-#: common/djangoapps/student/models/user.py:1630
+#: common/djangoapps/student/models/user.py:1663
 msgid "Secondary email address"
 msgstr "آدرس رایانامۀ دوم"
 
-#: common/djangoapps/student/models/user.py:1631
+#: common/djangoapps/student/models/user.py:1664
 msgid "Secondary email address to recover linked account."
 msgstr "آدرس رایانامۀ ثانویه برای بازیابی حساب کاربری پیوند شده."
 
-#: common/djangoapps/student/models/user.py:1678
+#: common/djangoapps/student/models/user.py:1711
 msgid ""
 "An employee (a user whose email has current site's domain name) whose email "
 "exists in this model, can be able to login from login screen through email "
@@ -1535,7 +1561,7 @@ msgstr ""
 "نداشته باشد، آن کارمند می‌تواند فقط از طریق پشتیبان احراز هویت شخص ثالث وارد"
 " شود."
 
-#: common/djangoapps/student/models/user.py:1693
+#: common/djangoapps/student/models/user.py:1726
 msgid ""
 "It expect that the data will be provided in a csv file format with"
 "                     first row being the header and columns will be as "
@@ -1544,47 +1570,47 @@ msgstr ""
 "انتظار می رود که داده ها با فرمت فایل csv ارائه شوند که ردیف اول سربرگ و "
 "ستون ها به صورت زیر باشد: نام کاربری، فعلی_ایمیل، ایمیل دلخواه."
 
-#: common/djangoapps/student/models/user.py:1833
+#: common/djangoapps/student/models/user.py:1908
 msgid "Add a reason"
 msgstr "دلیلی ذکر کنید."
 
-#: common/djangoapps/student/views/dashboard.py:142
+#: common/djangoapps/student/views/dashboard.py:143
 msgid " and "
 msgstr " و "
 
-#: common/djangoapps/student/views/dashboard.py:285
+#: common/djangoapps/student/views/dashboard.py:286
 msgid "Photos are mismatched"
 msgstr "عکس‌ها با هم مطابقت ندارند."
 
-#: common/djangoapps/student/views/dashboard.py:286
+#: common/djangoapps/student/views/dashboard.py:287
 msgid "Name missing from ID photo"
 msgstr "نام در عکس شناسنامه وجود ندارد."
 
-#: common/djangoapps/student/views/dashboard.py:287
+#: common/djangoapps/student/views/dashboard.py:288
 msgid "ID photo not provided"
 msgstr "عکس شناسنامه ارائه نشده است."
 
-#: common/djangoapps/student/views/dashboard.py:288
+#: common/djangoapps/student/views/dashboard.py:289
 msgid "ID is invalid"
 msgstr "شناسه نامعتبر است."
 
-#: common/djangoapps/student/views/dashboard.py:289
+#: common/djangoapps/student/views/dashboard.py:290
 msgid "Learner photo is blurry"
 msgstr "عکس دانش‌پذیر تار است"
 
-#: common/djangoapps/student/views/dashboard.py:290
+#: common/djangoapps/student/views/dashboard.py:291
 msgid "Name on ID does not match name on account"
 msgstr "نام موجود در عکس شناسنامه با نام موجود در حساب کاربری مطابقت ندارد."
 
-#: common/djangoapps/student/views/dashboard.py:291
+#: common/djangoapps/student/views/dashboard.py:292
 msgid "Learner photo not provided"
 msgstr "عکس دانش‌پذیر ارائه نشده است"
 
-#: common/djangoapps/student/views/dashboard.py:292
+#: common/djangoapps/student/views/dashboard.py:293
 msgid "ID photo is blurry"
 msgstr "عکس شناسنامه تار است."
 
-#: common/djangoapps/student/views/dashboard.py:597
+#: common/djangoapps/student/views/dashboard.py:607
 #, python-brace-format
 msgid ""
 "Check your {email_start}{email}{email_end} inbox for an account activation "
@@ -1595,7 +1621,7 @@ msgstr ""
 " {platform_name} بررسی کنید. اگر به کمک نیاز دارید، با {link_start} "
 "{platform_name} با پشتیبانی {link_end} تماس بگیرید."
 
-#: common/djangoapps/student/views/dashboard.py:622
+#: common/djangoapps/student/views/dashboard.py:632
 #, python-brace-format
 msgid ""
 "Add a recovery email to retain access when single-sign on is not available. "
@@ -1604,7 +1630,7 @@ msgstr ""
 "یک رایانامۀ بازیابی اضافه کنید تا زمانی که ورود به سامانه در دسترس نیست، "
 "دسترسی خود را حفظ کنید. به {link_start} تنظیمات حساب خود بروید {link_end} ."
 
-#: common/djangoapps/student/views/dashboard.py:633
+#: common/djangoapps/student/views/dashboard.py:643
 msgid ""
 "Recovery email is not activated yet. Kindly visit your email and follow the "
 "instructions to activate it."
@@ -1612,12 +1638,12 @@ msgstr ""
 "ایمیل بازیابی هنوز فعال نشده است. لطفاً به ایمیل خود مراجعه کرده و "
 "دستورالعمل فعال‌سازی را دنبال کنید."
 
-#: common/djangoapps/student/views/dashboard.py:755
+#: common/djangoapps/student/views/dashboard.py:765
 #, python-brace-format
 msgid "The course you are looking for does not start until {date}."
 msgstr "دوره مورد نظر شما تا {date} شروع نمی‌شود."
 
-#: common/djangoapps/student/views/dashboard.py:759
+#: common/djangoapps/student/views/dashboard.py:769
 #, python-brace-format
 msgid "The course you are looking for is closed for enrollment as of {date}."
 msgstr "ثبت‌نام دوره مورد نظر شما از {date} بسته شده است."
@@ -3163,12 +3189,13 @@ msgstr "بازسازی شد"
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
 #: lms/djangoapps/certificates/models.py:567
-#: lms/djangoapps/instructor_task/tasks.py:178
-#: lms/djangoapps/instructor_task/tasks.py:226
-#: lms/djangoapps/instructor_task/tasks.py:239
-#: lms/djangoapps/instructor_task/tasks.py:265
-#: lms/djangoapps/instructor_task/tasks.py:319
-#: lms/djangoapps/instructor_task/tasks.py:342
+#: lms/djangoapps/instructor_task/tasks.py:182
+#: lms/djangoapps/instructor_task/tasks.py:230
+#: lms/djangoapps/instructor_task/tasks.py:243
+#: lms/djangoapps/instructor_task/tasks.py:269
+#: lms/djangoapps/instructor_task/tasks.py:283
+#: lms/djangoapps/instructor_task/tasks.py:337
+#: lms/djangoapps/instructor_task/tasks.py:360
 msgid "generated"
 msgstr "تولید شده است"
 
@@ -3413,8 +3440,10 @@ msgstr ""
 #. Translators:  'All rights reserved' is a legal term used in copyrighting to
 #. protect published content
 #: lms/djangoapps/certificates/views/webview.py:176
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:176
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:231
 #: openedx/core/djangoapps/notifications/templates/notifications/digest_footer.html:50
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:176
 #: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:174
 msgid "All rights reserved"
 msgstr "تمامی حقوق محفوظ است"
@@ -3658,47 +3687,7 @@ msgstr "آزمون زمان‌دار"
 msgid "Exam"
 msgstr "آزمون"
 
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:45
-msgid ""
-"\n"
-"                            There’s still time to reach your goal\n"
-"                        "
-msgstr ""
-"\n"
-"هنوز برای رسیدن به هدفت وقت هست\n"
-"                        "
-
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:80
-msgid ""
-"\n"
-"                                Jump back in\n"
-"                            "
-msgstr ""
-"\n"
-"دوباره به داخل بپر\n"
-"                            "
-
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:90
-msgid ""
-"\n"
-"                            Remember, you can always change your learning goal. The best goal is one that you can stick to.\n"
-"                        "
-msgstr ""
-"\n"
-"به یاد داشته باشید، همیشه می‌توانید هدف یادگیری خود را تغییر دهید. بهترین هدف، هدفی است که بتوانید به آن پایبند باشید.\n"
-"                        "
-
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:109
-msgid ""
-"\n"
-"                            Adjust my goal\n"
-"                        "
-msgstr ""
-"\n"
-"هدفم را تنظیم کن\n"
-"                        "
-
-#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:129
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/body.html:144
 msgid ""
 "\n"
 "                            Unsubscribe from goal reminder emails for this course\n"
@@ -3734,6 +3723,70 @@ msgid ""
 msgstr ""
 "به یاد داشته باشید، همیشه می‌توانید هدف یادگیری خود را تغییر دهید. بهترین "
 "هدف هدفی است که بتوانید به آن پایبند باشید.  "
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:47
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/head.html:24
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:82
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:47
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/head.html:24
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:67
+#, python-format
+msgid "Go to %(platform_name)s Home Page"
+msgstr "به صفحه اصلی %(platform_name)s بروید"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:63
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:71
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:172
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:63
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:71
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:116
+#, python-format
+msgid "%(platform_name)s on Facebook"
+msgstr "%(platform_name)s در فیس بوک"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:79
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:156
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:79
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:100
+#, python-format
+msgid "%(platform_name)s on LinkedIn"
+msgstr "%(platform_name)s در لینکدین"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:87
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:164
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:87
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:108
+#, python-format
+msgid "%(platform_name)s on Twitter"
+msgstr "%(platform_name)s در توییتر"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:95
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:188
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:95
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:132
+#, python-format
+msgid "%(platform_name)s on Reddit"
+msgstr "%(platform_name)s در Reddit"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:137
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:202
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:137
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:146
+msgid "Download the iOS app on the Apple Store"
+msgstr "برنامه iOS را در اپل استور دانلود کنید"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:147
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:209
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:147
+#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:153
+msgid "Download the Android app on the Google Play Store"
+msgstr "برنامه اندروید را در فروشگاه Google Play دانلود کنید"
+
+#: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/footer.html:180
+#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:240
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/footer.html:180
+msgid "Unsubscribe from these emails."
+msgstr "لغو اشتراک از این ایمیل ها."
 
 #: lms/djangoapps/course_goals/templates/course_goals/edx_ace/goalreminder/email/subject.txt:3
 #, python-format
@@ -3798,23 +3851,23 @@ msgstr ""
 msgid "Course is full"
 msgstr "دوره پر است"
 
-#: lms/djangoapps/course_home_api/outline/views.py:640
+#: lms/djangoapps/course_home_api/outline/views.py:654
 msgid "'course_id' is required."
 msgstr "'course_id' مورد نیاز است."
 
-#: lms/djangoapps/course_home_api/outline/views.py:644
+#: lms/djangoapps/course_home_api/outline/views.py:658
 msgid "Only 'course_id' is expected."
 msgstr "فقط 'course_id'  انتظار می‌رود."
 
-#: lms/djangoapps/course_home_api/outline/views.py:650
+#: lms/djangoapps/course_home_api/outline/views.py:664
 msgid "Welcome message successfully dismissed."
 msgstr "پیام خوش‌آمد با موفقیت رد شد."
 
-#: lms/djangoapps/course_home_api/outline/views.py:680
+#: lms/djangoapps/course_home_api/outline/views.py:694
 msgid "Your course goal has been successfully set."
 msgstr "هدف دورۀ شما با موفقیت تنظیم شده‌است."
 
-#: lms/djangoapps/course_home_api/outline/views.py:681
+#: lms/djangoapps/course_home_api/outline/views.py:695
 msgid "Course goal updated successfully."
 msgstr "هدف دوره با موفقیت به‌روز شد."
 
@@ -4099,31 +4152,31 @@ msgstr ""
 "این نوع مؤلفه را نمی توان در حین مشاهده دوره به عنوان یک دانش آموز خاص نشان "
 "داد."
 
-#: lms/djangoapps/courseware/models.py:458
-#: lms/djangoapps/courseware/models.py:494
-#: lms/djangoapps/courseware/models.py:521
+#: lms/djangoapps/courseware/models.py:468
+#: lms/djangoapps/courseware/models.py:504
+#: lms/djangoapps/courseware/models.py:531
 msgid ""
 "Number of days a learner has to upgrade after content is made available"
 msgstr ""
 "تعداد روزهای مجاز جهت ارتقای دانش‌پذیر بعد از در دسترس قرار گرفتن محتوا"
 
-#: lms/djangoapps/courseware/models.py:499
+#: lms/djangoapps/courseware/models.py:509
 msgid "Disable the dynamic upgrade deadline for this course run."
 msgstr "غیرفعالسازی مهلت ارتقاء پویا برای اجرای این دوره "
 
-#: lms/djangoapps/courseware/models.py:526
+#: lms/djangoapps/courseware/models.py:536
 msgid "Disable the dynamic upgrade deadline for this organization."
 msgstr "غیرفعالسازی مهلت ارتقاء پویا برای این سازمان "
 
-#: lms/djangoapps/courseware/models.py:553
+#: lms/djangoapps/courseware/models.py:563
 msgid "Internal API Base URL"
 msgstr "آدرس اینترنتی پایه API داخلی"
 
-#: lms/djangoapps/courseware/models.py:554
+#: lms/djangoapps/courseware/models.py:564
 msgid "Financial Assistance Backend API Base URL."
 msgstr "Financial Assistance Backend API URL Base."
 
-#: lms/djangoapps/courseware/models.py:562
+#: lms/djangoapps/courseware/models.py:572
 msgid ""
 "Username created for Financial Assistance Backend, e.g. "
 "financial_assistance_service_user."
@@ -4131,7 +4184,7 @@ msgstr ""
 "نام کاربری ایجاد شده برای Financial Assistance Backend، به عنوان مثال "
 "Financial_assistance_service_user."
 
-#: lms/djangoapps/courseware/models.py:567
+#: lms/djangoapps/courseware/models.py:577
 msgid "Percentage of courses allowed to use edx-financial-assistance"
 msgstr "درصد دوره‌های مجاز به استفاده از edx-financial-asistance"
 
@@ -4198,13 +4251,11 @@ msgstr ""
 "تنظیمات سطح دوره برای ارزیابی‌های پاسخ باز با درجه‌بندی همتا انعطاف‌پذیر."
 
 #: lms/djangoapps/courseware/tabs.py:36
-#: lms/djangoapps/courseware/views/views.py:2217
+#: lms/djangoapps/courseware/views/views.py:2239
 #: openedx/features/course_experience/__init__.py:91 xmodule/tabs.py:490
 #: cms/templates/widgets/header.html:89 cms/templates/widgets/header.html:93
 #: cms/templates/widgets/header.html:164 cms/templates/widgets/header.html:292
 #: lms/templates/courseware/course_navigation.html:49
-#: lms/templates/courseware/courseware.html:201
-#: lms/templates/courseware/courseware.html:215
 #: lms/templates/ux/reference/bootstrap/course-skeleton.html:21
 msgid "Course"
 msgstr "دوره"
@@ -4218,44 +4269,22 @@ msgstr "سرفصل دروس"
 msgid "Dates"
 msgstr "تاریخ"
 
-#: lms/djangoapps/courseware/views/index.py:231
-#, python-brace-format
-msgid ""
-"You are not signed in. To see additional course content, {sign_in_link} or "
-"{register_link}, and enroll in this course."
-msgstr ""
-"شما وارد نشده‌اید. برای مشاهدۀ محتوای دوره اضافی، {sign_in_link} یا "
-"{register_link} و در این دوره ثبت‌نام کنید."
-
-#: lms/djangoapps/courseware/views/index.py:234
-#: lms/djangoapps/courseware/views/views.py:561
-#: xmodule/discussion_block.py:187
-msgid "sign in"
-msgstr "ورود"
-
-#: lms/djangoapps/courseware/views/index.py:238
-#: lms/djangoapps/courseware/views/views.py:565
-#: lms/djangoapps/courseware/views/views.py:580
-#: xmodule/discussion_block.py:191
-msgid "register"
-msgstr "ثبت‌نام"
-
-#: lms/djangoapps/courseware/views/views.py:174
+#: lms/djangoapps/courseware/views/views.py:178
 msgid "Your enrollment: Audit track"
 msgstr "ثبت‌نام شما: مسیر حسابرسی"
 
-#: lms/djangoapps/courseware/views/views.py:175
+#: lms/djangoapps/courseware/views/views.py:179
 msgid ""
 "You are enrolled in the audit track for this course. The audit track does "
 "not include a certificate."
 msgstr ""
 "شما در مسیر حسابرسی این دوره ثبت‌نام کرده‌اید. مسیر حسابرسی شامل گواهی نیست."
 
-#: lms/djangoapps/courseware/views/views.py:183
+#: lms/djangoapps/courseware/views/views.py:187
 msgid "Your enrollment: Honor track"
 msgstr "ثبت‌نام شما: مسیر اصول اخلاقی "
 
-#: lms/djangoapps/courseware/views/views.py:184
+#: lms/djangoapps/courseware/views/views.py:188
 msgid ""
 "You are enrolled in the honor track for this course. The honor track does "
 "not include a certificate."
@@ -4263,11 +4292,11 @@ msgstr ""
 "شما در پیست افتخاری این دوره ثبت نام کرده اید. پیست افتخاری شامل مدرک نمی "
 "باشد."
 
-#: lms/djangoapps/courseware/views/views.py:197
+#: lms/djangoapps/courseware/views/views.py:201
 msgid "We're working on it..."
 msgstr "داریم روی آن کار می‌کنیم..."
 
-#: lms/djangoapps/courseware/views/views.py:199
+#: lms/djangoapps/courseware/views/views.py:203
 msgid ""
 "We're creating your certificate. You can keep working in your courses and a "
 "link to it will appear here and on your Dashboard when it is ready."
@@ -4275,28 +4304,29 @@ msgstr ""
 "ما در حال ایجاد گواهی شما هستیم. می‌توانید در دوره‌های خود به کار ادامه دهید"
 " و زمانی که آماده شد پیوندی به آن در اینجا و روی داشبورد شما ظاهر می‌شود."
 
-#: lms/djangoapps/courseware/views/views.py:209
+#: lms/djangoapps/courseware/views/views.py:213
 msgid "Your certificate has been invalidated"
 msgstr "گواهی شما باطل شده‌است"
 
-#: lms/djangoapps/courseware/views/views.py:210
+#: lms/djangoapps/courseware/views/views.py:214
 msgid "Please contact your course team if you have any questions."
 msgstr "لطفاً در صورت داشتن هرگونه سوال با تیم دوره خود تماس بگیرید."
 
-#: lms/djangoapps/courseware/views/views.py:218
+#: lms/djangoapps/courseware/views/views.py:222
 msgid "Congratulations, you qualified for a certificate!"
 msgstr "تبریک می گویم، شما واجد شرایط دریافت گواهی هستید!"
 
-#: lms/djangoapps/courseware/views/views.py:219
-#: lms/djangoapps/courseware/views/views.py:241
+#: lms/djangoapps/courseware/views/views.py:223
+#: lms/djangoapps/courseware/views/views.py:256
 msgid "You've earned a certificate for this course."
 msgstr "شما برای این دوره گواهینامه کسب کرده‌اید."
 
-#: lms/djangoapps/courseware/views/views.py:229
+#: lms/djangoapps/courseware/views/views.py:233
 msgid "Your certificate will be available soon!"
 msgstr "گواهینامۀ شما به‌زودی در دسترس خواهد بود!"
 
-#: lms/djangoapps/courseware/views/views.py:230
+#: lms/djangoapps/courseware/views/views.py:234
+#: lms/djangoapps/courseware/views/views.py:245
 msgid ""
 "After this course officially ends, you will receive an email notification "
 "with your certificate."
@@ -4304,15 +4334,15 @@ msgstr ""
 "پس از پایان رسمی این دوره، یک اعلان از طریق هشدار رایانامه‌ای همراه با "
 "گواهینامه خود دریافت خواهید کرد."
 
-#: lms/djangoapps/courseware/views/views.py:240
+#: lms/djangoapps/courseware/views/views.py:255
 msgid "Your certificate is available"
 msgstr "گواهی شما موجود است"
 
-#: lms/djangoapps/courseware/views/views.py:254
+#: lms/djangoapps/courseware/views/views.py:269
 msgid "Certificate unavailable"
 msgstr "گواهی در دسترس نیست"
 
-#: lms/djangoapps/courseware/views/views.py:256
+#: lms/djangoapps/courseware/views/views.py:271
 #, python-brace-format
 msgid ""
 "You have not received a certificate because you do not have a current "
@@ -4321,17 +4351,28 @@ msgstr ""
 "شما گواهی دریافت نکرده‌اید زیرا هویت تأییدشدۀ فعلی {platform_name} را "
 "ندارید."
 
-#: lms/djangoapps/courseware/views/views.py:559
+#: lms/djangoapps/courseware/views/views.py:574
 #, python-brace-format
 msgid "To see course content, {sign_in_link} or {register_link}."
 msgstr "برای دیدن محتوای دوره، {sign_in_link} یا {register_link} ."
 
-#: lms/djangoapps/courseware/views/views.py:574
+#: lms/djangoapps/courseware/views/views.py:576
+#: xmodule/discussion_block.py:187
+msgid "sign in"
+msgstr "ورود"
+
+#: lms/djangoapps/courseware/views/views.py:580
+#: lms/djangoapps/courseware/views/views.py:595
+#: xmodule/discussion_block.py:191
+msgid "register"
+msgstr "ثبت‌نام"
+
+#: lms/djangoapps/courseware/views/views.py:589
 #, python-brace-format
 msgid "{sign_in_link} or {register_link}."
 msgstr "{sign_in_link} یا {register_link} ."
 
-#: lms/djangoapps/courseware/views/views.py:576
+#: lms/djangoapps/courseware/views/views.py:591
 #: openedx/core/djangoapps/user_authn/templates/user_authn/edx_ace/passwordresetsuccess/email/body.html:25
 #: lms/templates/header/navbar-not-authenticated.html:63
 #: lms/templates/header/navbar-not-authenticated.html:67
@@ -4340,7 +4381,7 @@ msgstr "{sign_in_link} یا {register_link} ."
 msgid "Sign in"
 msgstr "ورود"
 
-#: lms/djangoapps/courseware/views/views.py:590
+#: lms/djangoapps/courseware/views/views.py:605
 #, python-brace-format
 msgid ""
 "You must be enrolled in the course to see course content. "
@@ -4349,46 +4390,46 @@ msgstr ""
 "برای مشاهدۀ محتوای دوره باید در دوره ثبت‌نام کنید. {enroll_link_start} اکنون"
 " ثبت‌نام کنید {enroll_link_end} ."
 
-#: lms/djangoapps/courseware/views/views.py:603
+#: lms/djangoapps/courseware/views/views.py:618
 msgid "You must be enrolled in the course to see course content."
 msgstr "برای مشاهدۀ محتوای دوره باید در دوره ثبت‌نام کنید."
 
-#: lms/djangoapps/courseware/views/views.py:1219
-#: lms/djangoapps/instructor/views/api.py:173
+#: lms/djangoapps/courseware/views/views.py:1240
+#: lms/djangoapps/instructor/views/api.py:171
 msgid "User does not exist."
 msgstr "کاربر وجود ندارد."
 
-#: lms/djangoapps/courseware/views/views.py:1226
+#: lms/djangoapps/courseware/views/views.py:1247
 msgid "Invalid location."
 msgstr "مکان معتبر نیست."
 
-#: lms/djangoapps/courseware/views/views.py:1240
+#: lms/djangoapps/courseware/views/views.py:1261
 #, python-brace-format
 msgid "User {username} has never accessed problem {location}"
 msgstr "کاربر {username} هرگز به مسئله {location} دسترسی نداشته است"
 
-#: lms/djangoapps/courseware/views/views.py:1437
+#: lms/djangoapps/courseware/views/views.py:1458
 #, python-brace-format
 msgid "You must be signed in to {platform_name} to create a certificate."
 msgstr "برای ایجاد گواهینامه باید به {platform_name} وارد شوید."
 
-#: lms/djangoapps/courseware/views/views.py:1447
+#: lms/djangoapps/courseware/views/views.py:1468
 msgid "Course is not valid"
 msgstr "دوره معتبر نیست"
 
-#: lms/djangoapps/courseware/views/views.py:1463
+#: lms/djangoapps/courseware/views/views.py:1484
 msgid "Your certificate will be available when you pass the course."
 msgstr "گواهینامۀ شما پس از گذراندن دوره در دسترس خواهد بود."
 
-#: lms/djangoapps/courseware/views/views.py:1476
+#: lms/djangoapps/courseware/views/views.py:1497
 msgid "Certificate has already been created."
 msgstr "گواهینامه قبلاً ایجاد شده است."
 
-#: lms/djangoapps/courseware/views/views.py:1478
+#: lms/djangoapps/courseware/views/views.py:1499
 msgid "Certificate is being created."
 msgstr "گواهینامه در حال ساخت است."
 
-#: lms/djangoapps/courseware/views/views.py:2030
+#: lms/djangoapps/courseware/views/views.py:2051
 msgid ""
 "We plan to use this information to evaluate your application for financial assistance and to further develop our financial assistance program. \n"
 "Please note that while assistance is available in most courses that offer verified certificates, a few courses and programs are not eligible. You must complete a separate application for each course you take. You may be approved for financial assistance five (5) times each year (based on 12-month period from you first approval). \n"
@@ -4404,7 +4445,7 @@ msgstr ""
 " 2. این برنامه را تکمیل کنید.\n"
 " 3. ایمیل خود را بررسی کنید، لطفا 4 هفته فرصت دهید تا درخواست شما بررسی شود."
 
-#: lms/djangoapps/courseware/views/views.py:2224
+#: lms/djangoapps/courseware/views/views.py:2246
 msgid ""
 "Select the course for which you want to earn a verified certificate. If the "
 "course does not appear in the list, make sure that you have enrolled in the "
@@ -4414,23 +4455,23 @@ msgstr ""
 "اگر دوره در لیست نمایش داده نمی شود، مطمئن شوید که در مسیر ممیزی دوره ثبت "
 "نام کرده اید."
 
-#: lms/djangoapps/courseware/views/views.py:2231
+#: lms/djangoapps/courseware/views/views.py:2253
 msgid "I certify that: "
 msgstr "گواهی می‌دهم که: "
 
-#: lms/djangoapps/courseware/views/views.py:2238
+#: lms/djangoapps/courseware/views/views.py:2260
 msgid ""
 "Paying the verified certificate fee for the above course would cause me "
 "economic hardship"
 msgstr ""
 "پرداخت هزینۀ گواهینامۀ تاییدشده برای دورۀ فوق باعث مشکلات اقتصادی من می‌شود"
 
-#: lms/djangoapps/courseware/views/views.py:2250
+#: lms/djangoapps/courseware/views/views.py:2272
 msgid ""
 "I will work diligently to complete the course work and receive a certificate"
 msgstr "برای تکمیل دوره و دریافت گواهینامه مجدانه تلاش خواهم کرد"
 
-#: lms/djangoapps/courseware/views/views.py:2262
+#: lms/djangoapps/courseware/views/views.py:2284
 #, python-brace-format
 msgid ""
 "I have read, understand, and will abide by the {honor_code_link} for the edX"
@@ -4439,46 +4480,46 @@ msgstr ""
 "من {honor_code_link} سایت edX را خوانده‌ام، درک کرده‌ام و از آن تبعیت خواهم "
 "کرد."
 
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:545
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:610
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:558
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:623
 msgid "Title can't be empty"
 msgstr "عنوان نمی‌تواند خالی باشد"
 
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:547
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:612
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:654
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:737
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:560
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:625
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:667
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:750
 msgid "Body can't be empty"
 msgstr "متن نمی‌تواند خالی باشد"
 
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:629
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:642
 msgid "Topic doesn't exist"
 msgstr "موضوع وجود ندارد"
 
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:703
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:802
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:716
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:815
 msgid "Comment level too deep"
 msgstr "سطح نظر خیلی عمیق است"
 
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:1091
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:1104
 msgid ""
 "Error uploading file. Please contact the site administrator. Thank you."
 msgstr "خطا در بارگذاری پوشه. لطفا با مدیر وبگاه تماس بگیرید. متشکرم."
 
-#: lms/djangoapps/discussion/django_comment_client/base/views.py:1094
+#: lms/djangoapps/discussion/django_comment_client/base/views.py:1107
 msgid "Good"
 msgstr "خوب"
 
 #. Translators: Replier commented on "your" response to your post
-#: lms/djangoapps/discussion/rest_api/discussions_notifications.py:147
+#: lms/djangoapps/discussion/rest_api/discussions_notifications.py:152
 msgid "your"
 msgstr "شما"
 
 #. Translators: Replier commented on "their" response to your post
 #. Translators: Replier commented on "their" response in a post you're
 #. following
-#: lms/djangoapps/discussion/rest_api/discussions_notifications.py:151
-#: lms/djangoapps/discussion/rest_api/discussions_notifications.py:240
+#: lms/djangoapps/discussion/rest_api/discussions_notifications.py:156
+#: lms/djangoapps/discussion/rest_api/discussions_notifications.py:245
 msgid "their"
 msgstr "آن‌ها"
 
@@ -4553,20 +4594,20 @@ msgstr ""
 msgid "Access to this discussion is restricted to team members and staff."
 msgstr "دسترسی به این گفتگو برای اعضای تیم و کارکنان محدود است."
 
-#: lms/djangoapps/edxnotes/helpers.py:116
-#: lms/djangoapps/edxnotes/helpers.py:147
+#: lms/djangoapps/edxnotes/helpers.py:117
+#: lms/djangoapps/edxnotes/helpers.py:148
 msgid "EdxNotes Service is unavailable. Please try again in a few minutes."
 msgstr "سرویس EdxNotes در دسترس نیست. لطفا چند دقیقۀ دیگر دوباره سعی کنید."
 
-#: lms/djangoapps/edxnotes/helpers.py:348
+#: lms/djangoapps/edxnotes/helpers.py:341
 msgid "Invalid JSON response received from notes api."
 msgstr "پاسخ JSON نامعتبر از notes api دریافت شد."
 
-#: lms/djangoapps/edxnotes/helpers.py:355
+#: lms/djangoapps/edxnotes/helpers.py:348
 msgid "Incorrect data received from notes api."
 msgstr "داده‌های نادرست دریافت‌شده از notes api."
 
-#: lms/djangoapps/edxnotes/helpers.py:398
+#: lms/djangoapps/edxnotes/helpers.py:391
 msgid "No endpoint was provided for EdxNotes."
 msgstr "هیچ نقطۀ پایانی برای EdxNotes ارائه نشده‌است."
 
@@ -4608,7 +4649,7 @@ msgstr ""
 msgid "Your Platform Insights"
 msgstr "بینش پلتفرم شما"
 
-#: lms/djangoapps/instructor/views/api.py:157
+#: lms/djangoapps/instructor/views/api.py:155
 #, python-brace-format
 msgid ""
 "The {report_type} report is being created. To view the status of the report,"
@@ -4617,14 +4658,14 @@ msgstr ""
 "گزارش {report_type} در حال ساخت است. برای مشاهدۀ وضعیت گزارش، به وظایف معلق "
 "زیر مراجعه کنید."
 
-#: lms/djangoapps/instructor/views/api.py:175
+#: lms/djangoapps/instructor/views/api.py:173
 msgid ""
 "Found a conflict with given identifier. Please try an alternative identifier"
 msgstr ""
 "با شناسه داده شده تضاد پیدا کرد. لطفاً یک شناسه جایگزین را امتحان کنید"
 
-#: lms/djangoapps/instructor/views/api.py:366
-#: lms/djangoapps/instructor/views/api.py:3706
+#: lms/djangoapps/instructor/views/api.py:364
+#: lms/djangoapps/instructor/views/api.py:3839
 msgid ""
 "Make sure that the file you upload is in CSV format with no extraneous "
 "characters or rows."
@@ -4632,12 +4673,12 @@ msgstr ""
 "اطمینان حاصل کنید که فایلی که آپلود می کنید در قالب CSV و بدون نویسه یا ردیف"
 " اضافی باشد."
 
-#: lms/djangoapps/instructor/views/api.py:372
-#: lms/djangoapps/instructor/views/api.py:3709
+#: lms/djangoapps/instructor/views/api.py:370
+#: lms/djangoapps/instructor/views/api.py:3842
 msgid "Could not read uploaded file."
 msgstr "پوشۀ بارگذاری‌شده خوانده نشد."
 
-#: lms/djangoapps/instructor/views/api.py:397
+#: lms/djangoapps/instructor/views/api.py:395
 #, python-brace-format
 msgid ""
 "Data in row #{row_num} must have between four and six columns: email, "
@@ -4647,7 +4688,7 @@ msgstr ""
 "داده‌های ردیف # {row_num} باید بین چهار تا شش ستون داشته باشند: ایمیل، نام "
 "کاربری، نام کامل، کشور، گروه و حالت دوره. دو ستون آخر اختیاری هستند."
 
-#: lms/djangoapps/instructor/views/api.py:402
+#: lms/djangoapps/instructor/views/api.py:400
 #, python-brace-format
 msgid ""
 "Data in row #{row_num} must have exactly four columns: email, username, full"
@@ -4656,7 +4697,7 @@ msgstr ""
 "داده های ردیف # {row_num} باید دقیقاً چهار ستون داشته باشد: ایمیل، نام "
 "کاربری، نام کامل و کشور."
 
-#: lms/djangoapps/instructor/views/api.py:431
+#: lms/djangoapps/instructor/views/api.py:429
 msgid ""
 "Course is not cohorted but cohort provided. Ignoring cohort assignment for "
 "all users."
@@ -4664,14 +4705,14 @@ msgstr ""
 "دوره به صورت همگروهی نیست اما همگروهی ارائه می شود. نادیده گرفتن انتساب گروه"
 " برای همه کاربران."
 
-#: lms/djangoapps/instructor/views/api.py:446
+#: lms/djangoapps/instructor/views/api.py:444
 #, python-brace-format
 msgid ""
 "Cohort name not found: {cohort}. Ignoring cohort assignment for all users."
 msgstr ""
 "نام گروه یافت نشد: {cohort} . نادیده گرفتن انتساب گروه برای همه کاربران."
 
-#: lms/djangoapps/instructor/views/api.py:463
+#: lms/djangoapps/instructor/views/api.py:461
 #, python-brace-format
 msgid ""
 "Invalid course mode: {mode}. Falling back to the default mode, or keeping "
@@ -4680,7 +4721,7 @@ msgstr ""
 "حالت دوره نامعتبر: {mode} . بازگشت به حالت پیش فرض، یا حفظ حالت فعلی در "
 "صورتی که کاربر قبلاً ثبت نام کرده باشد."
 
-#: lms/djangoapps/instructor/views/api.py:469
+#: lms/djangoapps/instructor/views/api.py:467
 #, python-brace-format
 msgid ""
 "Invalid course mode: {mode}.  Failling back to {default_mode}, or resetting "
@@ -4689,14 +4730,14 @@ msgstr ""
 "حالت دوره نامعتبر: {mode} . بازگشت به {default_mode} ، یا بازنشانی به "
 "{default_mode} در صورتی که کاربر قبلاً ثبت نام کرده باشد."
 
-#: lms/djangoapps/instructor/views/api.py:487
-#: lms/djangoapps/instructor/views/api.py:549
-#: lms/djangoapps/instructor/views/api.py:584
+#: lms/djangoapps/instructor/views/api.py:485
+#: lms/djangoapps/instructor/views/api.py:547
+#: lms/djangoapps/instructor/views/api.py:582
 #, python-brace-format
 msgid "Invalid email {email_address}."
 msgstr "رایانامه معتبر {email_address} نیست."
 
-#: lms/djangoapps/instructor/views/api.py:499
+#: lms/djangoapps/instructor/views/api.py:497
 #, python-brace-format
 msgid ""
 "An account with email {email} exists but the provided username {username} is"
@@ -4705,17 +4746,17 @@ msgstr ""
 "حسابی با ایمیل {email} وجود دارد اما نام کاربری ارائه شده {username} متفاوت "
 "است. به هر حال در حال ثبت نام با {email} ."
 
-#: lms/djangoapps/instructor/views/api.py:589
-#: lms/djangoapps/instructor/views/api.py:3751
+#: lms/djangoapps/instructor/views/api.py:587
+#: lms/djangoapps/instructor/views/api.py:3884
 msgid "File is not attached."
 msgstr "پوشه پیوست نشده‌است"
 
-#: lms/djangoapps/instructor/views/api.py:723
+#: lms/djangoapps/instructor/views/api.py:721
 #, python-brace-format
 msgid "Username {user} already exists."
 msgstr "نام کاربری {user} از قبل وجود دارد."
 
-#: lms/djangoapps/instructor/views/api.py:750
+#: lms/djangoapps/instructor/views/api.py:748
 #, python-brace-format
 msgid ""
 "Error '{error}' while sending email to new user (user email={email}). "
@@ -4726,7 +4767,7 @@ msgstr ""
 "{email} ). بدون ایمیل دانشجو نمی تواند وارد شود. لطفا برای اطلاعات بیشتر با "
 "پشتیبانی تماس بگیرید."
 
-#: lms/djangoapps/instructor/views/api.py:1154
+#: lms/djangoapps/instructor/views/api.py:1147
 msgid ""
 "A usage key location for a section or a problem. If the location is a block "
 "that contains other blocks, (such as the course, section, subsection, or "
@@ -4737,11 +4778,11 @@ msgstr ""
 "بلوک‌های دیگر است (مانند دوره، بخش، زیربخش یا واحد)، آن‌گاه تمام بلوک‌های "
 "زیر مجموعه در گزارش گنجانده می‌شوند."
 
-#: lms/djangoapps/instructor/views/api.py:1163
+#: lms/djangoapps/instructor/views/api.py:1156
 msgid "A list of usage keys for the blocks to include in the report. "
 msgstr "فهرستی از کلیدهای استفاده برای بلوک ها که باید در گزارش گنجانده شود. "
 
-#: lms/djangoapps/instructor/views/api.py:1171
+#: lms/djangoapps/instructor/views/api.py:1164
 msgid ""
 "A list of problem/block types to generate the report for. This field can be "
 "omitted if the report should include details of allblock types. "
@@ -4749,11 +4790,11 @@ msgstr ""
 "لیستی از انواع مسئله‌ها/بلوک‌ها برای تولید گزارش. اگر گزارش باید شامل تمام "
 "انواع بلوک‌ها شود، این قسمت می‌تواند حذف شود. "
 
-#: lms/djangoapps/instructor/views/api.py:1182
+#: lms/djangoapps/instructor/views/api.py:1175
 msgid "User-friendly text describing current status of report generation."
 msgstr "متن کاربر پسند که وضعیت فعلی تولید گزارش را توصیف می کند."
 
-#: lms/djangoapps/instructor/views/api.py:1185
+#: lms/djangoapps/instructor/views/api.py:1178
 msgid ""
 "A unique id for the report generation task. It can be used to query the "
 "latest report generation status."
@@ -4761,7 +4802,7 @@ msgstr ""
 "یک شناسه منحصر به فرد برای وظیفه تولید گزارش. می توان از آن برای پرس و جو از"
 " آخرین وضعیت تولید گزارش استفاده کرد."
 
-#: lms/djangoapps/instructor/views/api.py:1211
+#: lms/djangoapps/instructor/views/api.py:1204
 msgid ""
 "The provided parameters were invalid. Make sure you've provided at least one"
 " valid usage key for `problem_locations`."
@@ -4769,53 +4810,53 @@ msgstr ""
 "پارامترهای ارائه‌شده نامعتبرند. مطمئن شوید که حداقل یک کلید استفاده معتبر "
 "برای  `problem_locations` ارائه کرده‌اید."
 
-#: lms/djangoapps/instructor/views/api.py:1214
-#: lms/djangoapps/instructor/views/api.py:2406
-#: lms/djangoapps/instructor/views/api.py:2616
+#: lms/djangoapps/instructor/views/api.py:1207
+#: lms/djangoapps/instructor/views/api.py:2498
+#: lms/djangoapps/instructor/views/api.py:2708
 msgid "The requesting user is not authenticated."
 msgstr "متقاضی احراز هویت نشده‌است."
 
-#: lms/djangoapps/instructor/views/api.py:1215
-#: lms/djangoapps/instructor/views/api.py:2407
-#: lms/djangoapps/instructor/views/api.py:2617
+#: lms/djangoapps/instructor/views/api.py:1208
+#: lms/djangoapps/instructor/views/api.py:2499
+#: lms/djangoapps/instructor/views/api.py:2709
 msgid "The requesting user lacks access to the course."
 msgstr "کاربر متقاضی به دوره دسترسی ندارد."
 
-#: lms/djangoapps/instructor/views/api.py:1350
+#: lms/djangoapps/instructor/views/api.py:1354
 #: lms/djangoapps/instructor_task/api_helper.py:109
 msgid "problem responses"
 msgstr "پاسخ‌های مسئله"
 
-#: lms/djangoapps/instructor/views/api.py:1356
+#: lms/djangoapps/instructor/views/api.py:1360
 msgid "Could not find problem with this location."
 msgstr "مسئله‌ای با این مکان پیدا نشد."
 
-#: lms/djangoapps/instructor/views/api.py:1422
+#: lms/djangoapps/instructor/views/api.py:1426
 msgid "CourseID"
 msgstr "شناسۀ دوره"
 
-#: lms/djangoapps/instructor/views/api.py:1423
+#: lms/djangoapps/instructor/views/api.py:1427
 msgid "Certificate Type"
 msgstr "نوع گواهینامه"
 
-#: lms/djangoapps/instructor/views/api.py:1424
+#: lms/djangoapps/instructor/views/api.py:1428
 msgid "Total Certificates Issued"
 msgstr "مجموع گواهینامه‌های صادرشده"
 
-#: lms/djangoapps/instructor/views/api.py:1425
+#: lms/djangoapps/instructor/views/api.py:1429
 msgid "Date Report Run"
 msgstr "تاریخ اجرا گزارش"
 
-#: lms/djangoapps/instructor/views/api.py:1475
+#: lms/djangoapps/instructor/views/api.py:1479
 #: lms/djangoapps/instructor_task/api_helper.py:110
 msgid "enrolled learner profile"
 msgstr "پروفایل دانش‌پذیر ثبت‌نام‌شده"
 
-#: lms/djangoapps/instructor/views/api.py:1500
+#: lms/djangoapps/instructor/views/api.py:1503
 msgid "User ID"
 msgstr "شناسۀ کاربر"
 
-#: lms/djangoapps/instructor/views/api.py:1501
+#: lms/djangoapps/instructor/views/api.py:1504
 #: lms/djangoapps/instructor/views/tools.py:221
 #: lms/djangoapps/instructor/views/tools.py:226
 #: openedx/core/djangoapps/schedules/admin.py:148
@@ -4832,8 +4873,8 @@ msgstr "نام کاربری"
 #. form meant to hold the user's email address.
 #. Translators: This label appears above a field on the registration form
 #. meant to hold the user's email address.
-#: lms/djangoapps/instructor/views/api.py:1503
-#: lms/djangoapps/instructor/views/instructor_dashboard.py:714
+#: lms/djangoapps/instructor/views/api.py:1506
+#: lms/djangoapps/instructor/views/instructor_dashboard.py:717
 #: openedx/core/djangoapps/user_authn/views/login_form.py:96
 #: openedx/core/djangoapps/user_authn/views/password_reset.py:90
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:506
@@ -4843,11 +4884,11 @@ msgstr "نام کاربری"
 msgid "Email"
 msgstr "آدرس رایانامه"
 
-#: lms/djangoapps/instructor/views/api.py:1504
+#: lms/djangoapps/instructor/views/api.py:1507
 msgid "Language"
 msgstr "زبان"
 
-#: lms/djangoapps/instructor/views/api.py:1505
+#: lms/djangoapps/instructor/views/api.py:1508
 msgid "Location"
 msgstr "مکان"
 
@@ -4856,7 +4897,7 @@ msgstr "مکان"
 #. the user's gender.
 #. Translators: This label appears above a dropdown menu on the registration
 #. form used to select the user's gender.
-#: lms/djangoapps/instructor/views/api.py:1508
+#: lms/djangoapps/instructor/views/api.py:1510
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:117
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:659
 #: lms/templates/signup_modal.html:94
@@ -4864,41 +4905,41 @@ msgstr "مکان"
 msgid "Gender"
 msgstr "جنسیت"
 
-#: lms/djangoapps/instructor/views/api.py:1509
+#: lms/djangoapps/instructor/views/api.py:1511
 msgid "Level of Education"
 msgstr "سطح تحصیلات"
 
-#: lms/djangoapps/instructor/views/api.py:1510
+#: lms/djangoapps/instructor/views/api.py:1512
 #: themes/stanford-style/lms/templates/register-form.html:223
 msgid "Mailing Address"
 msgstr "آدرس پستی"
 
-#: lms/djangoapps/instructor/views/api.py:1511
+#: lms/djangoapps/instructor/views/api.py:1513
 msgid "Goals"
 msgstr "اهداف"
 
-#: lms/djangoapps/instructor/views/api.py:1512
+#: lms/djangoapps/instructor/views/api.py:1514
 msgid "Enrollment Mode"
 msgstr "حالت ثبت‌نام"
 
-#: lms/djangoapps/instructor/views/api.py:1513
+#: lms/djangoapps/instructor/views/api.py:1515
 msgid "Last Login"
 msgstr "آخرین ورود"
 
-#: lms/djangoapps/instructor/views/api.py:1514
+#: lms/djangoapps/instructor/views/api.py:1516
 msgid "Date Joined"
 msgstr "تاریخ عضویت"
 
-#: lms/djangoapps/instructor/views/api.py:1515
+#: lms/djangoapps/instructor/views/api.py:1517
 msgid "External User Key"
 msgstr "کلید کاربر خارجی"
 
-#: lms/djangoapps/instructor/views/api.py:1521
+#: lms/djangoapps/instructor/views/api.py:1527
 msgid "Cohort"
 msgstr "گروه"
 
-#: lms/djangoapps/instructor/views/api.py:1525
-#: lms/djangoapps/instructor/views/instructor_dashboard.py:770
+#: lms/djangoapps/instructor/views/api.py:1531
+#: lms/djangoapps/instructor/views/instructor_dashboard.py:773
 msgid "Team"
 msgstr "تیم"
 
@@ -4907,7 +4948,7 @@ msgstr "تیم"
 #. which allows the user to input the city in which they live.
 #. Translators: This label appears above a field on the registration form
 #. which allows the user to input the city in which they live.
-#: lms/djangoapps/instructor/views/api.py:1529
+#: lms/djangoapps/instructor/views/api.py:1535
 #: openedx/core/djangoapps/user_authn/api/form_fields.py:290
 #: openedx/core/djangoapps/user_authn/views/registration_form.py:844
 #: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:88
@@ -4915,123 +4956,123 @@ msgstr "تیم"
 msgid "City"
 msgstr "شهر"
 
-#: lms/djangoapps/instructor/views/api.py:1531
+#: lms/djangoapps/instructor/views/api.py:1537
 #: lms/templates/instructor/instructor_dashboard_2/generate_registarion_codes_modal.html:103
 #: themes/stanford-style/lms/templates/register-form.html:167
 msgid "Country"
 msgstr "کشور"
 
-#: lms/djangoapps/instructor/views/api.py:1580
+#: lms/djangoapps/instructor/views/api.py:1586
 #: lms/djangoapps/instructor_task/api_helper.py:111
 msgid "enrollment"
 msgstr "ثبت‌نام"
 
-#: lms/djangoapps/instructor/views/api.py:1606
+#: lms/djangoapps/instructor/views/api.py:1652
 msgid "The file must contain a 'cohort' column containing cohort names."
 msgstr "فایل باید حاوی یک ستون 'cohort' حاوی نام گروه باشد."
 
-#: lms/djangoapps/instructor/views/api.py:1608
+#: lms/djangoapps/instructor/views/api.py:1654
 msgid "The file must contain a 'username' column, an 'email' column, or both."
 msgstr ""
 "فایل باید شامل یک ستون «نام کاربری»، یک ستون «ادرس رایانامه» یا هر دو باشد."
 
-#: lms/djangoapps/instructor/views/api.py:1711
+#: lms/djangoapps/instructor/views/api.py:1757
 #: lms/djangoapps/instructor_task/api_helper.py:113
 msgid "survey"
 msgstr "نظرسنجی"
 
-#: lms/djangoapps/instructor/views/api.py:1736
+#: lms/djangoapps/instructor/views/api.py:1782
 #: lms/djangoapps/instructor_task/api_helper.py:114
 msgid "proctored exam results"
 msgstr "نتایج آزمون حفاظت‌شده"
 
-#: lms/djangoapps/instructor/views/api.py:1766
+#: lms/djangoapps/instructor/views/api.py:1812
 msgid "Anonymized User IDs"
 msgstr "شناسه‌های کاربر ناشناس"
 
-#: lms/djangoapps/instructor/views/api.py:1803
+#: lms/djangoapps/instructor/views/api.py:1849
 #, python-brace-format
 msgid "Enrollment status for {student}: active"
 msgstr "وضعیت ثبت‌نام برای {student} : فعال"
 
-#: lms/djangoapps/instructor/views/api.py:1805
+#: lms/djangoapps/instructor/views/api.py:1851
 #, python-brace-format
 msgid "Enrollment status for {student}: inactive"
 msgstr "وضعیت ثبت‌نام برای {student} : غیرفعال"
 
-#: lms/djangoapps/instructor/views/api.py:1810
+#: lms/djangoapps/instructor/views/api.py:1856
 #, python-brace-format
 msgid "Enrollment status for {student}: pending"
 msgstr "وضعیت ثبت‌نام برای {student} : در انتظار"
 
-#: lms/djangoapps/instructor/views/api.py:1812
+#: lms/djangoapps/instructor/views/api.py:1858
 #, python-brace-format
 msgid "Enrollment status for {student}: never enrolled"
 msgstr "وضعیت ثبت‌نام برای {student} : هرگز ثبت‌نام نشده است"
 
-#: lms/djangoapps/instructor/views/api.py:1958
+#: lms/djangoapps/instructor/views/api.py:2004
 msgid "Module does not exist."
 msgstr "ماژول وجود ندارد."
 
-#: lms/djangoapps/instructor/views/api.py:1961
+#: lms/djangoapps/instructor/views/api.py:2007
 msgid "An error occurred while deleting the score."
 msgstr "هنگام حذف امتیاز خطایی روی داد."
 
-#: lms/djangoapps/instructor/views/api.py:1971
+#: lms/djangoapps/instructor/views/api.py:2017
 msgid "An error occurred while attempting to reset for all students."
 msgstr "هنگام تلاش برای بازنشانی برای همۀ فراگیران خطایی روی داد."
 
-#: lms/djangoapps/instructor/views/api.py:2008
-#: lms/djangoapps/instructor/views/api.py:2236
+#: lms/djangoapps/instructor/views/api.py:2077
+#: lms/djangoapps/instructor/views/api.py:2316
 msgid "Course has no entrance exam section."
 msgstr "دوره فاقد بخش آزمون ورودی است."
 
-#: lms/djangoapps/instructor/views/api.py:2023
-msgid "all_students and unique_student_identifier are mutually exclusive."
-msgstr "all_students و unique_student_identifier متقابل هستند."
-
-#: lms/djangoapps/instructor/views/api.py:2027
-msgid "all_students and delete_module are mutually exclusive."
-msgstr "all_students و delete_module متقابل هستند."
-
-#: lms/djangoapps/instructor/views/api.py:2033
+#: lms/djangoapps/instructor/views/api.py:2088
 msgid "Requires instructor access."
 msgstr "نیاز به دسترسی مربی دارد."
 
-#: lms/djangoapps/instructor/views/api.py:2050
-#: lms/djangoapps/instructor/views/api.py:2247
-#: lms/djangoapps/instructor/views/api.py:2555
+#: lms/djangoapps/instructor/views/api.py:2105
+#: lms/djangoapps/instructor/views/api.py:2338
+#: lms/djangoapps/instructor/views/api.py:2647
 msgid "Course has no valid entrance exam section."
 msgstr "دوره فاقد بخش آزمون ورودی معتبر است."
 
-#: lms/djangoapps/instructor/views/api.py:2052
-#: lms/djangoapps/instructor/views/api.py:2253
+#: lms/djangoapps/instructor/views/api.py:2107
+#: lms/djangoapps/instructor/views/api.py:2343
 msgid "All Students"
 msgstr "همۀ فرگیران"
 
-#: lms/djangoapps/instructor/views/api.py:2241
+#: lms/djangoapps/instructor/views/api.py:2253
+#, python-brace-format
+msgid ""
+"User {user_id} does not have permission to override scores for problem "
+"{problem_to_reset}."
+msgstr ""
+"کاربر {user_id} اجازه ندارد نمرات مسئله {problem_to_reset} را تغییر دهد."
+
+#: lms/djangoapps/instructor/views/api.py:2330
 msgid "Cannot rescore with all_students and unique_student_identifier."
 msgstr ""
 "با all_students و unique_student_identifier نمی‌توان دوباره امتیاز داد."
 
-#: lms/djangoapps/instructor/views/api.py:2324
+#: lms/djangoapps/instructor/views/api.py:2416
 msgid "Current status of task."
 msgstr "وضعیت فعلی کار"
 
-#: lms/djangoapps/instructor/views/api.py:2325
+#: lms/djangoapps/instructor/views/api.py:2417
 msgid "Identifies the kind of task being performed, e.g. rescoring."
 msgstr ""
 "نوع وظیفه ای را که درحال انجام است، مثلاً امتیازدهی مجدد، مشخص می‌کند."
 
-#: lms/djangoapps/instructor/views/api.py:2326
+#: lms/djangoapps/instructor/views/api.py:2418
 msgid "The celery ID for the task."
 msgstr "شناسۀ آدرس رایانامه برای کار."
 
-#: lms/djangoapps/instructor/views/api.py:2327
+#: lms/djangoapps/instructor/views/api.py:2419
 msgid "The date and time when the task was created."
 msgstr "تاریخ و زمانی که کار ایجاد شد."
 
-#: lms/djangoapps/instructor/views/api.py:2330
+#: lms/djangoapps/instructor/views/api.py:2422
 msgid ""
 "The input parameters for the task. The format and content of this data will "
 "depend on the kind of task being performed. For instanceit may contain the "
@@ -5041,108 +5082,108 @@ msgstr ""
 "بستگی دارد. به عنوان مثال ممکن است برای کار منابع مسئله‌ها، پارامتر ورودی "
 "حاوی مکان‌ مسئله‌ها باشد."
 
-#: lms/djangoapps/instructor/views/api.py:2334
+#: lms/djangoapps/instructor/views/api.py:2426
 msgid "The username of the user who initiated this task."
 msgstr "نام کاربری فردی که این کار را آغاز کرده است."
 
-#: lms/djangoapps/instructor/views/api.py:2335
+#: lms/djangoapps/instructor/views/api.py:2427
 msgid "The last knows state of the celery task."
 msgstr "آخرین وضعیت شناسۀ رایانامه را می‌داند."
 
-#: lms/djangoapps/instructor/views/api.py:2336
+#: lms/djangoapps/instructor/views/api.py:2428
 msgid "Task duration information, if known"
 msgstr "اطلاعات مدت کار، درصورت شناخت"
 
-#: lms/djangoapps/instructor/views/api.py:2337
+#: lms/djangoapps/instructor/views/api.py:2429
 msgid "User-friendly task status information, if available."
 msgstr "اطلاعات وضعیت کار کاربرپسند، در صورت وجود."
 
-#: lms/djangoapps/instructor/views/api.py:2346
+#: lms/djangoapps/instructor/views/api.py:2438
 msgid "List of instructor tasks."
 msgstr "لیست وظایف مربی"
 
-#: lms/djangoapps/instructor/views/api.py:2408
-#: lms/djangoapps/instructor/views/api.py:2618
+#: lms/djangoapps/instructor/views/api.py:2500
+#: lms/djangoapps/instructor/views/api.py:2710
 msgid "The requested course does not exist."
 msgstr "دورۀ درخواستی وجود ندارد."
 
-#: lms/djangoapps/instructor/views/api.py:2580
+#: lms/djangoapps/instructor/views/api.py:2672
 msgid "URL from which report can be downloaded."
 msgstr "آدرس اینترنتی که گزارش از آن قابل بارگیری است."
 
-#: lms/djangoapps/instructor/views/api.py:2581
+#: lms/djangoapps/instructor/views/api.py:2673
 msgid "Name of report."
 msgstr "نام گزارش."
 
-#: lms/djangoapps/instructor/views/api.py:2582
+#: lms/djangoapps/instructor/views/api.py:2674
 msgid "HTML anchor tag that contains the name and link."
 msgstr "تگ لنگر HTML که حاوی نام و پیوند است."
 
-#: lms/djangoapps/instructor/views/api.py:2591
+#: lms/djangoapps/instructor/views/api.py:2683
 msgid "List of report downloads"
 msgstr "فهرست بارگیری گزارش"
 
-#: lms/djangoapps/instructor/views/api.py:2605
+#: lms/djangoapps/instructor/views/api.py:2697
 msgid "ID for the course whose reports need to be listed."
 msgstr "شناسۀ دوره‌ای که گزارش آن باید فهرست شود."
 
-#: lms/djangoapps/instructor/views/api.py:2611
+#: lms/djangoapps/instructor/views/api.py:2703
 msgid ""
 "Filter results to only return details of for the report with the specified "
 "name."
 msgstr ""
 "نتایج را فیلتر کنید تا فقط جزئیات گزارش با نام مشخص شده را بازگردانید."
 
-#: lms/djangoapps/instructor/views/api.py:2724
+#: lms/djangoapps/instructor/views/api.py:2827
 #: lms/djangoapps/instructor_task/api_helper.py:115
 msgid "ORA data"
 msgstr "داده‌های ORA"
 
-#: lms/djangoapps/instructor/views/api.py:2742
+#: lms/djangoapps/instructor/views/api.py:2859
 msgid "ORA summary"
 msgstr "خلاصۀ ORA"
 
-#: lms/djangoapps/instructor/views/api.py:2766
+#: lms/djangoapps/instructor/views/api.py:2888
 msgid "Attachments archive is being created."
 msgstr "بایگانی پیوست‌ها در حال ساخت است."
 
-#: lms/djangoapps/instructor/views/api.py:2781
+#: lms/djangoapps/instructor/views/api.py:2909
 #: lms/djangoapps/instructor_task/api_helper.py:116
 msgid "grade"
 msgstr "مقطع تحصیلی"
 
-#: lms/djangoapps/instructor/views/api.py:2809
+#: lms/djangoapps/instructor/views/api.py:2937
 #: lms/djangoapps/instructor_task/api_helper.py:108
 msgid "problem grade"
 msgstr "نمره مسئله"
 
-#: lms/djangoapps/instructor/views/api.py:3113
+#: lms/djangoapps/instructor/views/api.py:3230
 #, python-brace-format
 msgid "Successfully changed due date for student {0} for {1} to {2}"
 msgstr "تاریخ سررسید دانشجویی {0} برای {1} با موفقیت به {2} تغییر کرد"
 
-#: lms/djangoapps/instructor/views/api.py:3160
+#: lms/djangoapps/instructor/views/api.py:3277
 msgid ""
 "Successfully removed invalid due date extension (unit has no due date)."
 msgstr ""
 "پسوند تاریخ سررسید نامعتبر با موفقیت حذف شد (واحد تاریخ سررسید ندارد)."
 
-#: lms/djangoapps/instructor/views/api.py:3165
+#: lms/djangoapps/instructor/views/api.py:3282
 #, python-brace-format
 msgid "Successfully reset due date for student {0} for {1} to {2}"
 msgstr "تاریخ سررسید دانشجویی {0} برای {1} با موفقیت به {2} بازنشانی شد"
 
-#: lms/djangoapps/instructor/views/api.py:3317
+#: lms/djangoapps/instructor/views/api.py:3450
 #, python-format
 msgid "This student (%s) will skip the entrance exam."
 msgstr "این دانش آموز ( %s ) از امتحان ورودی صرف نظر می کند."
 
-#: lms/djangoapps/instructor/views/api.py:3319
+#: lms/djangoapps/instructor/views/api.py:3452
 #, python-format
 msgid "This student (%s) is already allowed to skip the entrance exam."
 msgstr "این دانش آموز ( %s ) قبلاً مجاز به رد شدن از امتحان ورودی است."
 
-#: lms/djangoapps/instructor/views/api.py:3343
+#: lms/djangoapps/instructor/views/api.py:3476
 msgid ""
 "Certificate generation task for all students of this course has been "
 "started. You can view the status of the generation task in the \"Pending "
@@ -5151,11 +5192,11 @@ msgstr ""
 "وظیفه صدور گواهینامه برای تمامی دانشجویان این دوره آغاز شده است. می توانید "
 "وضعیت وظیفه تولید را در بخش &quot;وظایف در انتظار&quot; مشاهده کنید."
 
-#: lms/djangoapps/instructor/views/api.py:3376
+#: lms/djangoapps/instructor/views/api.py:3509
 msgid "Please select certificate statuses from the list only."
 msgstr "لطفاً وضعیت گواهینامه را فقط از فهرست انتخاب کنید."
 
-#: lms/djangoapps/instructor/views/api.py:3383
+#: lms/djangoapps/instructor/views/api.py:3516
 msgid ""
 "Certificate regeneration task has been started. You can view the status of "
 "the generation task in the \"Pending Tasks\" section."
@@ -5163,15 +5204,15 @@ msgstr ""
 "کار بازسازی گواهی آغاز شده است. می توانید وضعیت وظیفه تولید را در بخش "
 "&quot;وظایف در انتظار&quot; مشاهده کنید."
 
-#: lms/djangoapps/instructor/views/api.py:3429
-#: lms/djangoapps/instructor/views/api.py:3579
+#: lms/djangoapps/instructor/views/api.py:3562
+#: lms/djangoapps/instructor/views/api.py:3712
 msgid ""
 "The record is not in the correct format. Please add a valid username or "
 "email address."
 msgstr ""
 "فرمت رکورد درست نیست. لطفا یک نام کاربری یا آدرس ایمیل معتبر اضافه کنید."
 
-#: lms/djangoapps/instructor/views/api.py:3495
+#: lms/djangoapps/instructor/views/api.py:3628
 #, python-brace-format
 msgid ""
 "Student {user} is not enrolled in this course. Please check your spelling "
@@ -5180,7 +5221,7 @@ msgstr ""
 "دانشجو {user} در این دوره ثبت نام نکرده است. لطفا املای خود را بررسی کنید و "
 "دوباره امتحان کنید."
 
-#: lms/djangoapps/instructor/views/api.py:3502
+#: lms/djangoapps/instructor/views/api.py:3635
 #, python-brace-format
 msgid ""
 "Student {user} is already on the certificate invalidation list and cannot be"
@@ -5189,13 +5230,13 @@ msgstr ""
 "دانش‌آموز {user} قبلاً در لیست عدم اعتبار گواهی است و نمی‌توان آن را به لیست"
 " استثنای گواهی اضافه کرد."
 
-#: lms/djangoapps/instructor/views/api.py:3508
+#: lms/djangoapps/instructor/views/api.py:3641
 #, python-brace-format
 msgid "Student (username/email={user}) already in certificate exception list."
 msgstr ""
 "دانش آموز (نام کاربری/ایمیل= {user} ) از قبل در لیست استثنای گواهی است."
 
-#: lms/djangoapps/instructor/views/api.py:3544
+#: lms/djangoapps/instructor/views/api.py:3677
 #, python-brace-format
 msgid ""
 "Error occurred removing the allowlist entry for student {student}. Please "
@@ -5204,7 +5245,7 @@ msgstr ""
 "هنگام حذف ورودی لیست مجاز برای دانش آموز {student} خطایی روی داد. لطفا صفحه "
 "را مجددا بارگزاری کرده و دوباره تلاش کنید"
 
-#: lms/djangoapps/instructor/views/api.py:3562
+#: lms/djangoapps/instructor/views/api.py:3695
 msgid ""
 "Student username/email field is required and can not be empty. Kindly fill "
 "in username/email and then press \"Add to Exception List\" button."
@@ -5213,32 +5254,32 @@ msgstr ""
 "کاربری/ایمیل را وارد کنید و سپس دکمه &quot;افزودن به لیست استثنایی&quot; را "
 "فشار دهید."
 
-#: lms/djangoapps/instructor/views/api.py:3596
+#: lms/djangoapps/instructor/views/api.py:3729
 #, python-brace-format
 msgid ""
 "{user} does not exist in the LMS. Please check your spelling and retry."
 msgstr ""
 "{user} در LMS وجود ندارد. لطفا املای خود را بررسی کنید و دوباره امتحان کنید."
 
-#: lms/djangoapps/instructor/views/api.py:3637
+#: lms/djangoapps/instructor/views/api.py:3770
 msgid "Invalid data, generate_for must be \"new\" or \"all\"."
 msgstr "داده های نامعتبر، generate_for باید «جدید» یا «همه» باشد."
 
-#: lms/djangoapps/instructor/views/api.py:3645
+#: lms/djangoapps/instructor/views/api.py:3778
 msgid "Certificate generation started for students on the allowlist."
 msgstr "تولید گواهینامه برای فراگیران در فهرست مجاز آغاز شد."
 
-#: lms/djangoapps/instructor/views/api.py:3698
+#: lms/djangoapps/instructor/views/api.py:3831
 #, python-brace-format
 msgid "user \"{user}\" in row# {row}"
 msgstr "کاربر \"{user}\"در ردیف# {row}"
 
-#: lms/djangoapps/instructor/views/api.py:3749
+#: lms/djangoapps/instructor/views/api.py:3882
 #, python-brace-format
 msgid "user \"{username}\" in row# {row}"
 msgstr "کاربر \"{username}\" در ردیف# {row}"
 
-#: lms/djangoapps/instructor/views/api.py:3809
+#: lms/djangoapps/instructor/views/api.py:3942
 #, python-brace-format
 msgid ""
 "The student {student} appears on the Certificate Exception list in course "
@@ -5249,7 +5290,7 @@ msgstr ""
 "لطفاً قبل از تلاش برای باطل کردن گواهینامه آنها را از لیست استثناهای گواهی "
 "حذف کنید."
 
-#: lms/djangoapps/instructor/views/api.py:3870
+#: lms/djangoapps/instructor/views/api.py:4003
 #, python-brace-format
 msgid ""
 "Certificate of {user} has already been invalidated. Please check your "
@@ -5258,7 +5299,7 @@ msgstr ""
 "گواهی {user} قبلاً باطل شده است. لطفا املای خود را بررسی کنید و دوباره "
 "امتحان کنید."
 
-#: lms/djangoapps/instructor/views/api.py:3878
+#: lms/djangoapps/instructor/views/api.py:4011
 #, python-brace-format
 msgid ""
 "Certificate for student {user} is already invalid, kindly verify that "
@@ -5267,14 +5308,14 @@ msgstr ""
 "گواهی دانش‌آموز {user} قبلاً نامعتبر است، لطفاً تأیید کنید که گواهی برای این"
 " دانش‌آموز ایجاد شده است و سپس ادامه دهید."
 
-#: lms/djangoapps/instructor/views/api.py:3915
+#: lms/djangoapps/instructor/views/api.py:4048
 msgid ""
 "Certificate Invalidation does not exist, Please refresh the page and try "
 "again."
 msgstr ""
 "اعتبار گواهی وجود ندارد، لطفاً صفحه را بازخوانی کنید و دوباره امتحان کنید."
 
-#: lms/djangoapps/instructor/views/api.py:3951
+#: lms/djangoapps/instructor/views/api.py:4084
 msgid ""
 "Student username/email field is required and can not be empty. Kindly fill "
 "in username/email and then press \"Invalidate Certificate\" button."
@@ -5283,7 +5324,7 @@ msgstr ""
 "کاربری/ایمیل را وارد کنید و سپس دکمه &quot;بی اعتبار کردن گواهی&quot; را "
 "فشار دهید."
 
-#: lms/djangoapps/instructor/views/api.py:3969
+#: lms/djangoapps/instructor/views/api.py:4102
 #, python-brace-format
 msgid ""
 "The student {student} does not have certificate for the course {course}. "
@@ -5366,11 +5407,11 @@ msgstr "افزونه‌ها"
 msgid "Data Download"
 msgstr "دریافت داده ها"
 
-#: lms/djangoapps/instructor/views/instructor_dashboard.py:751
+#: lms/djangoapps/instructor/views/instructor_dashboard.py:754
 msgid "Analytics"
 msgstr "تجزیه‌وتحلیل"
 
-#: lms/djangoapps/instructor/views/instructor_dashboard.py:799
+#: lms/djangoapps/instructor/views/instructor_dashboard.py:802
 msgid "Open Responses"
 msgstr "بازگشایی پاسخ‌ها"
 
@@ -5401,13 +5442,47 @@ msgstr "کامل"
 msgid "Incomplete"
 msgstr "ناقص"
 
-#: lms/djangoapps/instructor/views/serializer.py:20
+#: lms/djangoapps/instructor/views/serializer.py:31
+#: lms/djangoapps/instructor/views/serializer.py:89
 msgid "Role name"
 msgstr "نام نقش"
 
-#: lms/djangoapps/instructor/views/serializer.py:27
+#: lms/djangoapps/instructor/views/serializer.py:38
+#: lms/djangoapps/instructor/views/serializer.py:99
 msgid "Invalid role name."
 msgstr "نام نقش معتبر نیست."
+
+#: lms/djangoapps/instructor/views/serializer.py:496
+msgid "Whether to reset for all students."
+msgstr "آیا برای همه دانش‌آموزان بازنشانی شود؟"
+
+#: lms/djangoapps/instructor/views/serializer.py:501
+msgid "Whether to delete entrance exam state for the student."
+msgstr "آیا وضعیت آزمون ورودی برای دانش‌آموز حذف شود؟"
+
+#: lms/djangoapps/instructor/views/serializer.py:535
+msgid "all_students and unique_student_identifier are mutually exclusive."
+msgstr "all_students و unique_student_identifier متقابل هستند."
+
+#: lms/djangoapps/instructor/views/serializer.py:539
+msgid "all_students and delete_module are mutually exclusive."
+msgstr "all_students و delete_module متقابل هستند."
+
+#: lms/djangoapps/instructor/views/serializer.py:543
+msgid ""
+"You must provide either unique_student_identifier or set all_students to "
+"True."
+msgstr ""
+"شما باید یا شناسه_دانش‌آموز_منحصر‌به‌فرد را ارائه دهید یا همه_دانش‌آموزان را"
+" به True تنظیم کنید."
+
+#: lms/djangoapps/instructor/views/serializer.py:565
+msgid "The URL name of the problem to override the score for."
+msgstr "نام URL مسئله‌ای که می‌خواهید امتیاز آن را تغییر دهید."
+
+#: lms/djangoapps/instructor/views/serializer.py:571
+msgid "The overriding score to set."
+msgstr "امتیاز نهایی برای تنظیم."
 
 #: lms/djangoapps/instructor/views/tools.py:79
 #, python-brace-format
@@ -5508,27 +5583,27 @@ msgstr "خطایی رخ داده است. وظیفه ایجاد نشد."
 
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:78
+#: lms/djangoapps/instructor_task/tasks.py:82
 msgid "rescored"
 msgstr "دوباره به ثمر رساند"
 
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:92
+#: lms/djangoapps/instructor_task/tasks.py:96
 #: lms/djangoapps/instructor_task/tasks_helper/module_state.py:67
 msgid "overridden"
 msgstr "لغو شد"
 
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:116
+#: lms/djangoapps/instructor_task/tasks.py:120
 msgid "reset"
 msgstr "تنظیم مجدد"
 
 #. #-#-#-#-#  django.po (0.1a)  #-#-#-#-#
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:139
+#: lms/djangoapps/instructor_task/tasks.py:143
 #: lms/templates/wiki/plugins/attachments/index.html:74
 #: wiki/models/article.py:257
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/history.html:22
@@ -5540,25 +5615,25 @@ msgstr "حذف‌شده"
 
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:162
+#: lms/djangoapps/instructor_task/tasks.py:166
 msgid "emailed"
 msgstr "ایمیل‌شده"
 
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:190
+#: lms/djangoapps/instructor_task/tasks.py:194
 msgid "graded"
 msgstr "ارزیابی‌شده"
 
 #. Translators: This is a past-tense phrase that is inserted into task
 #. progress messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:208
+#: lms/djangoapps/instructor_task/tasks.py:212
 msgid "problem distribution graded"
 msgstr "توزیع مسئله ارزیابی شد"
 
 #. Translators: This is a past-tense verb that is inserted into task progress
 #. messages as {action}.
-#: lms/djangoapps/instructor_task/tasks.py:277
+#: lms/djangoapps/instructor_task/tasks.py:295
 msgid "certificates generated"
 msgstr "گواهی‌های تولید‌شده"
 
@@ -5566,7 +5641,7 @@ msgstr "گواهی‌های تولید‌شده"
 #. messages as {action}.
 #. An example of such a message is: "Progress: {action} {succeeded} of
 #. {attempted} so far"
-#: lms/djangoapps/instructor_task/tasks.py:295
+#: lms/djangoapps/instructor_task/tasks.py:313
 msgid "cohorted"
 msgstr "همگروهی"
 
@@ -5574,11 +5649,11 @@ msgstr "همگروهی"
 #. messages as {action}.
 #. An example of such a message is: "Progress: {action} {succeeded} of
 #. {attempted} so far"
-#: lms/djangoapps/instructor_task/tasks.py:308
+#: lms/djangoapps/instructor_task/tasks.py:326
 msgid "generate_anonymized_id"
 msgstr "generate_anonymized_id"
 
-#: lms/djangoapps/instructor_task/tasks.py:331
+#: lms/djangoapps/instructor_task/tasks.py:349
 msgid "compressed"
 msgstr "فشرده‌شده"
 
@@ -5883,6 +5958,16 @@ msgstr ""
 "کننده LTI لازم است. برای جزئیات بیشتر به اسناد Open edX LTI Provider مراجعه "
 "کنید."
 
+#: lms/djangoapps/lti_provider/models.py:44
+msgid ""
+"When checked, the platform will automatically use any personal information "
+"provided via LTI to create an account. Otherwise an anonymous account will "
+"be created."
+msgstr ""
+"هنگامی که انتخاب شود، پلتفرم به‌طور خودکار از هرگونه اطلاعات شخصی ارائه‌شده "
+"از طریق LTI برای ایجاد یک حساب کاربری استفاده خواهد کرد. در غیر این صورت، یک"
+" حساب کاربری ناشناس ایجاد خواهد شد."
+
 #: lms/djangoapps/program_enrollments/models.py:57
 msgid "One of user or external_user_key must not be null."
 msgstr "یکی از user یا external_user_key نباید null باشد."
@@ -6108,11 +6193,11 @@ msgstr "تور کاربر نشان داده نشود"
 msgid "Your {platform_name} ID verification was approved!"
 msgstr "تأیید هویت {platform_name} شما تأیید شد!"
 
-#: lms/djangoapps/verify_student/models.py:1093
+#: lms/djangoapps/verify_student/models.py:1097
 msgid "The course for which this deadline applies"
 msgstr "دوره ای که این مهلت برای آن اعمال می شود"
 
-#: lms/djangoapps/verify_student/models.py:1098
+#: lms/djangoapps/verify_student/models.py:1102
 msgid ""
 "The datetime after which users are no longer allowed to submit photos for "
 "verification."
@@ -6179,7 +6264,7 @@ msgstr "داده های تصویر در قالب پشتیبانی نشده اس�
 msgid "Image data is not valid."
 msgstr "داده های تصویر معتبر نیست."
 
-#: lms/djangoapps/verify_student/views.py:1135
+#: lms/djangoapps/verify_student/views.py:1136
 #, python-brace-format
 msgid "Your {platform_name} Verification Has Been Denied"
 msgstr "تأیید {platform_name} شما رد شده است"
@@ -6833,7 +6918,7 @@ msgid "Allow"
 msgstr "اجازه"
 
 #: lms/templates/oauth2_provider/authorize.html:54
-#: openedx/core/djangoapps/content_staging/data.py:23
+#: openedx/core/djangoapps/content_staging/data.py:25
 #: lms/templates/ccx/schedule.html:78
 msgid "Error"
 msgstr "خطا"
@@ -7042,7 +7127,7 @@ msgstr "حذف مقاله"
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/delete.html:9
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/index.html:35
 #: wiki/templates/wiki/delete.html:7 cms/templates/component.html:32
-#: cms/templates/studio_xblock_wrapper.html:202
+#: cms/templates/studio_xblock_wrapper.html:214
 msgid "Delete"
 msgstr "حذف"
 
@@ -7081,7 +7166,7 @@ msgstr "شما در حال حذف یک مقاله هستید. لطفا تایی�
 #: lms/templates/wiki/edit.html:4 wiki/templates/wiki/edit.html:4
 #: wiki/templates/wiki/includes/article_menu.html:34
 #: cms/templates/component.html:13 cms/templates/container.html:201
-#: cms/templates/studio_xblock_wrapper.html:157
+#: cms/templates/studio_xblock_wrapper.html:169
 #: lms/templates/wiki/includes/article_menu.html:22
 msgid "Edit"
 msgstr "ویرایش کنید"
@@ -7375,10 +7460,8 @@ msgstr ""
 #: lms/templates/wiki/plugins/attachments/index.html:39
 #: wiki/plugins/attachments/templates/wiki/plugins/attachments/index.html:117
 #: lms/templates/api_admin/catalogs/search.html:23
-#: lms/templates/courseware/courses.html:44
-#: lms/templates/courseware/courseware.html:189
-#: lms/templates/dashboard.html:286 lms/templates/edxnotes/edxnotes.html:39
-#: lms/templates/index.html:30
+#: lms/templates/courseware/courses.html:44 lms/templates/dashboard.html:286
+#: lms/templates/edxnotes/edxnotes.html:39 lms/templates/index.html:30
 #: lms/templates/ux/reference/bootstrap/course-skeleton.html:47
 #: themes/stanford-style/lms/templates/index.html:26
 msgid "Search"
@@ -7484,12 +7567,6 @@ msgstr "مدیریت LMS"
 msgid "ACE Common"
 msgstr "ACE مشترک"
 
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:82
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:67
-#, python-format
-msgid "Go to %(platform_name)s Home Page"
-msgstr "به صفحه اصلی %(platform_name)s بروید"
-
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:97
 #: cms/templates/index.html:335 cms/templates/index.html:337
 #: lms/templates/courseware/courses.html:33
@@ -7505,53 +7582,15 @@ msgstr "دوره های آموزشی"
 msgid "My Account"
 msgstr "حساب من"
 
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:156
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:100
-#, python-format
-msgid "%(platform_name)s on LinkedIn"
-msgstr "%(platform_name)s در لینکدین"
-
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:164
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:108
-#, python-format
-msgid "%(platform_name)s on Twitter"
-msgstr "%(platform_name)s در توییتر"
-
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:172
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:116
-#, python-format
-msgid "%(platform_name)s on Facebook"
-msgstr "%(platform_name)s در فیس بوک"
-
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:180
 #: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:124
 #, python-format
 msgid "%(platform_name)s on Google Plus"
 msgstr "%(platform_name)s در گوگل پلاس"
 
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:188
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:132
-#, python-format
-msgid "%(platform_name)s on Reddit"
-msgstr "%(platform_name)s در Reddit"
-
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:202
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:146
-msgid "Download the iOS app on the Apple Store"
-msgstr "برنامه iOS را در اپل استور دانلود کنید"
-
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:209
-#: themes/red-theme/lms/templates/ace_common/edx_ace/common/base_body.html:153
-msgid "Download the Android app on the Google Play Store"
-msgstr "برنامه اندروید را در فروشگاه Google Play دانلود کنید"
-
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:233
 msgid "Our mailing address is:"
 msgstr "آدرس پستی ما این است:"
-
-#: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_body.html:240
-msgid "Unsubscribe from these emails."
-msgstr "لغو اشتراک از این ایمیل ها."
 
 #: openedx/core/djangoapps/ace_common/templates/ace_common/edx_ace/common/base_head.html:7
 #, python-format
@@ -7659,7 +7698,6 @@ msgstr "&quot; %s &quot; یک محدوده معتبر نیست."
 #: openedx/core/djangoapps/bookmarks/apps.py:18
 #: openedx/features/course_bookmarks/plugins.py:39
 #: openedx/features/course_bookmarks/views/course_bookmarks.py:93
-#: lms/templates/courseware/courseware.html:179
 #: openedx/features/course_bookmarks/templates/course_bookmarks/course-bookmarks.html:43
 #: openedx/features/course_bookmarks/templates/course_bookmarks/course-bookmarks.html:50
 msgid "Bookmarks"
@@ -7860,11 +7898,11 @@ msgstr ""
 "نسبت به LearningContextKey کامل نیاز دارد، که اجازه می‌دهد دوره‌ها و "
 "کتابخانه‌های بیشتری در فیلترهای جستجوی محتوا نمایش داده شوند."
 
-#: openedx/core/djangoapps/content_libraries/api/blocks.py:264
+#: openedx/core/djangoapps/content_libraries/api/blocks.py:268
 msgid "Library cannot have more than {} Components"
 msgstr "کتابخانه نمی تواند بیش از {} مؤلفه داشته باشد"
 
-#: openedx/core/djangoapps/content_libraries/api/libraries.py:508
+#: openedx/core/djangoapps/content_libraries/api/libraries.py:510
 msgid "Cannot change or remove the access level for the only admin."
 msgstr "نمی توان سطح دسترسی تنها سرپرست را تغییر داد یا حذف کرد."
 
@@ -8023,7 +8061,7 @@ msgstr "ما نتوانستیم کاربری با آن آدرس ایمیل پی�
 msgid "This user already has access to this library."
 msgstr "این کاربر قبلاً به این کتابخانه دسترسی دارد."
 
-#: openedx/core/djangoapps/content_staging/data.py:17
+#: openedx/core/djangoapps/content_staging/data.py:19
 #: cms/templates/certificates.html:82 cms/templates/container.html:232
 #: cms/templates/container_chromeless.html:159
 #: cms/templates/course_outline.html:293
@@ -8037,15 +8075,15 @@ msgstr "این کاربر قبلاً به این کتابخانه دسترسی �
 msgid "Loading"
 msgstr "بارگذاری"
 
-#: openedx/core/djangoapps/content_staging/data.py:21
+#: openedx/core/djangoapps/content_staging/data.py:23
 msgid "Expired"
 msgstr "منقضی شده"
 
-#: openedx/core/djangoapps/content_staging/models.py:42
+#: openedx/core/djangoapps/content_staging/models.py:43
 msgid "Staged Content"
 msgstr "محتوای مرحله بندی شده"
 
-#: openedx/core/djangoapps/content_staging/models.py:54
+#: openedx/core/djangoapps/content_staging/models.py:55
 msgid ""
 "\n"
 "            What type of content is staged. Only OLX content is supported, and\n"
@@ -8059,11 +8097,11 @@ msgstr ""
 " به عنوان مثال، &quot;ویدئو&quot; در صورتی که یک ویدئو صحنه سازی شده باشد، یا &quot;عمودی&quot; برای یک واحد.\n"
 "        "
 
-#: openedx/core/djangoapps/content_staging/models.py:71
+#: openedx/core/djangoapps/content_staging/models.py:72
 msgid "Content tags applied to these blocks"
 msgstr "برچسب های محتوا روی این بلوک ها اعمال می شود"
 
-#: openedx/core/djangoapps/content_staging/models.py:115
+#: openedx/core/djangoapps/content_staging/models.py:116
 msgid "Original usage key/ID of the thing that is in the clipboard."
 msgstr "کلید استفاده اصلی/شناسه چیزی که در کلیپ بورد است."
 
@@ -8096,7 +8134,7 @@ msgstr "گروه پیش فرض"
 msgid "You cannot create two cohorts with the same name"
 msgstr "شما نمی توانید دو گروه با یک نام ایجاد کنید"
 
-#: openedx/core/djangoapps/course_groups/cohorts.py:549
+#: openedx/core/djangoapps/course_groups/cohorts.py:553
 msgid ""
 "There must be one cohort to which students can automatically be assigned."
 msgstr ""
@@ -8166,17 +8204,17 @@ msgstr "نگارش اعتبارنامه را در استودیو فعال کنی
 msgid "Enable authoring of Credential Service credentials in Studio."
 msgstr "نگارش اعتبارنامه خدمات اعتبارنامه را در استودیو فعال کنید."
 
-#: openedx/core/djangoapps/credit/email_utils.py:91
+#: openedx/core/djangoapps/credit/email_utils.py:92
 msgid "Course Credit Eligibility"
 msgstr "واجد شرایط بودن اعتبار دوره"
 
-#: openedx/core/djangoapps/credit/email_utils.py:94
+#: openedx/core/djangoapps/credit/email_utils.py:95
 #, python-brace-format
 msgid "You are eligible for credit from {providers_string}"
 msgstr "شما واجد شرایط دریافت اعتبار از {providers_string} هستید"
 
 #. Translators: The join of two university names (e.g., Harvard and MIT).
-#: openedx/core/djangoapps/credit/email_utils.py:276
+#: openedx/core/djangoapps/credit/email_utils.py:295
 #, python-brace-format
 msgid "{first_provider} and {second_provider}"
 msgstr "{first_provider} و {second_provider}"
@@ -8184,7 +8222,7 @@ msgstr "{first_provider} و {second_provider}"
 #. Translators: The join of three or more university names. The first of these
 #. formatting strings
 #. represents a comma-separated list of names (e.g., MIT, Harvard, Dartmouth).
-#: openedx/core/djangoapps/credit/email_utils.py:283
+#: openedx/core/djangoapps/credit/email_utils.py:302
 #, python-brace-format
 msgid "{first_providers}, and {last_provider}"
 msgstr "{first_providers} و {last_provider}"
@@ -8675,7 +8713,7 @@ msgstr ""
 "<{p}> در ارزیابی خود {points_earned} از {points_possible} دریافت کرده اید: "
 "<{strong}>{ora_name}</{strong}></{p}>"
 
-#: openedx/core/djangoapps/notifications/base_notification.py:238
+#: openedx/core/djangoapps/notifications/base_notification.py:256
 msgid ""
 "Notifications for responses and comments on your posts, and the ones you’re "
 "following, including endorsements to your responses and on your posts."
@@ -8683,15 +8721,15 @@ msgstr ""
 "اعلان‌هایی برای پاسخ‌ها و نظرات در مورد پست‌های شما، و مواردی که دنبال "
 "می‌کنید، از جمله تأییدیه‌های پاسخ‌های شما و پست‌های شما."
 
-#: openedx/core/djangoapps/notifications/base_notification.py:248
+#: openedx/core/djangoapps/notifications/base_notification.py:266
 msgid "Notifications for new announcements and updates from the course team."
 msgstr "اعلان ها برای اطلاعیه ها و به روز رسانی های جدید از تیم دوره."
 
-#: openedx/core/djangoapps/notifications/base_notification.py:257
+#: openedx/core/djangoapps/notifications/base_notification.py:275
 msgid "Notifications for submission grading."
 msgstr "اطلاعیه برای درجه بندی ارسال."
 
-#: openedx/core/djangoapps/notifications/email/utils.py:449
+#: openedx/core/djangoapps/notifications/email/utils.py:441
 #: openedx/features/course_experience/plugins.py:34
 #: cms/templates/widgets/header.html:115 cms/templates/widgets/header.html:120
 #: lms/templates/api_admin/terms_of_service.html:66
@@ -8699,15 +8737,6 @@ msgstr "اطلاعیه برای درجه بندی ارسال."
 #: openedx/features/course_experience/templates/course_experience/course-updates-fragment.html:25
 msgid "Updates"
 msgstr "به روز رسانی ها"
-
-#: openedx/core/djangoapps/notifications/email/utils.py:450
-#: cms/templates/certificates.html:116
-#: cms/templates/group_configurations.html:127 cms/templates/settings.html:707
-#: cms/templates/settings_advanced.html:147
-#: cms/templates/settings_graders.html:50
-#: cms/templates/widgets/header.html:181 cms/templates/widgets/header.html:186
-msgid "Grading"
-msgstr "درجه بندی"
 
 #: openedx/core/djangoapps/notifications/email_notifications.py:16
 msgid "Daily"
@@ -8752,27 +8781,23 @@ msgid ""
 "You have successfully unsubscribed from email digest for learning activity"
 msgstr "شما با موفقیت اشتراک ایمیل را برای فعالیت یادگیری لغو کردید"
 
-#: openedx/core/djangoapps/notifications/views.py:224
-msgid "The notification preference config version is not up to date."
-msgstr "نسخه پیکربندی اولویت اعلان به‌روز نیست."
-
-#: openedx/core/djangoapps/notifications/views.py:384
+#: openedx/core/djangoapps/notifications/views.py:174
 msgid "Invalid app name."
 msgstr "نام برنامه نامعتبر است."
 
-#: openedx/core/djangoapps/notifications/views.py:394
+#: openedx/core/djangoapps/notifications/views.py:184
 msgid "Notifications marked as seen."
 msgstr "اعلان‌ها همانطور که دیده می‌شوند علامت‌گذاری شدند."
 
-#: openedx/core/djangoapps/notifications/views.py:433
+#: openedx/core/djangoapps/notifications/views.py:223
 msgid "Notification marked read."
 msgstr "اعلان به عنوان خوانده شده علامت گذاری شد."
 
-#: openedx/core/djangoapps/notifications/views.py:445
+#: openedx/core/djangoapps/notifications/views.py:235
 msgid "Notifications marked read."
 msgstr "اعلان‌ها به عنوان خوانده شده علامت‌گذاری شدند."
 
-#: openedx/core/djangoapps/notifications/views.py:447
+#: openedx/core/djangoapps/notifications/views.py:237
 msgid "Invalid app_name or notification_id."
 msgstr "app_name یا notification_id نامعتبر است."
 
@@ -8946,35 +8971,11 @@ msgstr "برنامه"
 msgid " By %(filter_title)s "
 msgstr " توسط %(filter_title)s "
 
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:7
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:9
 #: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/instructorledcourseupdate/email/body.html:7
 #, python-format
 msgid "Welcome to week %(week_num)s of %(course_name)s!"
 msgstr "به هفته %(week_num)s %(course_name)s خوش آمدید!"
-
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:18
-#, python-brace-format
-msgid ""
-"We hope you're enjoying {start_strong}{course_name}{end_strong}! We want to "
-"let you know what you can look forward to in week {week_num}:"
-msgstr ""
-"امیدواریم از {start_strong} {course_name} {end_strong} لذت برده باشید! "
-"می‌خواهیم به شما اطلاع دهیم که در هفته {week_num} منتظر چه چیزی هستید:"
-
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:31
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.txt:13
-msgid ""
-"With self-paced courses, you learn on your own schedule. We encourage you to"
-" spend time with the course each week. Your focused attention will pay off "
-"in the end!"
-msgstr ""
-"با دوره های خود گام، شما طبق برنامه خود یاد می گیرید. توصیه می کنیم هر هفته "
-"زمانی را با دوره اختصاص دهید. توجه متمرکز شما در پایان نتیجه خواهد داد!"
-
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.html:40
-#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/instructorledcourseupdate/email/body.html:39
-msgid "Resume your course now"
-msgstr "اکنون دوره خود را از سر بگیرید"
 
 #: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.txt:4
 #, python-format
@@ -8984,6 +8985,15 @@ msgid ""
 msgstr ""
 "امیدواریم از %(course_name)s لذت برده باشید! می‌خواهیم به شما اطلاع دهیم که "
 "در هفته %(week_num)s منتظر چه کارهایی هستید:"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/body.txt:13
+msgid ""
+"With self-paced courses, you learn on your own schedule. We encourage you to"
+" spend time with the course each week. Your focused attention will pay off "
+"in the end!"
+msgstr ""
+"با دوره های خود گام، شما طبق برنامه خود یاد می گیرید. توصیه می کنیم هر هفته "
+"زمانی را با دوره اختصاص دهید. توجه متمرکز شما در پایان نتیجه خواهد داد!"
 
 #: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/courseupdate/email/subject.txt:4
 #, python-format
@@ -9007,6 +9017,10 @@ msgid ""
 msgstr ""
 "توصیه می کنیم هر هفته زمانی را با دوره اختصاص دهید. توجه متمرکز شما در پایان"
 " نتیجه خواهد داد!"
+
+#: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/instructorledcourseupdate/email/body.html:39
+msgid "Resume your course now"
+msgstr "اکنون دوره خود را از سر بگیرید"
 
 #: openedx/core/djangoapps/schedules/templates/schedules/edx_ace/instructorledcourseupdate/email/body.txt:4
 #, python-format
@@ -9428,7 +9442,7 @@ msgstr ""
 "ارائه می کنید. برای حذف پیوند از نمایه {platform_name} ، این قسمت را خالی "
 "بگذارید."
 
-#: openedx/core/djangoapps/user_api/accounts/views.py:647
+#: openedx/core/djangoapps/user_api/accounts/views.py:637
 msgid ""
 "This account has been temporarily locked due to excessive login failures. "
 "Try again later."
@@ -9436,7 +9450,7 @@ msgstr ""
 "این حساب به دلیل عدم موفقیت در ورود بیش از حد به طور موقت قفل شده است. بعدا "
 "دوباره تلاش کنید."
 
-#: openedx/core/djangoapps/user_api/accounts/views.py:657
+#: openedx/core/djangoapps/user_api/accounts/views.py:647
 #: openedx/core/djangoapps/user_authn/views/login.py:311
 #: lms/templates/provider_login.html:43
 msgid "Email or password is incorrect."
@@ -9457,8 +9471,8 @@ msgid "Success"
 msgstr "موفقیت"
 
 #: openedx/core/djangoapps/user_api/admin.py:118
-#: cms/templates/studio_xblock_wrapper.html:162
-#: cms/templates/studio_xblock_wrapper.html:164
+#: cms/templates/studio_xblock_wrapper.html:174
+#: cms/templates/studio_xblock_wrapper.html:176
 #: lms/templates/staff_problem_info.html:66
 msgid "Actions"
 msgstr "اقدامات"
@@ -9769,7 +9783,7 @@ msgid "Account modification not allowed."
 msgstr "تغییر حساب مجاز نیست."
 
 #: openedx/core/djangoapps/user_authn/views/auto_auth.py:125
-#: openedx/core/djangoapps/user_authn/views/register.py:710
+#: openedx/core/djangoapps/user_authn/views/register.py:713
 msgid "Account creation not allowed."
 msgstr "ایجاد حساب مجاز نیست"
 
@@ -10580,8 +10594,8 @@ msgstr "داده های XML برای حاشیه نویسی"
 
 #: xmodule/annotatable_block.py:70 xmodule/capa_block.py:179
 #: xmodule/conditional_block.py:89 xmodule/discussion_block.py:50
-#: xmodule/html_block.py:57 xmodule/html_block.py:368
-#: xmodule/html_block.py:394 xmodule/item_bank_block.py:455
+#: xmodule/html_block.py:57 xmodule/html_block.py:382
+#: xmodule/html_block.py:408 xmodule/item_bank_block.py:455
 #: xmodule/library_content_block.py:78 xmodule/library_root_xblock.py:30
 #: xmodule/poll_block.py:52 xmodule/unit_block.py:39
 #: xmodule/video_block/video_xfields.py:20 xmodule/word_cloud_block.py:64
@@ -11294,7 +11308,7 @@ msgid ""
 "Source code for LaTeX and Word problems. This feature is not well-supported."
 msgstr "کد منبع برای مسائل LaTeX و Word. این ویژگی به خوبی پشتیبانی نمی‌شود."
 
-#: xmodule/capa_block.py:330 xmodule/html_block.py:69
+#: xmodule/capa_block.py:330 xmodule/html_block.py:76
 msgid "Enable LaTeX templates?"
 msgstr "قالب های LaTeX را فعال کنید؟"
 
@@ -12617,24 +12631,24 @@ msgstr "تولید شده است"
 
 #. Translators: "Homework 1 - Unreleased - 0% (?/?)" The section has not been
 #. released for viewing.
-#: xmodule/graders.py:402
+#: xmodule/graders.py:403
 #, python-brace-format
 msgid "{section_type} {index} Unreleased - 0% (?/?)"
 msgstr "{section_type} {index} منتشر نشده - 0% (?/?)"
 
-#: xmodule/graders.py:415
+#: xmodule/graders.py:417
 #, python-brace-format
 msgid "The lowest {drop_count} {section_type} scores are dropped."
 msgstr "کمترین امتیاز {drop_count} {section_type} حذف شده است."
 
 #. Translators: "Homework Average = 0%"
-#: xmodule/graders.py:433
+#: xmodule/graders.py:436
 #, python-brace-format
 msgid "{section_type} Average = {percent:.2%}"
 msgstr "{section_type} میانگین = {percent:.2%}"
 
 #. Translators: Avg is short for Average
-#: xmodule/graders.py:438
+#: xmodule/graders.py:441
 #, python-brace-format
 msgid "{short_label} Avg"
 msgstr "{short_label} میانگین"
@@ -12648,16 +12662,20 @@ msgstr ""
 "خطا: &quot; {block_type} &quot; یک نوع مؤلفه ناشناخته است. این مؤلفه در LMS "
 "پنهان خواهد شد."
 
-#: xmodule/html_block.py:63 xmodule/html_block.py:373
-#: xmodule/html_block.py:433
+#: xmodule/html_block.py:63 xmodule/html_block.py:387
+#: xmodule/html_block.py:447
 msgid "Html contents to display for this block"
 msgstr "محتوای Html برای نمایش برای این بلوک"
 
 #: xmodule/html_block.py:65
+msgid "Upstream html contents to store upstream data field"
+msgstr "محتوای HTML بالادستی برای ذخیره‌سازی فیلد داده بالادستی"
+
+#: xmodule/html_block.py:72
 msgid "Source code for LaTeX documents. This feature is not well-supported."
 msgstr "کد منبع برای اسناد LaTeX. این ویژگی به خوبی پشتیبانی نمی شود."
 
-#: xmodule/html_block.py:75
+#: xmodule/html_block.py:82
 msgid ""
 "Select Visual to enter content and have the editor automatically create the "
 "HTML. Select Raw to edit HTML directly. If you change this setting, you must"
@@ -12668,23 +12686,23 @@ msgstr ""
 "تغییر دهید، باید کامپوننت را ذخیره کنید و سپس دوباره آن را برای ویرایش باز "
 "کنید."
 
-#: xmodule/html_block.py:78
+#: xmodule/html_block.py:85
 msgid "Editor"
 msgstr "ویرایشگر"
 
-#: xmodule/html_block.py:81
+#: xmodule/html_block.py:88
 msgid "Visual"
 msgstr "دیداری"
 
-#: xmodule/html_block.py:82
+#: xmodule/html_block.py:89
 msgid "Raw"
 msgstr "خام"
 
-#: xmodule/html_block.py:399
+#: xmodule/html_block.py:413
 msgid "Hide Page From Learners"
 msgstr "پنهان کردن صفحه از دانش‌پذیران"
 
-#: xmodule/html_block.py:400
+#: xmodule/html_block.py:414
 msgid ""
 "If you select this option, only course team members with the Staff or Admin "
 "role see this page."
@@ -12692,11 +12710,11 @@ msgstr ""
 "اگر این گزینه را انتخاب کنید، فقط اعضای تیم دوره با نقش Staff یا Admin این "
 "صفحه را خواهند دید."
 
-#: xmodule/html_block.py:410
+#: xmodule/html_block.py:424
 msgid "HTML for the additional pages"
 msgstr "HTML برای صفحات اضافی"
 
-#: xmodule/html_block.py:428
+#: xmodule/html_block.py:442
 msgid "List of course update items"
 msgstr "لیست موارد به‌روز‌رسانی دوره"
 
@@ -13464,7 +13482,7 @@ msgstr ""
 "این بخش پیش نیاز است. برای باز کردن قفل محتوای اضافی باید این بخش را تکمیل "
 "کنید."
 
-#: xmodule/seq_block.py:984
+#: xmodule/seq_block.py:996
 msgid ""
 "A list summarizing what students should look forward to in this section."
 msgstr ""
@@ -15423,6 +15441,14 @@ msgstr "درباره گواهینامه ها بیشتر بدانید"
 msgid "Details & Schedule"
 msgstr "جزئیات و برنامه زمانبندی"
 
+#: cms/templates/certificates.html:116
+#: cms/templates/group_configurations.html:127 cms/templates/settings.html:707
+#: cms/templates/settings_advanced.html:147
+#: cms/templates/settings_graders.html:50
+#: cms/templates/widgets/header.html:181 cms/templates/widgets/header.html:186
+msgid "Grading"
+msgstr "درجه بندی"
+
 #: cms/templates/certificates.html:117
 #: cms/templates/group_configurations.html:128
 #: cms/templates/manage_users.html:28 cms/templates/settings.html:708
@@ -15461,7 +15487,7 @@ msgid "Tools"
 msgstr "ابزار"
 
 #: cms/templates/component.html:17
-#: cms/templates/studio_xblock_wrapper.html:196
+#: cms/templates/studio_xblock_wrapper.html:208
 msgid "Duplicate"
 msgstr "تکراری"
 
@@ -15470,7 +15496,7 @@ msgid "Duplicate this component"
 msgstr "این جزء را کپی کنید"
 
 #: cms/templates/component.html:23 cms/templates/component.html:28
-#: cms/templates/studio_xblock_wrapper.html:177
+#: cms/templates/studio_xblock_wrapper.html:189
 msgid "Move"
 msgstr "حرکت"
 
@@ -15480,7 +15506,7 @@ msgstr "این جزء را حذف کنید"
 
 #: cms/templates/component.html:39 cms/templates/edit-tabs.html:146
 #: cms/templates/edit-tabs.html:147
-#: cms/templates/studio_xblock_wrapper.html:211
+#: cms/templates/studio_xblock_wrapper.html:228
 msgid "Drag to reorder"
 msgstr "برای سفارش مجدد بکشید"
 
@@ -18625,43 +18651,57 @@ msgstr ""
 "امتحانات را ایجاد کنید و مشخص کنید که هر نوع تکلیف چقدر از نمره دانش‌آموز "
 "ارزش دارد."
 
-#: cms/templates/studio_xblock_wrapper.html:75
+#: cms/templates/studio_xblock_wrapper.html:76
 msgid "Importing components"
 msgstr "واردات قطعات"
 
-#: cms/templates/studio_xblock_wrapper.html:99
-#: cms/templates/studio_xblock_wrapper.html:101
+#: cms/templates/studio_xblock_wrapper.html:100
+#: cms/templates/studio_xblock_wrapper.html:102
 msgid "Expand or Collapse"
 msgstr "بزرگ کردن یا جمع کردن"
 
-#: cms/templates/studio_xblock_wrapper.html:109
+#: cms/templates/studio_xblock_wrapper.html:110
 msgid "Select this problem"
 msgstr "انتخاب این مسئله"
 
-#: cms/templates/studio_xblock_wrapper.html:122
-#: cms/templates/studio_xblock_wrapper.html:125
+#: cms/templates/studio_xblock_wrapper.html:123
+msgid ""
+"Sourced from a library - but has been modified locally.Sourced from a "
+"library."
+msgstr ""
+"از یک کتابخانه تهیه شده است - اما به صورت محلی تغییر یافته است. از یک "
+"کتابخانه تهیه شده است."
+
+#: cms/templates/studio_xblock_wrapper.html:127
+msgid "Sourced from a library - but has been modified locally."
+msgstr "از یک کتابخانه تهیه شده است - اما به صورت محلی تغییر یافته است."
+
+#: cms/templates/studio_xblock_wrapper.html:129
 msgid "Sourced from a library."
 msgstr "منبع از یک کتابخانه"
 
-#: cms/templates/studio_xblock_wrapper.html:172
+#: cms/templates/studio_xblock_wrapper.html:144
+#: cms/templates/studio_xblock_wrapper.html:146
+msgid "Edit Title"
+msgstr "ویرایش عنوان "
+
+#: cms/templates/studio_xblock_wrapper.html:184
 msgid "Manage Access"
 msgstr "مدیریت دسترسی"
 
-#: cms/templates/studio_xblock_wrapper.html:182
+#: cms/templates/studio_xblock_wrapper.html:194
 msgid "Manage Tags"
 msgstr "مدیریت برچسب ها"
 
-#: cms/templates/studio_xblock_wrapper.html:191
+#: cms/templates/studio_xblock_wrapper.html:203
 msgid "Copy to Clipboard"
 msgstr "کپی به کلیپ بورد"
 
-#: cms/templates/studio_xblock_wrapper.html:217
-#: lms/templates/instructor/instructor_dashboard_2/certificates.html:169
-#: lms/templates/module-error.html:20
-msgid "Details"
-msgstr "جزئیات"
+#: cms/templates/studio_xblock_wrapper.html:219
+msgid "Unlink from Library"
+msgstr "لغو پیوند از کتابخانه"
 
-#: cms/templates/studio_xblock_wrapper.html:229
+#: cms/templates/studio_xblock_wrapper.html:239
 msgid "This block contains multiple components."
 msgstr "این بلوک شامل چندین مؤلفه است."
 
@@ -19305,7 +19345,7 @@ msgstr ""
 "خواهیم کرد!"
 
 #: lms/templates/_gated_content.html:11 lms/templates/_gated_content.html:15
-#: lms/templates/seq_block.html:43 lms/templates/seq_block.html:110
+#: lms/templates/seq_block.html:60 lms/templates/seq_block.html:130
 msgid "Content Locked"
 msgstr "محتوا قفل شده است"
 
@@ -19334,7 +19374,7 @@ msgstr "بحث هدایت شده"
 msgid "Hide Annotations"
 msgstr "پنهان کردن حاشیه نویسی ها"
 
-#: lms/templates/bookmark_button.html:13 lms/templates/seq_block.html:82
+#: lms/templates/bookmark_button.html:13 lms/templates/seq_block.html:99
 msgid "Bookmarked"
 msgstr "نشانک گذاری شده است"
 
@@ -19402,7 +19442,6 @@ msgstr "خطاهای بارگیری دوره"
 msgid "Search Your Courses"
 msgstr "دروس خود را جستجو کنید"
 
-#: lms/templates/courseware/courseware.html:190
 #: lms/templates/dashboard.html:289
 msgid "Clear search"
 msgstr "جستجو را پاک کنید"
@@ -19754,6 +19793,11 @@ msgstr ""
 "متأسفیم، این ماژول به طور موقت در دسترس نیست. کارکنان ما در تلاش هستند تا در"
 " اسرع وقت آن را برطرف کنند. "
 
+#: lms/templates/instructor/instructor_dashboard_2/certificates.html:169
+#: lms/templates/module-error.html:20
+msgid "Details"
+msgstr "جزئیات"
+
 #: lms/templates/module-error.html:28
 msgid "Raw data:"
 msgstr "داده های خام:"
@@ -19901,7 +19945,6 @@ msgid "Enroll in this course"
 msgstr "در این دوره ثبت نام کنید"
 
 #: lms/templates/courseware/courseware-chromeless.html:12
-#: lms/templates/courseware/courseware.html:28
 #: lms/templates/public_video_share_embed.html:18
 #: openedx/features/course_bookmarks/templates/course_bookmarks/course-bookmarks.html:10
 #, python-brace-format
@@ -19943,31 +19986,31 @@ msgstr ""
 "ایمیل ثانویه شما فعال شده است. لطفاً برای دوره ها به داشبورد {link_start} "
 "{link_end} مراجعه کنید."
 
-#: lms/templates/seq_block.html:18
+#: lms/templates/seq_block.html:35
 msgid "Important!"
 msgstr "مهم!"
 
 #. Translators: A button for showing the Previous Unit
-#: lms/templates/seq_block.html:32 lms/templates/seq_block.html:140
+#: lms/templates/seq_block.html:49 lms/templates/seq_block.html:160
 msgctxt "unit"
 msgid "Previous"
 msgstr "قبلی"
 
 #. Translators: A button for showing the Next Unit
-#: lms/templates/seq_block.html:36 lms/templates/seq_block.html:144
+#: lms/templates/seq_block.html:53 lms/templates/seq_block.html:164
 msgctxt "unit"
 msgid "Next"
 msgstr "بعد"
 
-#: lms/templates/seq_block.html:39
+#: lms/templates/seq_block.html:56
 msgid "Sequence"
 msgstr "توالی"
 
-#: lms/templates/seq_block.html:91
+#: lms/templates/seq_block.html:108
 msgid "New Unit"
 msgstr "واحد جدید"
 
-#: lms/templates/seq_block.html:97
+#: lms/templates/seq_block.html:114
 msgid "Paste as new unit"
 msgstr "چسباندن به عنوان واحد جدید"
 
@@ -20318,41 +20361,41 @@ msgstr "دانلودها و رونوشت ها"
 msgid "Download video file"
 msgstr "بارگیری ویدیو"
 
-#: lms/templates/video.html:74 lms/templates/video.html:81
+#: lms/templates/video.html:71 lms/templates/video.html:74
 msgid "Share this video"
 msgstr "اشتراک‌گذاری این ویدیو"
 
-#: lms/templates/video.html:110
+#: lms/templates/video.html:102
 #, python-brace-format
 msgid "Share on {site}"
 msgstr "اشتراک‌گذاری در {site}"
 
-#: lms/templates/video.html:127
+#: lms/templates/video.html:111
 msgid "Copy"
 msgstr "کپی"
 
-#: lms/templates/video.html:138
+#: lms/templates/video.html:121
 msgid "Transcripts"
 msgstr "متن"
 
-#: lms/templates/video.html:144
+#: lms/templates/video.html:127
 #, python-brace-format
 msgid "Download {file}"
 msgstr "دانلود {file}"
 
-#: lms/templates/video.html:150
+#: lms/templates/video.html:133
 msgid "Download transcript"
 msgstr "متن را دانلود کنید"
 
-#: lms/templates/video.html:156
+#: lms/templates/video.html:139
 msgid "Handouts"
 msgstr "جزوات"
 
-#: lms/templates/video.html:157
+#: lms/templates/video.html:140
 msgid "Download Handout"
 msgstr "دانلود جزوه"
 
-#: lms/templates/video.html:170
+#: lms/templates/video.html:153
 msgid "How is the transcript quality ?"
 msgstr "کیفیت رونوشت چطوره؟"
 
@@ -21708,11 +21751,11 @@ msgstr "صفحه اصلی {platform_name}"
 msgid "Noted by"
 msgstr "اشاره شده توسط"
 
-#: lms/templates/certificates/_accomplishment-rendering.html:69
+#: lms/templates/certificates/_accomplishment-rendering.html:68
 msgid "Supported by the following organizations"
 msgstr "توسط سازمان های زیر حمایت می شود"
 
-#: lms/templates/certificates/_accomplishment-rendering.html:96
+#: lms/templates/certificates/_accomplishment-rendering.html:95
 msgid "Awarded to:"
 msgstr "اعطا شده به:"
 
@@ -21910,31 +21953,6 @@ msgstr "به این دوره دسترسی داشته باشید"
 msgid "Get access to the course material, including videos and readings"
 msgstr "دریافت دسترسی به محتوای دوره، از جمله ویدیوها و مطالب"
 
-#: lms/templates/courseware/accordion.html:13
-#, python-brace-format
-msgid "{chapter} current chapter"
-msgstr "{chapter} فصل جاری"
-
-#: lms/templates/courseware/accordion.html:30
-#, python-brace-format
-msgid "{span_start}current section{span_end}"
-msgstr "{span_start} بخش فعلی {span_end}"
-
-#: lms/templates/courseware/accordion.html:46
-#: lms/templates/courseware/progress.html:208
-#, python-brace-format
-msgid "due {date}"
-msgstr "به دلیل {date}"
-
-#: lms/templates/courseware/accordion.html:48
-#, python-brace-format
-msgid "{section_format} due {{date}}"
-msgstr "{section_format} سررسید {{date}}"
-
-#: lms/templates/courseware/accordion.html:69
-msgid "This content is graded"
-msgstr "این محتوا درجه بندی شده است"
-
 #: lms/templates/courseware/course_about.html:55
 msgid "An error occurred. Please try again later."
 msgstr "خطایی رخ داد. لطفاً بعداً دوباره امتحان کنید."
@@ -22073,7 +22091,6 @@ msgid "Refine Your Search"
 msgstr "جستجوی خود را اصلاح کنید"
 
 #: lms/templates/courseware/courseware-chromeless.html:100
-#: lms/templates/courseware/courseware.html:307
 msgid "Course Utilities"
 msgstr "ابزارهای دوره"
 
@@ -22089,28 +22106,6 @@ msgid ""
 msgstr ""
 "متأسفیم، این ماژول به طور موقت در دسترس نیست. کارکنان ما در تلاش هستند تا در"
 " اسرع وقت آن را برطرف کنند."
-
-#: lms/templates/courseware/courseware.html:186
-msgid "Course Search"
-msgstr "جستجوی دوره"
-
-#: lms/templates/courseware/courseware.html:205
-msgid "No content has been added to this course"
-msgstr "هیچ محتوایی به این دوره اضافه نشده است"
-
-#: lms/templates/courseware/courseware.html:257
-#, python-format, python-brace-format
-msgid ""
-"To access course materials, you must score {required_score}% or higher on "
-"this                     exam. Your current score is {current_score}%."
-msgstr ""
-"برای دسترسی به مواد درسی، باید نمره {required_score} ٪ یا بالاتر را در این "
-"امتحان کسب کنید. امتیاز فعلی شما {current_score} ٪ است."
-
-#: lms/templates/courseware/courseware.html:275
-#, python-brace-format
-msgid "Your score is {current_score}%. You have passed the entrance exam."
-msgstr "امتیاز شما {current_score} ٪ است. شما در آزمون ورودی قبول شده اید."
 
 #: lms/templates/courseware/gradebook.html:44
 msgid "Gradebook"
@@ -22367,6 +22362,11 @@ msgstr "جزئیات هر فصل"
 #, python-brace-format
 msgid "{earned} of {total} possible points"
 msgstr "{earned} از {total} نقاط ممکن"
+
+#: lms/templates/courseware/progress.html:208
+#, python-brace-format
+msgid "due {date}"
+msgstr "به دلیل {date}"
 
 #: lms/templates/courseware/progress.html:215
 msgid ""
@@ -22788,7 +22788,7 @@ msgstr "اعتبار دریافت کنید"
 #. Translators: link_to_provider_site is a link to an external webpage. The
 #. text of the link will be the name of a  credit provider, such as 'State
 #. University' or 'Happy Fun Company'.
-#: lms/templates/dashboard/_dashboard_credit_info.html:38
+#: lms/templates/dashboard/_dashboard_credit_info.html:35
 #, python-brace-format
 msgid ""
 "Thank you for your payment. To receive course credit, you must now request "
@@ -22799,11 +22799,11 @@ msgstr ""
 "سایت {link_to_provider_site} درخواست اعتبار کنید. {start_bold} را انتخاب "
 "کنید و برای شروع بکار بخواهید اعتبار {end_bold} بخواهید."
 
-#: lms/templates/dashboard/_dashboard_credit_info.html:45
+#: lms/templates/dashboard/_dashboard_credit_info.html:42
 msgid "Request Credit"
 msgstr "درخواست اعتبار"
 
-#: lms/templates/dashboard/_dashboard_credit_info.html:50
+#: lms/templates/dashboard/_dashboard_credit_info.html:47
 #, python-brace-format
 msgid ""
 "{provider_name} has received your course credit request. We will update you "
@@ -22812,7 +22812,7 @@ msgstr ""
 "{provider_name} درخواست اعتبار دوره شما را دریافت کرده است. وقتی پردازش "
 "اعتبار کامل شد، شما را به‌روزرسانی می‌کنیم."
 
-#: lms/templates/dashboard/_dashboard_credit_info.html:52
+#: lms/templates/dashboard/_dashboard_credit_info.html:49
 msgid "View Details"
 msgstr "دیدن جزئیات"
 
@@ -22820,7 +22820,7 @@ msgstr "دیدن جزئیات"
 #. text of the link will be the name of a credit provider, such as 'State
 #. University' or 'Happy Fun Company'. provider_name is the name of credit
 #. provider.
-#: lms/templates/dashboard/_dashboard_credit_info.html:57
+#: lms/templates/dashboard/_dashboard_credit_info.html:54
 #, python-brace-format
 msgid ""
 "{start_bold}Congratulations!{end_bold} {provider_name} has approved your "
@@ -22831,11 +22831,11 @@ msgstr ""
 "اعتبار دوره را تایید کرده است. برای مشاهده اعتبار دوره خود به وب سایت "
 "{link_to_provider_site} مراجعه کنید."
 
-#: lms/templates/dashboard/_dashboard_credit_info.html:65
+#: lms/templates/dashboard/_dashboard_credit_info.html:62
 msgid "View Credit"
 msgstr "مشاهده اعتبار"
 
-#: lms/templates/dashboard/_dashboard_credit_info.html:69
+#: lms/templates/dashboard/_dashboard_credit_info.html:66
 #, python-brace-format
 msgid ""
 "{provider_name} did not approve your request for course credit. For more "
@@ -22844,7 +22844,7 @@ msgstr ""
 "{provider_name} درخواست شما برای اعتبار دوره را تایید نکرد. برای اطلاعات "
 "بیشتر، مستقیماً با {link_to_provider_site} تماس بگیرید."
 
-#: lms/templates/dashboard/_dashboard_credit_info.html:80
+#: lms/templates/dashboard/_dashboard_credit_info.html:77
 #, python-brace-format
 msgid ""
 "An error occurred with this transaction. For help, contact {support_email}."
@@ -23766,7 +23766,7 @@ msgstr ""
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html:104
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html:142
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:144
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:148
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2.html:84
 #: lms/templates/instructor/instructor_dashboard_2/send_email.html:117
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html:236
@@ -23775,7 +23775,7 @@ msgstr "وظایف معلق"
 
 #: lms/templates/instructor/instructor_dashboard_2/certificates.html:106
 #: lms/templates/instructor/instructor_dashboard_2/course_info.html:144
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:146
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:150
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2.html:86
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html:238
 msgid "The status for any active tasks appears in a table below."
@@ -24021,34 +24021,34 @@ msgstr ""
 msgid "Download a CSV of learners who can enroll"
 msgstr "بارگیری فایل CSV از تمامی دانش‌پذیرانی که امکان ثبت‌نام دارند"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:40
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:44
 msgid "Click to download a CSV of anonymized student IDs:"
 msgstr "برای دانلود CSV شناسه های دانشجویی ناشناس کلیک کنید:"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:41
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:45
 msgid "Get Student Anonymized IDs CSV"
 msgstr "CSV شناسه‌های ناشناس دانشجو را دریافت کنید"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:44
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:48
 msgid ""
 "Click to generate a CSV file of all proctored exam results in this course."
 msgstr ""
 "برای ایجاد یک فایل CSV از تمام نتایج امتحانات proctored در این دوره کلیک "
 "کنید."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:45
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:49
 msgid "Generate Proctored Exam Results Report"
 msgstr "ایجاد گزارش نتایج آزمون Proctored"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:49
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:53
 msgid "Click to generate a CSV file of survey results for this course."
 msgstr "برای ایجاد یک فایل CSV از نتایج نظرسنجی برای این دوره کلیک کنید."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:50
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:54
 msgid "Generate Survey Results Report"
 msgstr "ایجاد گزارش نتایج نظرسنجی"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:53
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:57
 msgid ""
 "Select a problem to generate a CSV file that lists all student answers to "
 "the problem. You also select a section or chapter to include results of all "
@@ -24058,12 +24058,12 @@ msgstr ""
 "یک مشکل را انتخاب کنید. شما همچنین یک بخش یا فصل را انتخاب کنید تا نتایج "
 "تمام مشکلات در آن بخش یا فصل گنجانده شود."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:57
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:61
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/problem_report.html:42
 msgid "NOTE"
 msgstr "توجه داشته باشید"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:58
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:62
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/problem_report.html:43
 #, python-brace-format
 msgid ""
@@ -24076,20 +24076,20 @@ msgstr ""
 " از {max_entries} را دارید، سعی کنید گزارش را فصل به فصل یا مشکل به مشکل "
 "ایجاد کنید یا برای افزایش محدودیت با مدیر سایت خود تماس بگیرید."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:80
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:84
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/certificates.html:31
 msgid "Click to list certificates that are issued for this course:"
 msgstr "برای لیست گواهی های صادر شده برای این دوره کلیک کنید:"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:82
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:86
 msgid "View Certificates Issued"
 msgstr "مشاهده گواهی های صادر شده"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:83
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:87
 msgid "Download CSV of Certificates Issued"
 msgstr "CSV گواهی های صادر شده را دانلود کنید"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:90
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:94
 msgid ""
 "For smaller courses, click to list profile information for enrolled students"
 " directly on this page:"
@@ -24097,11 +24097,11 @@ msgstr ""
 "برای دوره های کوچکتر، کلیک کنید تا اطلاعات نمایه دانشجویان ثبت نام شده را "
 "مستقیماً در این صفحه فهرست کنید:"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:91
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:95
 msgid "List enrolled students' profile information"
 msgstr "اطلاعات پروفایل دانش آموزان ثبت نام شده را فهرست کنید"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:96
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:100
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2/grading.html:25
 msgid ""
 "Click to generate a CSV grade report for all currently enrolled students."
@@ -24109,39 +24109,39 @@ msgstr ""
 "برای ایجاد گزارش نمره CSV برای همه دانش آموزانی که در حال حاضر ثبت نام کرده "
 "اند، کلیک کنید."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:98
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:102
 msgid "Generate Grade Report"
 msgstr "ایجاد گزارش نمره"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:99
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:103
 msgid "Generate Problem Grade Report"
 msgstr "ایجاد گزارش نمره مسئله"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:100
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:104
 msgid "Generate ORA Data Report"
 msgstr "گزارش داده های ORA را ایجاد کنید"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:101
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:105
 msgid "Generate ORA Summary Report"
 msgstr "گزارش خلاصه ORA را ایجاد کنید"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:104
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:108
 msgid ""
 "Click to generate a ZIP file that contains all submission texts and "
 "attachments."
 msgstr ""
 "برای ایجاد یک فایل ZIP که حاوی تمام متون ارسالی و پیوست‌ها است، کلیک کنید."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:106
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:110
 msgid "Generate Submission Files Archive"
 msgstr "ایجاد آرشیو فایل های ارسالی"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:114
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:118
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2.html:48
 msgid "Reports Available for Download"
 msgstr "گزارش های موجود برای دانلود"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:116
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:120
 #: lms/templates/instructor/instructor_dashboard_2/data_download_2.html:50
 msgid ""
 "The reports listed below are available for download, identified by UTC date "
@@ -24150,7 +24150,7 @@ msgstr ""
 "گزارش‌های فهرست‌شده در زیر برای دانلود در دسترس هستند که بر اساس تاریخ و "
 "زمان تولید UTC شناسایی می‌شوند."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:121
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:125
 msgid ""
 "The answer distribution report listed below is generated periodically by an "
 "automated background process. The report is cumulative, so answers submitted"
@@ -24162,7 +24162,7 @@ msgstr ""
 "از شروع فرآیند ارسال می‌شوند در گزارش بعدی گنجانده می‌شوند. گزارش چندین بار "
 "در روز تولید می شود."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download.html:127
+#: lms/templates/instructor/instructor_dashboard_2/data_download.html:131
 #, python-brace-format
 msgid ""
 "{strong_start}Note{strong_end}: {ul_start}{li_start}To keep student data "
@@ -25247,7 +25247,7 @@ msgstr ""
 "یک مشکل را انتخاب کنید. شما همچنین یک بخش یا فصل را انتخاب کنید تا نتایج "
 "تمام مشکلات در آن بخش یا فصل گنجانده شود."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:70
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:74
 msgid ""
 "Click to display the grading configuration for the                 course. "
 "The grading configuration is the breakdown of graded subsections of the "
@@ -25258,11 +25258,11 @@ msgstr ""
 "زیربخش‌های نمره‌دار دوره است (مانند امتحانات و مجموعه‌های مسائل)، و می‌توان "
 "آن را در صفحه «ارزیابی» (در بخش «تنظیمات») در استودیو تغییر داد."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:74
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:78
 msgid "Click to download a CSV of                 anonymized student IDs:"
 msgstr "برای دانلود CSV شناسه های دانشجویی ناشناس کلیک کنید:"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:77
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:81
 msgid ""
 "For large courses, generating some reports can take                 several "
 "hours. When report generation is complete, a                 link that "
@@ -25276,7 +25276,7 @@ msgstr ""
 "می‌شود. این گزارش‌ها در پس‌زمینه تولید می‌شوند، به این معنی که وقتی گزارش "
 "شما در حال تولید است، از این صفحه دور شوید."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:83
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:87
 msgid ""
 "Please be patient and do not click these buttons                 multiple "
 "times. Clicking these buttons multiple times will significantly slow the "
@@ -25285,7 +25285,7 @@ msgstr ""
 "لطفا صبور باشید و این دکمه ها را چند بار کلیک نکنید. چند بار کلیک کردن روی "
 "این دکمه ها روند تولید را به میزان قابل توجهی کند می کند."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:88
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:92
 msgid ""
 "For smaller courses, click to list                 profile information for "
 "enrolled students directly on this page:"
@@ -25293,7 +25293,7 @@ msgstr ""
 "برای دوره های کوچکتر، کلیک کنید تا اطلاعات نمایه دانشجویان ثبت نام شده را "
 "مستقیماً در این صفحه فهرست کنید:"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:91
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:95
 msgid ""
 "Click to generate a CSV file of                 all students enrolled in "
 "this course, along with profile information such as email address and"
@@ -25302,7 +25302,7 @@ msgstr ""
 "برای ایجاد یک فایل CSV از همه دانش آموزان ثبت نام شده در این دوره به همراه "
 "اطلاعات نمایه مانند آدرس ایمیل و نام کاربری کلیک کنید:"
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:95
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:99
 msgid ""
 "Click to generate a CSV file                 that lists learners who can "
 "enroll in the course but have not yet done so."
@@ -25310,7 +25310,7 @@ msgstr ""
 "جهت تولید گزارش CSV از دانش‌پذیران مجاز به ثبت‌نام که هنوز اقدام نکرده‌اند، "
 "کلیک کنید. "
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:98
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:105
 msgid ""
 "Click to generate a CSV file                 of all proctored exam results "
 "in this course."
@@ -25318,13 +25318,13 @@ msgstr ""
 "برای ایجاد یک فایل CSV از تمام نتایج امتحانات proctored در این دوره کلیک "
 "کنید."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:101
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:108
 msgid ""
 "Click to generate a CSV file of                 survey results for this "
 "course."
 msgstr "برای ایجاد یک فایل CSV از نتایج نظرسنجی برای این دوره کلیک کنید."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:103
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:110
 msgid ""
 "Click to generate a CSV                 ORA grade report for all currently "
 "enrolled students."
@@ -25332,7 +25332,7 @@ msgstr ""
 "برای ایجاد گزارش نمره CSV ORA برای همه دانش آموزانی که در حال حاضر ثبت نام "
 "کرده اند، کلیک کنید."
 
-#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:105
+#: lms/templates/instructor/instructor_dashboard_2/data_download_2/reports.html:112
 msgid ""
 "Click to generate a CSV                 problem grade report for all "
 "currently enrolled students."

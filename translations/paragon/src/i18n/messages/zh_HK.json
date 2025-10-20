@@ -89,6 +89,10 @@
     "developer_comment": "側邊欄篩選器組件的標題",
     "string": "篩選器"
   },
+  "pgn.DataTable.filtersDropdownTitle": {
+    "developer_comment": "篩選器下拉選單標題",
+    "string": "篩選器"
+  },
   "pgn.DataTable.paginationLabel": {
     "developer_comment": "",
     "string": ""
@@ -128,6 +132,10 @@
   "pgn.FormAutosuggest.iconButtonOpened": {
     "developer_comment": "自動建議選單關閉時顯示的訊息。",
     "string": "開啟選項選單"
+  },
+  "pgn.Modal.closeButon": {
+    "developer_comment": "",
+    "string": ""
   },
   "pgn.ProductTour.Checkpoint.bottom-position-text": {
     "developer_comment": "螢幕閱讀器訊息，通知用户他們位於產品瀏覽步驟的底部。",

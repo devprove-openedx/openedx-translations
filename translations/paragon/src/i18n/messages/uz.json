@@ -89,6 +89,10 @@
     "developer_comment": "Yon panel filtrlari komponenti sarlavhasi",
     "string": "Filtrlar"
   },
+  "pgn.DataTable.filtersDropdownTitle": {
+    "developer_comment": "Filtrlar ochiladigan ro‘yxatining sarlavhasi",
+    "string": "Filtrlar"
+  },
   "pgn.DataTable.paginationLabel": {
     "developer_comment": "Sahifalar komponentining navigatsiya elementi uchun mavjud nom",
     "string": "jadvalni sahifalash"
@@ -128,6 +132,10 @@
   "pgn.FormAutosuggest.iconButtonOpened": {
     "developer_comment": "Avtomatik taklif menyusi yopilganda ko‘rsatiladigan xabar.",
     "string": "Variantlar menyusini oching"
+  },
+  "pgn.Modal.closeButon": {
+    "developer_comment": "",
+    "string": ""
   },
   "pgn.ProductTour.Checkpoint.bottom-position-text": {
     "developer_comment": "Ekranni o‘quvchi xabari foydalanuvchiga mahsulot sayohati bosqichining pastki qismida joylashganligi haqida xabar beradi.",
