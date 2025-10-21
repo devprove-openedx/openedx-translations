@@ -2778,11 +2778,8 @@ msgid "Cannot join instructor managed team"
 msgstr "Не можна приєднатися до команди, керованої викладачем"
 
 #: lms/djangoapps/teams/static/teams/js/views/team_utils.js:35
-msgid " Member"
-msgid_plural " Members"
-msgstr[0] " учасник"
-msgstr[1] " учасники"
-msgstr[2] " учасників"
+msgid "Members"
+msgstr "Учасники"
 
 #: lms/djangoapps/teams/static/teams/js/views/teams.js:16
 msgid "All teams"
