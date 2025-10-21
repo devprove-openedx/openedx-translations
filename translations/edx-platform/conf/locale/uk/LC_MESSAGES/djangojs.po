@@ -3408,7 +3408,7 @@ msgstr ""
 msgid "Viewing %s course"
 msgid_plural "Viewing %s courses"
 msgstr[0] "Знайдено %s курс"
-msgstr[1] "Знайдено %s курси
+msgstr[1] "Знайдено %s курси"
 msgstr[2] "Знайдено %s курсів"
 
 #: lms/static/js/discovery/views/search_form.js:57
