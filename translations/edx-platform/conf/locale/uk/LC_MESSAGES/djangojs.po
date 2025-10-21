@@ -30,7 +30,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 "Language: uk\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 
 #: cms/static/cms/js/main.js:38
 #: cms/static/js/views/active_video_upload_list.js:36
@@ -914,10 +914,9 @@ msgstr "Виникла помилка під час експорту."
 #: cms/static/js/views/group_configuration_details.js:71
 msgid "Contains {count} group"
 msgid_plural "Contains {count} groups"
-msgstr[0] "Містить групу {count}"
-msgstr[1] "Містить групи {count}"
-msgstr[2] "Містить групи {count}"
-msgstr[3] "Містить групи {count}"
+msgstr[0] "Містить {count} групу"
+msgstr[1] "Містить {count} групи"
+msgstr[2] "Містить {count} груп"
 
 #: cms/static/js/views/group_configuration_details.js:82
 #: cms/static/js/views/partition_group_details.js:66
@@ -934,6 +933,7 @@ msgid "Used in {count} location"
 msgid_plural "Used in {count} locations"
 msgstr[0] "Використовується в {count} локації"
 msgstr[1] "Використовується в {count} локаціях"
+msgstr[2] "Використовується в {count} локаціях"
 
 #. Translators: this refers to a collection of groups.
 #: cms/static/js/views/group_configuration_item.js:26
@@ -2013,13 +2013,15 @@ msgstr "зображення пропущено"
 msgid "there is currently {numVotes} vote"
 msgid_plural "there are currently {numVotes} votes"
 msgstr[0] "зараз є {numVotes} голос"
-msgstr[1] "зараз є {numVotes} голосів"
+msgstr[1] "зараз є {numVotes} голоси"
+msgstr[2] "зараз є {numVotes} голосів"
 
 #: common/static/common/js/discussion/views/discussion_content_view.js:291
 msgid "{numVotes} Vote"
 msgid_plural "{numVotes} Votes"
 msgstr[0] "{numVotes} голос"
-msgstr[1] "{numVotes} голосів"
+msgstr[1] "{numVotes} голоси"
+msgstr[2] "{numVotes} голосів"
 
 #: common/static/common/js/discussion/views/discussion_content_view.js:359
 msgid ""
@@ -2171,13 +2173,15 @@ msgstr ""
 msgid "{numResponses} other response"
 msgid_plural "{numResponses} other responses"
 msgstr[0] "{numResponses} інша відповідь"
-msgstr[1] "{numResponses} інших відповідей"
+msgstr[1] "{numResponses} інші відповіді"
+msgstr[2] "{numResponses} інших відповідей"
 
 #: common/static/common/js/discussion/views/discussion_thread_view.js:258
 msgid "{numResponses} response"
 msgid_plural "{numResponses} responses"
 msgstr[0] "{numResponses} відповідь"
-msgstr[1] "{numResponses} відповідей"
+msgstr[1] "{numResponses} відповіді"
+msgstr[2] "{numResponses} відповідей"
 
 #: common/static/common/js/discussion/views/discussion_thread_view.js:270
 msgid "Showing all responses"
@@ -2188,6 +2192,7 @@ msgid "Showing first response"
 msgid_plural "Showing first {numResponses} responses"
 msgstr[0] "Показано першу відповідь"
 msgstr[1] "Показано перші {numResponses} відповіді"
+msgstr[2] "Показано перші {numResponses} відповідей"
 
 #: common/static/common/js/discussion/views/discussion_thread_view.js:287
 msgid "Load all responses"
@@ -2287,7 +2292,6 @@ msgid_plural "%d minutes"
 msgstr[0] "%d хвилина"
 msgstr[1] "%d хвилин"
 msgstr[2] "%d хвилин"
-msgstr[3] "%d хвилин"
 
 #: common/static/js/src/jquery.timeago.locale.js:9
 msgid "about an hour"
@@ -2298,7 +2302,8 @@ msgstr "близько години"
 msgid "about %d hour"
 msgid_plural "about %d hours"
 msgstr[0] "близько %d години"
-msgstr[1] "близько %d годин"
+msgstr[1] "близько %d години"
+msgstr[2] "близько %d годин"
 
 #: common/static/js/src/jquery.timeago.locale.js:11
 msgid "a day"
@@ -2309,7 +2314,8 @@ msgstr "день"
 msgid "%d day"
 msgid_plural "%d days"
 msgstr[0] "%d день"
-msgstr[1] "%d днів"
+msgstr[1] "%d дні"
+msgstr[2] "%d днів"
 
 #: common/static/js/src/jquery.timeago.locale.js:13
 msgid "about a month"
@@ -2320,7 +2326,8 @@ msgstr "близько місяця"
 msgid "%d month"
 msgid_plural "%d months"
 msgstr[0] "%d місяць"
-msgstr[1] "%d місяців"
+msgstr[1] "%d місяці"
+msgstr[2] "%d місяців"
 
 #: common/static/js/src/jquery.timeago.locale.js:15
 msgid "about a year"
@@ -2331,7 +2338,8 @@ msgstr "близько року"
 msgid "%d year"
 msgid_plural "%d years"
 msgstr[0] "%d рік"
-msgstr[1] "%d років"
+msgstr[1] "%d роки"
+msgstr[2] "%d років"
 
 #: lms/djangoapps/instructor/static/instructor/ProblemBrowser/components/Main/Main.jsx:39
 msgid "Select a section or problem"
@@ -2775,7 +2783,6 @@ msgid_plural " Members"
 msgstr[0] " учасник"
 msgstr[1] " учасники"
 msgstr[2] " учасників"
-msgstr[3] " учасника"
 
 #: lms/djangoapps/teams/static/teams/js/views/teams.js:16
 msgid "All teams"
@@ -2906,7 +2913,6 @@ msgid_plural "{team_count} Teams"
 msgstr[0] "{team_count} команда"
 msgstr[1] "{team_count} команди"
 msgstr[2] "{team_count} команд"
-msgstr[3] "{team_count} команди"
 
 #: lms/djangoapps/teams/static/teams/js/views/topic_card.js:50
 msgid "Topic"
@@ -3020,7 +3026,6 @@ msgid_plural "%(errorCount)s errors found in form."
 msgstr[0] "У формі знайдено %(errorCount)s помилку."
 msgstr[1] "У формі знайдено %(errorCount)s помилки."
 msgstr[2] "У формі знайдено %(errorCount)s помилок."
-msgstr[3] "У формі знайдено %(errorCount)s помилки."
 
 #: lms/static/js/Markdown.Editor.js:1451
 msgid "Bold (Ctrl+B)"
@@ -3405,7 +3410,6 @@ msgid_plural "Viewing %s courses"
 msgstr[0] "Знайдено %s курс"
 msgstr[1] "Знайдено %s курси
 msgstr[2] "Знайдено %s курсів"
-msgstr[3] "Знайдено %s курси"
 
 #: lms/static/js/discovery/views/search_form.js:57
 #, javascript-format
@@ -3598,7 +3602,6 @@ msgid_plural "{numUsersAdded} learners have been added to this cohort. "
 msgstr[0] "До цієї когорти додано {numUsersAdded} студента."
 msgstr[1] "До цієї когорти додано {numUsersAdded} студенти."
 msgstr[2] "До цієї когорти додано {numUsersAdded} студентів."
-msgstr[3] "До цієї когорти додано {numUsersAdded} студенти."
 
 #: lms/static/js/groups/views/cohort_editor.js:195
 msgid "{numMoved} learner was moved from {prevCohort}"
@@ -3606,7 +3609,6 @@ msgid_plural "{numMoved} learners were moved from {prevCohort}"
 msgstr[0] "{numMoved} студента переміщено з {prevCohort}."
 msgstr[1] "{numMoved} студенти переміщено з {prevCohort}."
 msgstr[2] "{numMoved} студентів переміщено з {prevCohort}."
-msgstr[3] "{numMoved} студенти переміщено з {prevCohort}."
 
 #: lms/static/js/groups/views/cohort_editor.js:205
 msgid "{numPresent} learner was already in the cohort"
@@ -3614,7 +3616,6 @@ msgid_plural "{numPresent} learners were already in the cohort"
 msgstr[0] "{numPresent} студент уже був у когорті."
 msgstr[1] "{numPresent} студенти уже були у когорті."
 msgstr[2] "{numPresent} студентів уже були у когорті."
-msgstr[3] "{numPresent} студенти уже були у когорті."
 
 #: lms/static/js/groups/views/cohort_editor.js:231
 msgid "{email}"
@@ -3630,7 +3631,6 @@ msgid_plural ""
 msgstr[0] "{numPreassigned} студент був попередньо призначений до цієї когорти. Цей студент автоматично буде доданий до когорти після реєстрації на курс."
 msgstr[1] "{numPreassigned} студенти були попередньо призначені до цієї когорти. Ці студенти автоматично будуть додані до когорти після реєстрації на курс."
 msgstr[2] "{numPreassigned} студентів було попередньо призначено до цієї когорти. Ці студенти автоматично будуть додані до когорти після реєстрації на курс."
-msgstr[3] "{numPreassigned} студенти були попередньо призначені до цієї когорти. Ці студенти автоматично будуть додані до когорти після реєстрації на курс."
 
 #: lms/static/js/groups/views/cohort_editor.js:276
 msgid "Unknown username: {user}"
@@ -3650,7 +3650,6 @@ msgid_plural "{numErrors} learners could not be added to this cohort:"
 msgstr[0] "Виникла помилка при спробі додати студента:"
 msgstr[1] "Виникла помилка при спробі додати {numErrors} студенти до цієї когорти:"
 msgstr[2] "Виникла помилка при спробі додати {numErrors} студентів до цієї когорти:"
-msgstr[3] "Виникла помилка при спробі додати {numErrors} студенти до цієї когорти:"
 
 #: lms/static/js/groups/views/cohort_editor.js:306
 msgid "View all errors"
@@ -5202,7 +5201,6 @@ msgid_plural "{total_results} results found for \"{search_term}\""
 msgstr[0] "{total_results} результат знайдено для \"{search_term}\""
 msgstr[1] "{total_results} результати знайдено для \"{search_term}\""
 msgstr[2] "{total_results} результатів знайдено для \"{search_term}\""
-msgstr[3] "{total_results} результати знайдено для \"{search_term}\""
 
 #: xmodule/assets/library_content/public/js/library_content_edit.js:16
 #: xmodule/js/public/js/library_content_edit.js:16
@@ -5262,7 +5260,6 @@ msgid_plural "{num_points} points possible (graded, results hidden)"
 msgstr[0] "{num_points} бал можливий (оцінено, результати приховано)"
 msgstr[1] "{num_points} бали можливі (оцінено, результати приховано)"
 msgstr[2] "{num_points} балів можливі (оцінено, результати приховано)"
-msgstr[3] "{num_points} бали можливі (оцінено, результати приховано)"
 
 #. Translators: {num_points} is the number of points possible (examples: 1, 3,
 #. 10).;
@@ -5272,7 +5269,6 @@ msgid_plural "{num_points} points possible (ungraded, results hidden)"
 msgstr[0] "{num_points} бал можливий (неоцінено, результати приховано)"
 msgstr[1] "{num_points} бали можливі (неоцінено, результати приховано)"
 msgstr[2] "{num_points} балів можливі (неоцінено, результати приховано)"
-msgstr[3] "{num_points} бали можливі (неоцінено, результати приховано)"
 
 #. Translators: {num_points} is the number of points possible (examples: 1, 3,
 #. 10).;
@@ -5282,7 +5278,6 @@ msgid_plural "{num_points} points possible (graded)"
 msgstr[0] "{num_points} бал можливий (оцінено)"
 msgstr[1] "{num_points} бали можливі (оцінено)"
 msgstr[2] "{num_points} балів можливі (оцінено)"
-msgstr[3] "{num_points} бали можливі (оцінено)"
 
 #. Translators: {num_points} is the number of points possible (examples: 1, 3,
 #. 10).;
@@ -5292,7 +5287,6 @@ msgid_plural "{num_points} points possible (ungraded)"
 msgstr[0] "{num_points} бал можливий (неоцінено)"
 msgstr[1] "{num_points} бали можливі (неоцінено)"
 msgstr[2] "{num_points} балів можливі (неоцінено)"
-msgstr[3] "{num_points} бали можливі (неоцінено)"
 
 #. Translators: {earned} is the number of points earned. {possible} is the
 #. total number of points (examples: 0/1, 1/1, 2/3, 5/10). The total number of
@@ -5304,7 +5298,6 @@ msgid_plural "{earned}/{possible} points (graded)"
 msgstr[0] "{earned}/{possible} бал (оцінено)"
 msgstr[1] "{earned}/{possible} бали (оцінено)"
 msgstr[2] "{earned}/{possible} балів (оцінено)"
-msgstr[3] "{earned}/{possible} бали (оцінено)"
 
 #. Translators: {earned} is the number of points earned. {possible} is the
 #. total number of points (examples: 0/1, 1/1, 2/3, 5/10). The total number of
@@ -5316,7 +5309,6 @@ msgid_plural "{earned}/{possible} points (ungraded)"
 msgstr[0] "{earned}/{possible} бал (неоцінено)"
 msgstr[1] "{earned}/{possible} бали (неоцінено)"
 msgstr[2] "{earned}/{possible} балів (неоцінено)"
-msgstr[3] "{earned}/{possible} бали (неоцінено)"
 
 #: xmodule/js/src/capa/display.js:349
 msgid "The grading process is still running. Refresh the page to see updates."
@@ -6775,7 +6767,6 @@ msgid_plural "%(value)s hours"
 msgstr[0] "%(value)s година"
 msgstr[1] "%(value)s години"
 msgstr[2] "%(value)s годин"
-msgstr[3] "%(value)s години"
 
 #: xmodule/js/src/video/06_video_progress_slider.js:327
 msgid "%(value)s minute"
@@ -6783,7 +6774,6 @@ msgid_plural "%(value)s minutes"
 msgstr[0] "%(value)s хвилина"
 msgstr[1] "%(value)s хвилини"
 msgstr[2] "%(value)s хвилин"
-msgstr[3] "%(value)s хвилини"
 
 #: xmodule/js/src/video/06_video_progress_slider.js:330
 msgid "%(value)s second"
@@ -6791,7 +6781,7 @@ msgid_plural "%(value)s seconds"
 msgstr[0] "%(value)s секунда"
 msgstr[1] "%(value)s секунди"
 msgstr[2] "%(value)s секунд"
-msgstr[3] "%(value)s секунди"
+
 #: xmodule/js/src/video/07_video_volume_control.js:70
 msgid ""
 "Click on this button to mute or unmute this video or press UP or DOWN "
@@ -9092,7 +9082,6 @@ msgid_plural "Show Comments (%(num_comments)s)"
 msgstr[0] "Показати коментар (%(num_comments)s)"
 msgstr[1] "Показати коментарі (%(num_comments)s)"
 msgstr[2] "Показати коментарів (%(num_comments)s)"
-msgstr[3] "Показати коментарі (%(num_comments)s)"
 
 #: common/static/common/templates/discussion/templates.underscore:164
 #: common/static/common/templates/discussion/templates.underscore:166
@@ -10146,7 +10135,6 @@ msgid_plural "(contains %(student_count)s students)"
 msgstr[0] "(містить %(student_count)s студента)"
 msgstr[1] "(містить %(student_count)s студенти)"
 msgstr[2] "(містить %(student_count)s студентів)"
-msgstr[3] "(містить %(student_count)s студенти)"
 
 #: lms/templates/instructor/instructor_dashboard_2/cohort-group-header.underscore:14
 msgid ""
@@ -10357,7 +10345,6 @@ msgid_plural "Courses"
 msgstr[0] "Курс"
 msgstr[1] "Курси"
 msgstr[2] "Курсів"
-msgstr[3] "Курси"
 
 #: lms/templates/learner_dashboard/program_card.underscore:18
 msgid "Completed"
@@ -11373,7 +11360,6 @@ msgid_plural "Load next {num_items} results"
 msgstr[0] "Завантажити наступний {num_items} результат"
 msgstr[1] "Завантажити наступні {num_items} результати"
 msgstr[2] "Завантажити наступних {num_items} результатів"
-msgstr[3] "Завантажити наступні {num_items} результати"
 
 #: openedx/features/course_search/static/course_search/templates/course_search_results.underscore:25
 #: openedx/features/course_search/static/course_search/templates/dashboard_search_results.underscore:26
