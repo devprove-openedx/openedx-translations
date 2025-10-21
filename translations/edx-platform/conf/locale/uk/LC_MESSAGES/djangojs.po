@@ -1949,6 +1949,10 @@ msgstr "Переглянути дочірні елементи"
 msgid "Navigate up"
 msgstr "Перейти вгору"
 
+#: common/static/common/js/components/BlockBrowser/components/BlockBrowser/BlockBrowser.jsx:89
+msgid "Browsing"
+msgstr "Перегляд"
+
 #: common/static/common/js/components/BlockBrowser/components/BlockBrowser/BlockBrowser.jsx:96
 msgid "Select"
 msgstr "Обрати"
