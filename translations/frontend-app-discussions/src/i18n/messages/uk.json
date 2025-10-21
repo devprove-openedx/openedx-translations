@@ -43,8 +43,8 @@
   "discussions.page.title": "Обговорення | {siteName}",
   "navigation.course.tabs.label": "Матеріал курсу",
   "discussions.topics.backAlt": "Повернутися до списку тем",
-  "discussions.topics.discussions": "{count, plural, =0 {Обговорення} one {# обговорення} few {# обговорення} many {# обговорень} other {# обговорення} }",
-  "discussions.topics.questions": "{count, plural, =0 {Запитання} one {# запитання} few {# запитання} many {# запитань} other {# запитання} }",
+  "discussions.topics.discussions": "{count, plural, =0 {обговорення} one {# обговорення} few {# обговорення} many {# обговорень} other {# обговорення} }",
+  "discussions.topics.questions": "{count, plural, =0 {запитання} one {# запитання} few {# запитання} many {# запитань} other {# запитання} }",
   "discussions.topics.reported": "{reported} повідомлено",
   "discussions.topics.previouslyReported": "{previouslyReported} раніше повідомлено",
   "discussions.topics.find.label": "Пошук тем",
@@ -71,8 +71,8 @@
   "discussions.comments.comment.addResponse": "Додати відповідь",
   "discussions.comments.comment.abuseFlaggedMessage": "Про вміст повідомлено пероналу",
   "discussions.actions.back.alt": "Назад до списку",
-  "discussions.comments.comment.responseCount": "{num, plural, =0 {No responses} один {Showing # response} other {Showing # responses} }",
-  "discussions.comments.comment.endorsedResponseCount": "{num, plural, =0 {No endorsed responses} один {Showing # endorsed response} other {Showing # endorsed responses} }",
+  "discussions.comments.comment.responseCount": "{num, plural, =0 {Немає відповідей} one {Показано # відповідь} few {Показано # відповіді} many {Показано # відповідей} other {Показано # відповіді}}",
+  "discussions.comments.comment.endorsedResponseCount": "{num, plural, =0 {Немає затверджених відповідей} one {Показано # затверджену відповідь} few {Показано # затверджені відповіді} many {Показано # затверджених відповідей} other {Показано # затверджені відповіді}}"
   "discussions.comments.comment.loadMoreComments": "Завантажити більше коментарів",
   "discussions.comments.comment.loadMoreResponses": "Завантажити більше відповідей",
   "discussions.comments.comment.visibility": "",
@@ -210,5 +210,5 @@
   "discussions.posts.sort.lastActivity": "Остання активність",
   "discussions.posts.sort.commentCount": "Найактивніше",
   "discussions.posts.sort.voteCount": "Найбільше вподобань",
-  "discussions.posts.sort-filter.sortFilterStatus": "{own, select, false {Усі} true {Мої} other {{own}}} {status, select, statusAll {} statusUnread {непрочитані} statusFollowing {відстежувані} statusReported {із скаргами} statusUn Answered {без відповіді} statusUnresponded {без реакції} other {{status}}} {type, select, discussion {обговорення} question {запитання} all {повідомлення} other {{type}}} {cohortType, select, all {} group {в {cohort}} other {{cohortType} }} відсортовано за {sort, select, LastActivityAt {останньою активністю} commentCount {найактивнішими} voiceCount {найбільш вподобані} other {{sort} }}"
+   "discussions.posts.sort-filter.sortFilterStatus": "{own, select, false {Усі} true {Мої} other {{own}}} {status, select, statusAll {} statusUnread {непрочитані} statusFollowing {відстежувані} statusReported {із скаргами} statusUnanswered {без відповіді} statusUnresponded {без реакції} other {{status}}} {type, select, discussion {обговорення} question {запитання} all {повідомлення} other {{type}}} {cohortType, select, all {} group {в {cohort}} other {{cohortType}}} відсортовано за {sort, select, lastActivityAt {останньою активністю} commentCount {найактивнішими} voteCount {найбільш вподобані} other {{sort}}}"
 }
