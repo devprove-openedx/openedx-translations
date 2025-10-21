@@ -43,7 +43,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.17.0\n"
 "Language: uk\n"
-"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
 
 #: cms/djangoapps/api/v1/serializers/course_runs.py:49
 msgid "Course team user does not exist"
@@ -1528,7 +1528,8 @@ msgstr ""
 msgid "%(count)d student account was unlocked."
 msgid_plural "%(count)d student accounts were unlocked."
 msgstr[0] "%(count)d акаунт студента було розблоковано."
-msgstr[1] "%(count)d акаунтів студентів було розблоковано."
+msgstr[1] "%(count)d акаунти студентів було розблоковано."
+msgstr[2] "%(count)d акаунтів студентів було розблоковано."
 
 #: common/djangoapps/student/admin.py:498
 #, python-brace-format
@@ -2454,7 +2455,6 @@ msgstr[1] ""
 "Файл має закінчуватися одним із таких розширень: &#39;{file_types}&#39;."
 msgstr[2] ""
 "Файл має закінчуватися одним із таких розширень: &#39;{file_types}&#39;."
-msgstr[3] "Файл повинен мати одне з наступних розширень: '{file_types}'."
 
 #: common/djangoapps/util/file.py:73
 #, python-brace-format
@@ -3928,6 +3928,12 @@ msgstr[0] ""
 msgstr[1] ""
 "\n"
 "                                Ви поставили мету вчитись "
+"{start_bold}%(days_per_week)s рази на тиждень у %(course_name)s{end_bold}. "
+"Ви ще не досягли її, але час ще є!\n"
+"                                "
+msgstr[2] ""
+"\n"
+"                                Ви поставили мету вчитись "
 "{start_bold}%(days_per_week)s разів на тиждень у %(course_name)s{end_bold}. "
 "Ви ще не досягли її, але час ще є!\n"
 "                            "
@@ -4048,7 +4054,8 @@ msgstr "Відключено"
 msgid "({number} Question)"
 msgid_plural "({number} Questions)"
 msgstr[0] "({number} питання)"
-msgstr[1] "({number} питань)"
+msgstr[1] "({number} питання)"
+msgstr[2] "({number} питань)"
 
 #: lms/djangoapps/course_home_api/outline/views.py:293
 #, python-brace-format
@@ -5670,14 +5677,16 @@ msgstr "відправлених: 0"
 msgid "{num_emails} sent"
 msgid_plural "{num_emails} sent"
 msgstr[0] "{num_emails} надіслано"
-msgstr[1] "{num_emails} надіслані"
+msgstr[1] "{num_emails} надіслано"
+msgstr[2] "{num_emails} надіслані"
 
 #: lms/djangoapps/instructor/views/instructor_task_helpers.py:99
 #, python-brace-format
 msgid "{num_emails} failed"
 msgid_plural "{num_emails} failed"
 msgstr[0] "{num_emails} не надіслано"
-msgstr[1] "{num_emails} не надіслані"
+msgstr[1] "{num_emails} не надіслано"
+msgstr[2] "{num_emails} не надіслані"
 
 #: lms/djangoapps/instructor/views/instructor_task_helpers.py:140
 msgid "Complete"
@@ -10907,7 +10916,8 @@ msgstr ""
 msgid "Try again ({attempts} attempt remaining)"
 msgid_plural "Try again ({attempts} attempts remaining)"
 msgstr[0] "Спробуйте ще раз ({attempts} спроба залишилася)"
-msgstr[1] "Спробуйте ще раз ({attempts} спроб залишилося)"
+msgstr[1] "Спробуйте ще раз ({attempts} спроби залишилося)"
+msgstr[2] "Спробуйте ще раз ({attempts} спроб залишилося)"
 
 #: openedx/features/personalized_learner_schedules/call_to_action.py:150
 #, python-brace-format
@@ -11789,21 +11799,24 @@ msgstr ""
 msgid "Incorrect ({progress} point)"
 msgid_plural "Incorrect ({progress} points)"
 msgstr[0] "Неправильно ({progress} бал)"
-msgstr[1] "Неправильно ({progress} балів)"
+msgstr[1] "Неправильно ({progress} бали)"
+msgstr[2] "Неправильно ({progress} балів)"
 
 #: xmodule/capa_block.py:1402
 #, python-brace-format
 msgid "Correct ({progress} point)"
 msgid_plural "Correct ({progress} points)"
 msgstr[0] "Правильно ({progress} бал)"
-msgstr[1] "Правильно ({progress} балів)"
+msgstr[1] "Правильно ({progress} бали)"
+msgstr[2] "Правильно ({progress} балів)"
 
 #: xmodule/capa_block.py:1411
 #, python-brace-format
 msgid "Partially correct ({progress} point)"
 msgid_plural "Partially correct ({progress} points)"
 msgstr[0] "Частково правильно ({progress} бал)"
-msgstr[1] "Частково правильно ({progress} балів)"
+msgstr[1] "Частково правильно ({progress} бали)"
+msgstr[2] "Частково правильно ({progress} балів)"
 
 #: xmodule/capa_block.py:1416
 msgid "Partially Correct"
@@ -11842,21 +11855,24 @@ msgstr ""
 msgid "{num_hour} hour"
 msgid_plural "{num_hour} hours"
 msgstr[0] "{num_hour} година"
-msgstr[1] "{num_hour} годин"
+msgstr[1] "{num_hour} години"
+msgstr[2] "{num_hour} годин"
 
 #: xmodule/capa_block.py:2015
 #, python-brace-format
 msgid "{num_minute} minute"
 msgid_plural "{num_minute} minutes"
 msgstr[0] "{num_minute} хвилина"
-msgstr[1] "{num_minute} хвилин"
+msgstr[1] "{num_minute} хвилини"
+msgstr[2] "{num_minute} хвилин"
 
 #: xmodule/capa_block.py:2021
 #, python-brace-format
 msgid "{num_second} second"
 msgid_plural "{num_second} seconds"
 msgstr[0] "{num_second} секунда"
-msgstr[1] "{num_second} секунд"
+msgstr[1] "{num_second} секунди"
+msgstr[2] "{num_second} секунд"
 
 #: xmodule/capa_block.py:2141
 msgid "Problem needs to be reset prior to save."
@@ -13241,14 +13257,16 @@ msgstr "Вибрати інший вид завдання."
 msgid "The specified library is configured to fetch {count} problem, "
 msgid_plural "The specified library is configured to fetch {count} problems, "
 msgstr[0] "Вказана бібліотека налаштована на отримання {count} завдання, "
-msgstr[1] "Вказана бібліотека налаштована на отримання {count} завдань, "
+msgstr[1] "Вказана бібліотека налаштована на отримання {count} завдання, "
+msgstr[2] "Вказана бібліотека налаштована на отримання {count} завдань, "
 
 #: xmodule/library_content_block.py:360
 #, python-brace-format
 msgid "but there is only {actual} matching problem."
 msgid_plural "but there are only {actual} matching problems."
 msgstr[0] "але є лише {actual} відповідне завдання."
-msgstr[1] "але є лише {actual} відповідних завдань."
+msgstr[1] "але є лише {actual} відповідні завдання."
+msgstr[2] "але є лише {actual} відповідних завдань."
 
 #: xmodule/library_content_block.py:366
 msgid "Edit the library configuration."
@@ -14015,7 +14033,11 @@ msgstr[0] ""
 "                "
 msgstr[1] ""
 "\n"
-"                Учні побачать всі вибрані компоненти (%(num_selected)s) у випадковому порядку:\n"
+"                Учні побачать усі вибрані компоненти (%(num_selected)s) у випадковому порядку:\n"
+"                "
+msgstr[2] ""
+"\n"
+"                Учні побачать усі вибрані компоненти (%(num_selected)s) у випадковому порядку:\n"
 "                "
 
 
@@ -14145,12 +14167,10 @@ msgstr "Основне"
 #: xmodule/video_block/video_block.py:605
 #, python-brace-format
 msgid "There is no transcript file associated with the {lang} language."
-msgid_plural ""
-"There are no transcript files associated with the {lang} languages."
-msgstr[0] ""
-"Не існує файлу транскрипту, пов'язаного з мовою {lang}."
-msgstr[1] ""
-"Не існує файлів транскриптів, пов'язаних з мовами {lang}."
+msgid_plural "There are no transcript files associated with the {lang} languages."
+msgstr[0] "Не існує файлу транскрипту, пов'язаного з мовою {lang}."
+msgstr[1] "Не існує файлів транскриптів, пов'язаних з мовами {lang}."
+msgstr[2] "Не існує файлів транскриптів, пов'язаних з мовами {lang}."
 
 #: xmodule/video_block/video_block.py:936
 msgid ""
@@ -18062,8 +18082,11 @@ msgid_plural ""
 "list."
 msgstr[0] ""
 "Показано весь відповідний контент, який можна додати до {display_name}. Кожному студенту "
-"буде призначено {max_count} компонентів, вибраних випадковим чином із цього списку."
+"буде призначено {max_count} компонент, вибраний випадковим чином із цього списку."
 msgstr[1] ""
+"Показано весь відповідний контент, який можна додати до {display_name}. Кожному студенту "
+"буде призначено {max_count} компоненти, вибрані випадковим чином із цього списку."
+msgstr[2] ""
 "Показано весь відповідний контент, який можна додати до {display_name}. Кожному студенту "
 "буде призначено {max_count} компонентів, вибраних випадковим чином із цього списку."
 
@@ -19807,6 +19830,7 @@ msgid "%s discussion started"
 msgid_plural "%s discussions started"
 msgstr[0] "%s дискусія розпочата"
 msgstr[1] "%s дискусії розпочаті"
+msgstr[2] "%s дискусій розпочато"
 
 #: lms/djangoapps/discussion/templates/discussion/discussion_profile_page.html:56
 #: lms/templates/discussion/_user_profile.html:9
@@ -19814,7 +19838,8 @@ msgstr[1] "%s дискусії розпочаті"
 msgid "%s comment"
 msgid_plural "%s comments"
 msgstr[0] "%s коментар"
-msgstr[1] "%s коментарів"
+msgstr[1] "%s коментарі"
+msgstr[2] "%s коментарів"
 
 #: lms/djangoapps/discussion/templates/discussion/maintenance_fragment.html:10
 msgid "Discussion unavailable"
@@ -20359,8 +20384,9 @@ msgstr "Показати відповідь"
 #, python-brace-format
 msgid "You have used {num_used} of {num_total} attempt"
 msgid_plural "You have used {num_used} of {num_total} attempts"
-msgstr[0] "Ви використали {num_used} з {num_total} спроби"
-msgstr[1] "Ви використали {num_used} з {num_total} спроб"
+msgstr[0] "Ви використали {num_used} з {num_total} спробу"
+msgstr[1] "Ви використали {num_used} з {num_total} спроби"
+msgstr[2] "Ви використали {num_used} з {num_total} спроб"
 
 #: lms/templates/problem.html:96
 #, python-brace-format
