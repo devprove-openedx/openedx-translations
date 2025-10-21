@@ -24278,6 +24278,10 @@ msgstr "Електронна пошта студента або ім'я кори
 msgid "Choose the graded subsection:"
 msgstr "Виберіть оцінюваний підрозділ:"
 
+#: lms/templates/instructor/instructor_dashboard_2/extensions.html:22
+msgid "Choose one"
+msgstr "Обрати"
+
 #: lms/templates/instructor/instructor_dashboard_2/extensions.html:31
 #, python-brace-format
 msgid ""
