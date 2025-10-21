@@ -25209,6 +25209,19 @@ msgstr ""
 msgid "Adjust all enrolled learners' grades for a specific problem"
 msgstr "Коригувати усі оцінки студентів до конкретного курсу"
 
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:210
+msgid "Allows all learners to work on the problem again."
+msgstr "Дозволити всім слухачам знову працювати над завданням."
+
+#: lms/templates/instructor/instructor_dashboard_2/student_admin.html:216
+msgid ""
+"Rescore submitted responses. The 'Rescore Only If Scores Improve' option "
+"updates a learner's score only if it improves in the learner's favor."
+msgstr ""
+"Перевірити подані відповіді повторно. Якщо обрати опцію «Перевіряти тільки, "
+"якщо оцінка покращиться», оцінка слухача зміниться лише у разі покращення "
+"на його користь."
+
 #: lms/templates/instructor/instructor_dashboard_2/student_admin.html:219
 msgid "Rescore All Learners' Submissions"
 msgstr "Видалити усі спроби студента"
