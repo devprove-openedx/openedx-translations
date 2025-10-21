@@ -11362,3 +11362,31 @@ msgstr[2] "Завантажити наступних {num_items} результ�
 #: openedx/features/course_search/static/course_search/templates/dashboard_search_results.underscore:26
 msgid "Sorry, no results were found."
 msgstr "На жаль, жодного результату не знайдено."
+
+
+# lms main filters
+
+msgid "language"
+msgstr "Мова"
+
+msgid "en"
+msgstr "English"
+
+msgid "uk"
+msgstr "Українська"
+
+
+msgid "modes"
+msgstr "Режим"
+
+msgid "honor"
+msgstr "Кодекс"
+
+msgid "audit"
+msgstr "Вільний"
+
+
+msgid "org"
+msgstr "Організація"
+
+
