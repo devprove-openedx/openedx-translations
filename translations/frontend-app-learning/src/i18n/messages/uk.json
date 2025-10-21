@@ -9,7 +9,7 @@
   "learning.pageNotFound.header": "Сторінку не знайдено",
   "learning.pageNotFound.body": "Сторінку, яку ви шукали, не знайдено. Поверніться на сторінку {homepageLink}.",
   "learning.pageNotFound.body.homepageLink.label": "домашня сторінка",
-  "instructor.toolbar.view.course": "Переглянути курс в :",
+  "instructor.toolbar.view.course": "Переглянути курс в:",
   "instructor.toolbar.studio": "Studio",
   "instructor.toolbar.insights": "Insights",
   "learning.notification.preferences.unsubscribe.preferenceCenterUrl": "сторінка налаштувань",
