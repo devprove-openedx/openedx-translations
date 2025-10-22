@@ -11385,6 +11385,9 @@ msgstr "Кодекс"
 msgid "audit"
 msgstr "Вільний"
 
+msgid "verified"
+msgstr "Верифікований"
+
 
 msgid "org"
 msgstr "Організація"
